@@ -18,7 +18,7 @@ plt.figure(figsize=(10, 6))
 plt.errorbar(sensor, distancia, xerr=error_sensor, yerr=error_distancia, fmt='o', color='blue', ecolor='blue', elinewidth=2, capsize=10, label='Datos de Sensor vs Distancia')
 
 # Graficar la recta de tendencia
-plt.plot(sensor, tendencia, color='cyan', label='Tendencia')
+plt.plot(sensor, tendencia, color='cyan', label='Tendencia con error $\pm$0.5')
 
 # Graficar las bandas de desviación
 plt.fill_between(sensor, tendencia - 0.5, tendencia + 0.5, color='cyan', alpha=0.2)
