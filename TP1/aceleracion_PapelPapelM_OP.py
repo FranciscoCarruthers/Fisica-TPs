@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# 'Fisica-TPs/TP1/Mediciones Fisica/papel boligoma papel/M_O-1.csv'
+# 'Fisica-TPs/TP1/Mediciones Fisica/papel boligoma papel/M_OP-1.csv'
 
 def get_data_from_file(path):
     with open(path):
@@ -20,15 +20,15 @@ def change_ms_to_s(ms):
     return ms
 
 
-ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/papel boligoma papel/M_O-2.csv')
-ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/papel boligoma papel/M_O-3.csv')
+ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/papel boligoma papel/M_OP-2.csv')
+ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/papel boligoma papel/M_OP-3.csv')
 
-tiempo2 = change_ms_to_s(ms2[5:27]) - 0.5
-posicion2 = change_data_to_distance(sensor_data2[5:27]) - 15
+tiempo2 = change_ms_to_s(ms2[8:18]) - 0.5
+posicion2 = change_data_to_distance(sensor_data2[8:18]) - 15
 errores_y2 = np.full(len(posicion2), 0.44)
 
-tiempo3 = change_ms_to_s(ms3[5:27]) - 0.5
-posicion3 = change_data_to_distance(sensor_data3[5:27]) - 15
+tiempo3 = change_ms_to_s(ms3[8:18]) - 0.5
+posicion3 = change_data_to_distance(sensor_data3[8:18]) - 15
 errores_y3 = np.full(len(posicion3), 0.44)
 
 # Definir la función cuadrática con v_0 = 0
@@ -39,7 +39,7 @@ def modelo_cuadratico(t, a, v_0, x_0):
 # popt, pcov = curve_fit(modelo_cuadratico, tiempo, posicion, sigma=errores_y, absolute_sigma=True)
 
 # ajustar las curvas
-popt2, pcov2 = curve_fit(modelo_cuadratico, tiempo2[1:-1], posicion2[1:-1], sigma=errores_y2[1:-1], absolute_sigma=True)
+popt2, pcov2 = curve_fit(modelo_cuadratico, tiempo2[1:-2], posicion2[1:-2], sigma=errores_y2[1:-2], absolute_sigma=True)
 popt3, pcov3 = curve_fit(modelo_cuadratico, tiempo3[1:-1], posicion3[1:-1], sigma=errores_y3[1:-1], absolute_sigma=True)
 
 # Obtener los coeficientes ajustados y sus errores
@@ -122,7 +122,7 @@ plt.show()
 acel_prom2 = np.mean(aceleracion2[:-3]) /2
 acel_prom3 = np.mean(aceleracion3[:-3]) /2
 
-m_chiquita = 72
+m_chiquita = 72+23
 M_grande = 109 + 134
 
 # Graficar las aceleraciones promedio
