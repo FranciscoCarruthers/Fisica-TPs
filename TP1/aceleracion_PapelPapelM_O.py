@@ -122,6 +122,8 @@ plt.show()
 acel_prom2 = np.mean(aceleracion2[:-3]) /2
 acel_prom3 = np.mean(aceleracion3[:-3]) /2
 
+print(f"Aceleración promedio: {(acel_prom2 + acel_prom3) /2} cm/s^2")
+
 m_chiquita = 72
 M_grande = 109 + 134
 
