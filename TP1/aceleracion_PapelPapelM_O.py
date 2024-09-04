@@ -49,9 +49,11 @@ popt3, pcov3 = curve_fit(modelo_cuadratico, tiempo3[1:-1], posicion3[1:-1], sigm
 # obtener los coeficientes ajustados y sus errores
 
 a_opt2, v_0_opt2, x_0_opt2 = popt2
+print(a_opt2, v_0_opt2, x_0_opt2)
 errores2 = np.sqrt(np.diag(pcov2))
 
 a_opt3, v_0_opt3, x_0_opt3 = popt3
+print(a_opt3, v_0_opt3, x_0_opt3)
 errores3 = np.sqrt(np.diag(pcov3))
 
 
@@ -77,6 +79,7 @@ plt.plot(t_ajuste3, modelo_cuadratico(t_ajuste3, *popt3), 'b', label=f'Ajuste cu
 plt.xlabel('Tiempo [s]')
 plt.ylabel('Posición [m]')
 plt.legend()
+plt.savefig('TP1/ajuste2_PapelPapelM_O.png')
 plt.show()
 
 """# Otra forma
@@ -103,6 +106,7 @@ plt.plot(tiempo3, velocidad3, 'b-', marker='o', label='Derivada numérica 2', co
 plt.xlabel('Tiempo [s]')
 plt.ylabel('Velocidad [m/s]')
 plt.legend()
+plt.savefig('TP1/velocidad_PapelPapelM_O.png')
 plt.show()
 
 # Calcular la derivada numérica de los datos de posición respecto al tiempo
@@ -116,4 +120,5 @@ plt.plot(tiempo3, aceleracon3, 'b-', marker='o', label='Derivada numérica 2', c
 plt.xlabel('Tiempo [s]')
 plt.ylabel(r'$ 2 \times$ Aceleración [$m/s^2$]')
 plt.legend()
+plt.savefig('TP1/aceleracion_PapelPapelM_O.png')
 plt.show()

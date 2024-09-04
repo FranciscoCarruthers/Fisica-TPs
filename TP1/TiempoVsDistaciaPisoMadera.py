@@ -10,7 +10,7 @@ for i in range(2, 4):
     s = change_ms_to_s(ms) - 0.5
     plot_distance_vs_time(s[4:13], distance[4:13], 0.44, i)
 plt.tight_layout()
-# plt.savefig('TP1/TiempoVsDistanciaPapelPapelM_O.png')
+plt.savefig('TP1/TiempoVsDistanciaPapelPapelM_O.png')
 plt.show()
 
 
@@ -22,7 +22,7 @@ for i in range(2, 4):
     s = change_ms_to_s(ms) - 1.5
     plot_distance_vs_time(s[14:27], distance[14:27], 0.44, i)
 plt.tight_layout()
-# plt.savefig('TP1/TiempoVsDistanciaPapelPapelM_OP.png')
+plt.savefig('TP1/TiempoVsDistanciaPapelPapelM_OP.png')
 plt.show()
 
 
@@ -34,5 +34,5 @@ for i in range(2, 4):
     s = change_ms_to_s(ms) - 0.4
     plot_distance_vs_time(s[3:13], distance[3:13], 0.44, i)
 plt.tight_layout()
-# plt.savefig('TP1/TiempoVsDistanciaPapelPapelV_O.png')
+plt.savefig('TP1/TiempoVsDistanciaPapelPapelV_O.png')
 plt.show()
