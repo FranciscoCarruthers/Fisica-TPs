@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# 'Fisica-TPs/TP1/Mediciones Fisica/papel boligoma papel/M_O-1.csv'
+# 'Fisica-TPs/TP1/Mediciones Fisica/papel boligoma papel/M_OP-1.csv'
 
 def get_data_from_file(path):
     with open(path):
@@ -20,15 +20,15 @@ def change_ms_to_s(ms):
     return ms
 
 
-ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/papel boligoma papel/M_O-2.csv')
-ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/papel boligoma papel/M_O-3.csv')
+ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/papel boligoma papel/V_O-2.csv')
+ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/papel boligoma papel/V_O-3.csv')
 
-tiempo2 = change_ms_to_s(ms2[5:27]) - 0.5
-posicion2 = change_data_to_distance(sensor_data2[5:27]) - 15
+tiempo2 = change_ms_to_s(ms2[6:15]) - 0.5
+posicion2 = change_data_to_distance(sensor_data2[6:15]) - 15
 errores_y2 = np.full(len(posicion2), 0.44)
 
-tiempo3 = change_ms_to_s(ms3[5:27]) - 0.5
-posicion3 = change_data_to_distance(sensor_data3[5:27]) - 15
+tiempo3 = change_ms_to_s(ms3[6:15]) - 0.5
+posicion3 = change_data_to_distance(sensor_data3[6:15]) - 15
 errores_y3 = np.full(len(posicion3), 0.44)
 
 # Definir la función cuadrática con v_0 = 0
@@ -122,10 +122,10 @@ plt.show()
 acel_prom2 = np.mean(aceleracion2[:-3]) /2
 acel_prom3 = np.mean(aceleracion3[:-3]) /2
 
-print(f"Aceleración promedio: {(acel_prom2 + acel_prom3) /2} cm/s^2")
-
 m_chiquita = 72
-M_grande = 109 + 134
+M_grande = 109
+
+print(f"Aceleración promedio: {(acel_prom2 + acel_prom3) /2} cm/s^2")
 
 # Graficar las aceleraciones promedio
 
