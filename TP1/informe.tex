@@ -12,8 +12,10 @@
 \usepackage{csquotes}
 
 \title{Informe de Física: Encontrando el coeficiente de fricción dinámica}
-\author{Francisco Carruthers, Facundo Firpo y Joel Jablonski\\ [2mm] %\\ para nueva línea
-\small UDESA}
+\author{Francisco Carruthers, Facundo Firpo y Joel Jablonski\\ [2mm]
+\small \texttt{\{fcarruthers, ffirpo, jjablonski\}@udesa.edu.ar}\\
+\small Grupo 4\\
+\small Fisica I, tutorial Vinograd}
 \date{2do Semestre 2024}
 
 
@@ -27,7 +29,9 @@
 
 \section{Introducción}
 
-Medimos los datos usando un Arduino
+(Descripción del experimento)
+
+(Desarrollo de Newton y Vinculos del problema)
 
 \begin{table}
     \centering
@@ -68,7 +72,11 @@ Distancia para 600: 10.54 ± 0.44 cm \\
 
 \subsection{Papel y Papel}
 
-\subsubsection*{m = Metro, M = Pesa Dorada}
+\subsubsection{$M = 243 \pm 1, m = 72 \pm 1$}
+
+En un primer caso pusimos el metro en el carrito y la pesa dorada en el extremo de la soga.
+
+Usando los datos del sensor Arduino, podemos calcular la distancia recorrida en función del tiempo.
 
 \begin{figure}[H]
     \centering
@@ -77,6 +85,8 @@ Distancia para 600: 10.54 ± 0.44 cm \\
     \label{fig:PyPM_O}
 \end{figure}
 
+Usamos un ajuste cuadrático para encontrar la aceleración.
+
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.9\linewidth]{ajuste2_PapelPapelM_O.png}
@@ -84,17 +94,20 @@ Distancia para 600: 10.54 ± 0.44 cm \\
     \label{fig:a2PPM_O}
 \end{figure}
 
-Con $Pos_1(t) = 3.9146637317708874 t^2 + 0.22601767425705577 t - 0.8134488393102333$
+Con $Pos_1(t) = (3.91 \pm 0.33) t^2 + (0.23 \pm 0.78) t + (-0.81 \pm 0.40)$
 
-Con $Pos_2(t) = 3.4724812213941743 t^2 + 1.4487578256464553 t - 0.7508679099098365$
+\newpage
+Graficamos las aceleraciones en función de las masas.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\linewidth]{velocidad_PapelPapelM_O.png}
-    \includegraphics[width=0.4\linewidth]{aceleracion_PapelPapelM_O.png}
-    \caption{Velocidad y aceleracion}
-    \label{fig:vaPPM_O}
+    \includegraphics[width=0.9\linewidth]{scatter_aceleraciones.png}
+    \caption{Aceleraciones vs m y M}
+    \label{fig:aPPM_O}
 \end{figure}
 
+(No se ve del todo bien, probablemente haya que cambiar la manera de graficar) \\
+
+Utilizando estas aceleraciones, reemplazamos en la ecuacion para el $\mu_d$ y encontramos que $\mu_d$ de rozamiento entre papel y papel es 21.22 N. (falta la incerteza)
 
 \end{document}
