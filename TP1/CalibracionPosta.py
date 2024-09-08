@@ -68,9 +68,7 @@ x = np.linspace(0, 2000, 100) # evalúo a tiempos más largos que los que medí
 y, sigma_y = lineal_ajustada(x, v, d0, sigma_sensor, cov) # recta de ajuste con incertezas
 
 fig, ax = plt.subplots(1, 1, figsize=(6, 4))
-ax.set_axisbelow(True)
-ax.grid(True, c='gainsboro', linewidth=0.7)
-ax.set_xlabel(r'$arduino$', size=15)
+ax.set_xlabel(r'$arduino(u.a)$', size=15)
 ax.set_ylabel(r'$d\,(cm)$', size=15)
 
 ax.fill_between(x, y + sigma_y, y - sigma_y, color='tab:blue', alpha=0.5) # bandas de incerteza
@@ -78,7 +76,7 @@ ax.plot(x, y, color='tab:blue', label=r'$d(arduino) = \hat{v} arduino + \hat{d_0
 ax.errorbar(sensor, distancia, xerr=sigma_sensor, yerr=sigma_distancia,
              fmt='o', c='navy', capsize=2, label='Datos', markersize=2) # datos con barras de incerteza
 ax.legend()
-plt.savefig('Fisica-TPs/TP1/Calibracion.png')
+plt.savefig('TP1/Calibracion.png')
 plt.show()
 
 x600 = np.linspace(0, 600, 100) 

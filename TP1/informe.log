@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  4 SEP 2024 00:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  8 SEP 2024 15:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -588,24 +588,24 @@ LaTeX Info: Redefining \% on input line 12.
 )
 \openout1 = `informe.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 22.
-LaTeX Font Info:    ... okay on input line 22.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -641,8 +641,8 @@ LaTeX Font Info:    ... okay on input line 22.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Info: Redefining \. on input line 22.
-LaTeX Info: Redefining \% on input line 22.
+LaTeX Info: Redefining \. on input line 21.
+LaTeX Info: Redefining \% on input line 21.
 (/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count436
@@ -662,7 +662,7 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (/usr/local/texlive/2024/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring OFF on input line 22.
+Package hyperref Info: Link coloring OFF on input line 21.
  (./informe.out) (./informe.out)
 \@outlinefile=\write4
 \openout4 = `informe.out'.
@@ -680,78 +680,114 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'informe.bbl' found.
  (./informe.bbl)
-Package biblatex Info: Reference section=0 on input line 22.
-Package biblatex Info: Reference segment=0 on input line 22.
-LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 25.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 25.
+Package biblatex Info: Reference section=0 on input line 21.
+Package biblatex Info: Reference segment=0 on input line 21.
+LaTeX Font Info:    Trying to load font information for OMS+cmtt on input line 24.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 24.
 
 
 LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbraceleft' on input line 25.
+(Font)              for symbol `textbraceleft' on input line 24.
 
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<Calibracion.png, id=37, 433.62pt x 289.08pt>
+<Calibracion.png, id=81, 433.62pt x 289.08pt>
 File: Calibracion.png Graphic file (type png)
 <use Calibracion.png>
-Package pdftex.def Info: Calibracion.png  used on input line 60.
+Package pdftex.def Info: Calibracion.png  used on input line 59.
 (pdftex.def)             Requested size: 460.6753pt x 307.1335pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 66--67
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 69--70
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 75.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pm' on input line 75.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\pm' on input line 75.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 75.
-
-[2{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc} <./Calibracion.png>]
-<TiempoVsDistanciaPapelPapelM_O.png, id=47, 462.528pt x 346.896pt>
+[2 <./Calibracion.png>]
+<TiempoVsDistanciaPapelPapelM_O.png, id=90, 462.528pt x 346.896pt>
 File: TiempoVsDistanciaPapelPapelM_O.png Graphic file (type png)
 <use TiempoVsDistanciaPapelPapelM_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_O.png  used on input line 83.
-(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
-<ajuste2_PapelPapelM_O.png, id=48, 462.528pt x 346.896pt>
+Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_O.png  used on input line 82.
+(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
+<ajuste2_PapelPapelM_O.png, id=91, 462.528pt x 346.896pt>
 File: ajuste2_PapelPapelM_O.png Graphic file (type png)
 <use ajuste2_PapelPapelM_O.png>
-Package pdftex.def Info: ajuste2_PapelPapelM_O.png  used on input line 92.
-(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
- [3 <./TiempoVsDistanciaPapelPapelM_O.png>] [4 <./ajuste2_PapelPapelM_O.png>]
-<scatter_aceleraciones.png, id=62, 462.528pt x 346.896pt>
+Package pdftex.def Info: ajuste2_PapelPapelM_O.png  used on input line 83.
+(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
+ [3 <./TiempoVsDistanciaPapelPapelM_O.png> <./ajuste2_PapelPapelM_O.png>]
+<scatter_aceleraciones.png, id=100, 462.528pt x 346.896pt>
 File: scatter_aceleraciones.png Graphic file (type png)
 <use scatter_aceleraciones.png>
-Package pdftex.def Info: scatter_aceleraciones.png  used on input line 104.
+Package pdftex.def Info: scatter_aceleraciones.png  used on input line 95.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 109--110
+Underfull \hbox (badness 10000) in paragraph at lines 100--101
 
  []
 
-[5 <./scatter_aceleraciones.png>] (./informe.aux
+<TiempoVsDistanciaPapelPapelM_OP.png, id=101, 462.528pt x 346.896pt>
+File: TiempoVsDistanciaPapelPapelM_OP.png Graphic file (type png)
+<use TiempoVsDistanciaPapelPapelM_OP.png>
+Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_OP.png  used on input line 106.
+(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
+[4 <./scatter_aceleraciones.png>]
+<TiempoVsDistanciaPapelPapelV_O.png, id=108, 462.528pt x 346.896pt>
+File: TiempoVsDistanciaPapelPapelV_O.png Graphic file (type png)
+<use TiempoVsDistanciaPapelPapelV_O.png>
+Package pdftex.def Info: TiempoVsDistanciaPapelPapelV_O.png  used on input line 115.
+(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
+ [5 <./TiempoVsDistanciaPapelPapelM_OP.png>]
+File: TiempoVsDistanciaPapelPapelM_O.png Graphic file (type png)
+<use TiempoVsDistanciaPapelPapelM_O.png>
+Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_O.png  used on input line 124.
+(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
+ [6 <./TiempoVsDistanciaPapelPapelV_O.png>]
+<TiempoVsDistanciaPisoHoja2PB_O.png, id=121, 462.528pt x 346.896pt>
+File: TiempoVsDistanciaPisoHoja2PB_O.png Graphic file (type png)
+<use TiempoVsDistanciaPisoHoja2PB_O.png>
+Package pdftex.def Info: TiempoVsDistanciaPisoHoja2PB_O.png  used on input line 135.
+(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
+ [7]
+<TiempoVsDistanciaPisoHojaM_OP.png, id=128, 462.528pt x 346.896pt>
+File: TiempoVsDistanciaPisoHojaM_OP.png Graphic file (type png)
+<use TiempoVsDistanciaPisoHojaM_OP.png>
+Package pdftex.def Info: TiempoVsDistanciaPisoHojaM_OP.png  used on input line 144.
+(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
+ [8 <./TiempoVsDistanciaPisoHoja2PB_O.png>]
+<TiempoVsDistanciaPisoHojaV_2P.png, id=135, 462.528pt x 346.896pt>
+File: TiempoVsDistanciaPisoHojaV_2P.png Graphic file (type png)
+<use TiempoVsDistanciaPisoHojaV_2P.png>
+Package pdftex.def Info: TiempoVsDistanciaPisoHojaV_2P.png  used on input line 153.
+(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
+ [9 <./TiempoVsDistanciaPisoHojaM_OP.png>]
+<TiempoVsDistanciaPisoMadera2PB_O.png, id=142, 462.528pt x 346.896pt>
+File: TiempoVsDistanciaPisoMadera2PB_O.png Graphic file (type png)
+<use TiempoVsDistanciaPisoMadera2PB_O.png>
+Package pdftex.def Info: TiempoVsDistanciaPisoMadera2PB_O.png  used on input line 165.
+(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
+ [10 <./TiempoVsDistanciaPisoHojaV_2P.png>]
+<TiempoVsDistanciaPisoMaderaMPB_O.png, id=149, 462.528pt x 346.896pt>
+File: TiempoVsDistanciaPisoMaderaMPB_O.png Graphic file (type png)
+<use TiempoVsDistanciaPisoMaderaMPB_O.png>
+Package pdftex.def Info: TiempoVsDistanciaPisoMaderaMPB_O.png  used on input line 175.
+(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
+ [11 <./TiempoVsDistanciaPisoMadera2PB_O.png>]
+<TiempoVsDistanciaPisoMaderaV_2P.png, id=156, 462.528pt x 346.896pt>
+File: TiempoVsDistanciaPisoMaderaV_2P.png Graphic file (type png)
+<use TiempoVsDistanciaPisoMaderaV_2P.png>
+Package pdftex.def Info: TiempoVsDistanciaPisoMaderaV_2P.png  used on input line 184.
+(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
+ [12 <./TiempoVsDistanciaPisoMaderaMPB_O.png>] [13 <./TiempoVsDistanciaPisoMaderaV_2P.png>] (./informe.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -765,24 +801,24 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `informe.out' has not changed.
-(rerunfilecheck)             Checksum: D6DB7053700E72918EC5717EE347AB5D;611.
+(rerunfilecheck)             Checksum: 4B1B394A45772172BC4737FCDA7591F5;1606.
 Package logreq Info: Writing requests to 'informe.run.xml'.
 \openout1 = `informe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18781 strings out of 474116
- 326397 string characters out of 5743682
+ 18879 strings out of 474116
+ 329410 string characters out of 5743682
  1936187 words of memory out of 5000000
- 40941 multiletter control sequences out of 15000+600000
- 565732 words of font info for 63 fonts, out of 8000000 for 9000
+ 41014 multiletter control sequences out of 15000+600000
+ 565395 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,8n,81p,730b,1829s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on informe.pdf (5 pages, 254245 bytes).
+ 75i,9n,81p,730b,1829s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on informe.pdf (13 pages, 416607 bytes).
 PDF statistics:
- 123 PDF objects out of 1000 (max. 8388607)
- 85 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 223 PDF objects out of 1000 (max. 8388607)
+ 164 compressed objects within 2 object streams
+ 43 named destinations out of 1000 (max. 500000)
+ 189 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -3,19 +3,19 @@ import matplotlib.pyplot as plt
 
 # PapelPapelM_O
 
-acel_prom_PPM_O = 3.91 #± 0.33 m /s^2
+acel_prom_PPM_O = 3.91 /100 #± 0.33 m /s^2
 m_chiquita_PPM_O = 72
 M_grande_PPM_O = 109 + 134
 
 # PapelPapelM_OP
 
-acel_prom_PPM_OP = 24.80 #± 4.80 m /s^2
+acel_prom_PPM_OP = 24.80 /100 #± 4.80 m /s^2
 m_chiquita_PPM_OP = 72 + 23
 M_grande_PPM_OP = 109 + 134
 
 # PapelPapelV_O
 
-acel_prom_PPV_O = 76.97 #± 4.80 m /s^2
+acel_prom_PPV_O = 76.97 /100 #± 4.80 m /s^2
 m_chiquita_PPV_O = 72
 M_grande_PPV_O = 109
 
@@ -33,8 +33,3 @@ ax.set_zlabel('Aceleración promedio [cm/s^2]')
 plt.legend()
 plt.savefig('TP1/scatter_aceleraciones.png')
 plt.show()
-
-def get_dinamic_friction(mC, mG, a):
-    return (a * (mC + mG) - mC * 9.8 ) / mG * 9.8
-
-print(f"fricción dinámica PapelPapelM_O: {get_dinamic_friction(m_chiquita_PPM_O, M_grande_PPM_O, acel_prom_PPM_O):.2f} N")

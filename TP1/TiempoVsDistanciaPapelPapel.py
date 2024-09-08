@@ -28,37 +28,39 @@ def plot_distance_vs_time(s, distance, sigma_y, i):
     plt.legend()
 
 
-# plot the data from papel boligoma papel M_O
-plt.figure()
-for i in range(2, 4):
-    ms, sensor_data = get_data_from_file(f'TP1/Mediciones Fisica/papel boligoma papel/M_O-{i}.csv')
-    distance = change_data_to_distance(sensor_data) - 15
-    s = change_ms_to_s(ms) - 0.5
-    plot_distance_vs_time(s[6:28], distance[6:28], 0.44, i)
-plt.tight_layout()
-plt.savefig('TP1/TiempoVsDistanciaPapelPapelM_O.png')
-plt.show()
+if __name__ == '__main__':
+        
+    # plot the data from papel boligoma papel M_O
+    plt.figure()
+    for i in range(2, 4):
+        ms, sensor_data = get_data_from_file(f'TP1/Mediciones Fisica/papel boligoma papel/M_O-{i}.csv')
+        distance = change_data_to_distance(sensor_data) - 15
+        s = change_ms_to_s(ms) - 0.5
+        plot_distance_vs_time(s[6:28], distance[6:28], 0.44, i)
+    plt.tight_layout()
+    plt.savefig('TP1/TiempoVsDistanciaPapelPapelM_O.png')
+    plt.show()
 
 
-# plot the data from papel boligmoa papel M_OP
-plt.figure()
-for i in range(2, 4):
-    ms, sensor_data = get_data_from_file(f'TP1/Mediciones Fisica/papel boligoma papel/M_OP-{i}.csv')
-    distance = change_data_to_distance(sensor_data) - 15
-    s = change_ms_to_s(ms) - 0.5
-    plot_distance_vs_time(s[6:19], distance[6:19], 0.44, i)
-plt.tight_layout()
-# plt.savefig('TP1/TiempoVsDistanciaPapelPapelM_OP.png')
-plt.show()
+    # plot the data from papel boligmoa papel M_OP
+    plt.figure()
+    for i in range(2, 4):
+        ms, sensor_data = get_data_from_file(f'TP1/Mediciones Fisica/papel boligoma papel/M_OP-{i}.csv')
+        distance = change_data_to_distance(sensor_data) - 15
+        s = change_ms_to_s(ms) - 0.5
+        plot_distance_vs_time(s[6:19], distance[6:19], 0.44, i)
+    plt.tight_layout()
+    # plt.savefig('TP1/TiempoVsDistanciaPapelPapelM_OP.png')
+    plt.show()
 
 
-# plot the data from papel boligmoa papel V_O
-plt.figure()
-for i in range(2, 4):
-    ms, sensor_data = get_data_from_file(f'TP1/Mediciones Fisica/papel boligoma papel/V_O-{i}.csv')
-    distance = change_data_to_distance(sensor_data) - 15
-    s = change_ms_to_s(ms) - 0.7
-    plot_distance_vs_time(s[6:15], distance[6:15], 0.44, i)
-plt.tight_layout()
-# plt.savefig('TP1/TiempoVsDistanciaPapelPapelV_O.png')
-plt.show()
+    # plot the data from papel boligmoa papel V_O
+    plt.figure()
+    for i in range(2, 4):
+        ms, sensor_data = get_data_from_file(f'TP1/Mediciones Fisica/papel boligoma papel/V_O-{i}.csv')
+        distance = change_data_to_distance(sensor_data) - 15
+        s = change_ms_to_s(ms) - 0.7
+        plot_distance_vs_time(s[6:14], distance[6:14], 0.44, i)
+    plt.tight_layout()
+    # plt.savefig('TP1/TiempoVsDistanciaPapelPapelV_O.png')
+    plt.show()
