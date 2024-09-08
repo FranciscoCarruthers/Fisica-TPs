@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  8 SEP 2024 15:54
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  8 SEP 2024 16:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -724,70 +724,59 @@ File: ajuste2_PapelPapelM_O.png Graphic file (type png)
 <use ajuste2_PapelPapelM_O.png>
 Package pdftex.def Info: ajuste2_PapelPapelM_O.png  used on input line 83.
 (pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
- [3 <./TiempoVsDistanciaPapelPapelM_O.png> <./ajuste2_PapelPapelM_O.png>]
-<scatter_aceleraciones.png, id=100, 462.528pt x 346.896pt>
-File: scatter_aceleraciones.png Graphic file (type png)
-<use scatter_aceleraciones.png>
-Package pdftex.def Info: scatter_aceleraciones.png  used on input line 95.
-(pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--101
-
- []
-
-<TiempoVsDistanciaPapelPapelM_OP.png, id=101, 462.528pt x 346.896pt>
+<TiempoVsDistanciaPapelPapelM_OP.png, id=92, 462.528pt x 346.896pt>
 File: TiempoVsDistanciaPapelPapelM_OP.png Graphic file (type png)
 <use TiempoVsDistanciaPapelPapelM_OP.png>
-Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_OP.png  used on input line 106.
+Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_OP.png  used on input line 94.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
-[4 <./scatter_aceleraciones.png>]
-<TiempoVsDistanciaPapelPapelV_O.png, id=108, 462.528pt x 346.896pt>
+ [3 <./TiempoVsDistanciaPapelPapelM_O.png> <./ajuste2_PapelPapelM_O.png>]
+<TiempoVsDistanciaPapelPapelV_O.png, id=101, 462.528pt x 346.896pt>
 File: TiempoVsDistanciaPapelPapelV_O.png Graphic file (type png)
 <use TiempoVsDistanciaPapelPapelV_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPapelPapelV_O.png  used on input line 115.
+Package pdftex.def Info: TiempoVsDistanciaPapelPapelV_O.png  used on input line 103.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
- [5 <./TiempoVsDistanciaPapelPapelM_OP.png>]
+ [4 <./TiempoVsDistanciaPapelPapelM_OP.png>]
 File: TiempoVsDistanciaPapelPapelM_O.png Graphic file (type png)
 <use TiempoVsDistanciaPapelPapelM_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_O.png  used on input line 124.
+Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_O.png  used on input line 112.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
- [6 <./TiempoVsDistanciaPapelPapelV_O.png>]
-<TiempoVsDistanciaPisoHoja2PB_O.png, id=121, 462.528pt x 346.896pt>
+ [5 <./TiempoVsDistanciaPapelPapelV_O.png>]
+<TiempoVsDistanciaPisoHoja2PB_O.png, id=114, 462.528pt x 346.896pt>
 File: TiempoVsDistanciaPisoHoja2PB_O.png Graphic file (type png)
 <use TiempoVsDistanciaPisoHoja2PB_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoHoja2PB_O.png  used on input line 135.
+Package pdftex.def Info: TiempoVsDistanciaPisoHoja2PB_O.png  used on input line 123.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
- [7]
-<TiempoVsDistanciaPisoHojaM_OP.png, id=128, 462.528pt x 346.896pt>
+ [6]
+<TiempoVsDistanciaPisoHojaM_OP.png, id=120, 462.528pt x 346.896pt>
 File: TiempoVsDistanciaPisoHojaM_OP.png Graphic file (type png)
 <use TiempoVsDistanciaPisoHojaM_OP.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoHojaM_OP.png  used on input line 144.
+Package pdftex.def Info: TiempoVsDistanciaPisoHojaM_OP.png  used on input line 132.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
- [8 <./TiempoVsDistanciaPisoHoja2PB_O.png>]
-<TiempoVsDistanciaPisoHojaV_2P.png, id=135, 462.528pt x 346.896pt>
+ [7 <./TiempoVsDistanciaPisoHoja2PB_O.png>]
+<TiempoVsDistanciaPisoHojaV_2P.png, id=128, 462.528pt x 346.896pt>
 File: TiempoVsDistanciaPisoHojaV_2P.png Graphic file (type png)
 <use TiempoVsDistanciaPisoHojaV_2P.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoHojaV_2P.png  used on input line 153.
+Package pdftex.def Info: TiempoVsDistanciaPisoHojaV_2P.png  used on input line 141.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
- [9 <./TiempoVsDistanciaPisoHojaM_OP.png>]
-<TiempoVsDistanciaPisoMadera2PB_O.png, id=142, 462.528pt x 346.896pt>
+ [8 <./TiempoVsDistanciaPisoHojaM_OP.png>]
+<TiempoVsDistanciaPisoMadera2PB_O.png, id=135, 462.528pt x 346.896pt>
 File: TiempoVsDistanciaPisoMadera2PB_O.png Graphic file (type png)
 <use TiempoVsDistanciaPisoMadera2PB_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoMadera2PB_O.png  used on input line 165.
+Package pdftex.def Info: TiempoVsDistanciaPisoMadera2PB_O.png  used on input line 153.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
- [10 <./TiempoVsDistanciaPisoHojaV_2P.png>]
-<TiempoVsDistanciaPisoMaderaMPB_O.png, id=149, 462.528pt x 346.896pt>
+ [9 <./TiempoVsDistanciaPisoHojaV_2P.png>]
+<TiempoVsDistanciaPisoMaderaMPB_O.png, id=142, 462.528pt x 346.896pt>
 File: TiempoVsDistanciaPisoMaderaMPB_O.png Graphic file (type png)
 <use TiempoVsDistanciaPisoMaderaMPB_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoMaderaMPB_O.png  used on input line 175.
+Package pdftex.def Info: TiempoVsDistanciaPisoMaderaMPB_O.png  used on input line 163.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
- [11 <./TiempoVsDistanciaPisoMadera2PB_O.png>]
-<TiempoVsDistanciaPisoMaderaV_2P.png, id=156, 462.528pt x 346.896pt>
+ [10 <./TiempoVsDistanciaPisoMadera2PB_O.png>]
+<TiempoVsDistanciaPisoMaderaV_2P.png, id=149, 462.528pt x 346.896pt>
 File: TiempoVsDistanciaPisoMaderaV_2P.png Graphic file (type png)
 <use TiempoVsDistanciaPisoMaderaV_2P.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoMaderaV_2P.png  used on input line 184.
+Package pdftex.def Info: TiempoVsDistanciaPisoMaderaV_2P.png  used on input line 172.
 (pdftex.def)             Requested size: 460.6753pt x 345.5242pt.
- [12 <./TiempoVsDistanciaPisoMaderaMPB_O.png>] [13 <./TiempoVsDistanciaPisoMaderaV_2P.png>] (./informe.aux
+ [11 <./TiempoVsDistanciaPisoMaderaMPB_O.png>] [12 <./TiempoVsDistanciaPisoMaderaV_2P.png>] (./informe.aux
 LaTeX Info: Redefining \sptext on input line 12.
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
@@ -807,18 +796,18 @@ Package logreq Info: Writing requests to 'informe.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18879 strings out of 474116
- 329410 string characters out of 5743682
+ 18869 strings out of 474116
+ 329159 string characters out of 5743682
  1936187 words of memory out of 5000000
- 41014 multiletter control sequences out of 15000+600000
+ 41006 multiletter control sequences out of 15000+600000
  565395 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,9n,81p,730b,1829s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on informe.pdf (13 pages, 416607 bytes).
+Output written on informe.pdf (12 pages, 364428 bytes).
 PDF statistics:
- 223 PDF objects out of 1000 (max. 8388607)
- 164 compressed objects within 2 object streams
- 43 named destinations out of 1000 (max. 500000)
- 189 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 158 compressed objects within 2 object streams
+ 41 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

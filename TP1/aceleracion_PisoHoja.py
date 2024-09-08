@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
 
-# 'Fisica-TPs/TP1/Mediciones Fisica/papel boligoma papel/M_O-1.csv'
+# 'Fisica-TPs/TP1/Mediciones Fisica/piso hoja/2PB_O.csv'
 
 def get_data_from_file(path):
     with open(path):
@@ -70,7 +70,7 @@ plt.legend()
 plt.savefig('TP1/ajuste2_PisoHoja2PB_O.png')
 plt.show()
 
-# 'Fisica-TPs/TP1/Mediciones Fisica/papel boligoma papel/M_OP.csv'
+# 'Fisica-TPs/TP1/Mediciones Fisica/piso hoja/M_OP.csv'
 
 
 ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/piso hoja/M_OP-2.csv')
@@ -118,12 +118,12 @@ plt.errorbar(tiempo3, posicion3, yerr=errores_y3, fmt='o', color = 'blue')
 plt.plot(t_ajuste2, modelo_cuadratico(t_ajuste2, *popt2), 'r', label=f'Ajuste cuadrático 1')
 plt.plot(t_ajuste3, modelo_cuadratico(t_ajuste3, *popt3), 'b', label=f'Ajuste cuadrático 2')
 plt.xlabel('Tiempo [s]')
-plt.ylabel('Posición [m]')
+plt.ylabel('Posición [cm]')
 plt.legend()
 plt.savefig('TP1/ajuste2_PisoHojaM_OP.png')
 plt.show()
 
-# 'Fisica-TPs/TP1/Mediciones Fisica/papel boligoma papel/M_OP.csv'
+# 'Fisica-TPs/TP1/Mediciones Fisica/piso hoja/V_2P.csv'
 
 
 ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/piso hoja/V_2P-1.csv')
@@ -169,7 +169,7 @@ plt.errorbar(tiempo3, posicion3, yerr=errores_y3, fmt='o', color = 'blue')
 plt.plot(t_ajuste2, modelo_cuadratico(t_ajuste2, *popt2), 'r', label=f'Ajuste cuadrático 1')
 plt.plot(t_ajuste3, modelo_cuadratico(t_ajuste3, *popt3), 'b', label=f'Ajuste cuadrático 2')
 plt.xlabel('Tiempo [s]')
-plt.ylabel('Posición [m]')
+plt.ylabel('Posición [cm]')
 plt.legend()
 plt.savefig('TP1/aceleracion_PisoHojaV_O.png')
 plt.show()

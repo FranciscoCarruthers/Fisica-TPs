@@ -42,3 +42,24 @@ plt.xlabel('M / m')
 plt.ylabel('Fricción dinámica')
 plt.savefig('TP1/ud_PisoPapel.png')
 plt.show()
+
+
+######## PisoMadera ########
+
+# 2PB_O, MPB_O, V_2P
+
+ace = [47.70/100, 10.81/100, 41.02/100]
+sigma_ace = [3.39/100, 1.20/100, 2.51/100]
+m_chiquita = [72, 72, 23*2]
+M_grande = [2*23 + 6 + 109, 109 + 134 + 23 + 6, 109 + 23*2]
+
+fricciones = [get_dinamic_friction(m_chiquita[i], M_grande[i], ace[i]) for i in range(3)]
+
+mG_mC = [M_grande[i] / m_chiquita[i] for i in range(3)]
+
+plt.scatter(mG_mC, fricciones)
+plt.ylim(0, 1)
+plt.xlabel('M / m')
+plt.ylabel('Fricción dinámica')
+plt.savefig('TP1/ud_PisoMadera.png')
+plt.show()

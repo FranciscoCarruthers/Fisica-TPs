@@ -1,12 +1,12 @@
 # Fdb version 4
-["biber informe"] 0 "informe.bcf" "informe.bbl" "informe" 1725821681.42249 -1
-  "informe.bcf" 1725821681.35455 106450 38a813c98e7e49f307736aee1a42071f "pdflatex"
+["biber informe"] 0 "informe.bcf" "informe.bbl" "informe" 1725822952.17115 -1
+  "informe.bcf" 1725822952.10167 106450 38a813c98e7e49f307736aee1a42071f "pdflatex"
   (generated)
   "informe.bbl"
   "informe.blg"
   (rewritten before read)
-["pdflatex"] 1725821680.24031 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP1/informe.tex" "informe.pdf" "informe" 1725821681.42276 0
-  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP1/informe.tex" 1725821547.47915 5262 82c0f5f6bf4026bd22e6c9f46e4d5abd ""
+["pdflatex"] 1725822951.03288 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP1/informe.tex" "informe.pdf" "informe" 1725822952.17143 0
+  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP1/informe.tex" 1725822882.25969 4944 80bcf011021a81f43835dcfb60c0dde1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -111,7 +111,7 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1715637434.69241 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1715637080 8221425 1e78564c598dad7446ed1d069af6f381 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "Calibracion.png" 1725821679.81881 31565 30c25a17c55cb36258a7948756cdbd9c ""
+  "Calibracion.png" 1725822950.61687 30653 f1d198874ca90411d7eb944da727732a ""
   "TiempoVsDistanciaPapelPapelM_O.png" 1725820561.68545 30327 5378cb51a72e0861eaee0c4cdcbf4ae8 ""
   "TiempoVsDistanciaPapelPapelM_OP.png" 1725416456.70609 30303 15505ada3cef9bd074652f71b2acf8c6 ""
   "TiempoVsDistanciaPapelPapelV_O.png" 1725416457.42136 28959 93c1d51898fb7e5e2e309004d73a1070 ""
@@ -121,13 +121,12 @@
   "TiempoVsDistanciaPisoMadera2PB_O.png" 1725821178.90746 29569 4b735dc300c673d48362afab3c128516 ""
   "TiempoVsDistanciaPisoMaderaMPB_O.png" 1725821191.36323 30303 15505ada3cef9bd074652f71b2acf8c6 ""
   "TiempoVsDistanciaPisoMaderaV_2P.png" 1725821193.88303 28959 93c1d51898fb7e5e2e309004d73a1070 ""
-  "ajuste2_PapelPapelM_O.png" 1725819355.18137 33585 84dd945ebbd1ea2a691b07e22670a349 ""
-  "informe.aux" 1725821681.35109 5279 c710e421f4f16c9b6592fce2e42b0800 "pdflatex"
+  "ajuste2_PapelPapelM_O.png" 1725822336.78155 33585 84dd945ebbd1ea2a691b07e22670a349 ""
+  "informe.aux" 1725822952.09904 5073 595a92e54d4204fb60135386d228e895 "pdflatex"
   "informe.bbl" 1725299689.41479 0 d41d8cd98f00b204e9800998ecf8427e "biber informe"
-  "informe.out" 1725821681.35384 1606 4b1b394a45772172bc4737fcda7591f5 "pdflatex"
-  "informe.run.xml" 1725821681.35509 2245 8abb3da92309ccea6277a35c95efbdba "pdflatex"
-  "informe.tex" 1725821547.47915 5262 82c0f5f6bf4026bd22e6c9f46e4d5abd ""
-  "scatter_aceleraciones.png" 1725818726.01884 71802 0d46c1ecaf32eb66b7f21075cd18ad88 ""
+  "informe.out" 1725822952.10098 1606 4b1b394a45772172bc4737fcda7591f5 "pdflatex"
+  "informe.run.xml" 1725822952.10221 2245 8abb3da92309ccea6277a35c95efbdba "pdflatex"
+  "informe.tex" 1725822882.25969 4944 80bcf011021a81f43835dcfb60c0dde1 ""
   (generated)
   "informe.aux"
   "informe.bcf"
