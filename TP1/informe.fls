@@ -216,12 +216,12 @@ INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
-INPUT ./Calibracion.png
-INPUT ./Calibracion.png
-INPUT ./Calibracion.png
-INPUT ./Calibracion.png
-INPUT ./Calibracion.png
 INPUT c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
+INPUT ./Calibracion.png
+INPUT ./Calibracion.png
+INPUT ./Calibracion.png
+INPUT ./Calibracion.png
+INPUT ./Calibracion.png
 INPUT ./TiempoVsDistanciaPisoMadera2PB_O.png
 INPUT ./TiempoVsDistanciaPisoMadera2PB_O.png
 INPUT ./TiempoVsDistanciaPisoMadera2PB_O.png

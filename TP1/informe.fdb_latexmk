@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber informe"] 0 "informe.bcf" "informe.bbl" "informe" 1726008483.71661 -1
-  "informe.bcf" 1726008483 107186 ad70a2d448736df146eacb51839de2bc "pdflatex"
+["biber informe"] 0 "informe.bcf" "informe.bbl" "informe" 1726008939.7442 -1
+  "informe.bcf" 1726008939 107186 ad70a2d448736df146eacb51839de2bc "pdflatex"
   (generated)
   "informe.bbl"
   "informe.blg"
   (rewritten before read)
-["pdflatex"] 1726008475.74787 "c:/Users/Franc/Desktop/UdeSA/Fisica/Fisica-TPs/TP1/informe.tex" "informe.pdf" "informe" 1726008483.71807 0
+["pdflatex"] 1726008935.76084 "c:/Users/Franc/Desktop/UdeSA/Fisica/Fisica-TPs/TP1/informe.tex" "informe.pdf" "informe" 1726008939.74524 0
   "Calibracion.png" 1726004345 30653 fdbdd87547d69aa5ea45a9207871516c ""
   "TiempoVsDistanciaPapelPapelM_O.png" 1725451998 30327 a62d19618ffbce264cbfea8d0abbd670 ""
   "TiempoVsDistanciaPapelPapelM_OP.png" 1725451998 30303 c1177c52bb3bf2c0ef91d06d73aa4dcf ""
@@ -25,7 +25,7 @@
   "ajuste2_PisoMadera2PB_O.png" 1726004345 31503 31228baffb88c898e35a025d32529d18 ""
   "ajuste2_PisoMaderaMPB_O.png" 1726004345 31742 f8cf25b28c0967cbc745ef3baa677e6c ""
   "ajuste2_PisoMaderaV_2P.png" 1726004345 29328 035163117e4425900236bab2c1418795 ""
-  "c:/Users/Franc/Desktop/UdeSA/Fisica/Fisica-TPs/TP1/informe.tex" 1726008474 9645 fe7fb649b9a1f2e5b7e0203cc40a6d85 ""
+  "c:/Users/Franc/Desktop/UdeSA/Fisica/Fisica-TPs/TP1/informe.tex" 1726008929 12870 9b7f284e703d41ae1f3eacd5d1338c98 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1725421339 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1725425032 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1725423457 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -137,11 +137,11 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1725440053 5543950 2aa73a438b7054b2327b796fbe5f4275 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1725440397 8239325 022b8a30c3163f01e8133b6a7fbbd8cc ""
   "c:/texlive/2024/texmf.cnf" 1725440006 713 e69b156964470283e0530f5060668171 ""
-  "informe.aux" 1726008483 4739 e8034d1dfef6201a4340c79e43de5931 "pdflatex"
+  "informe.aux" 1726008939 5258 248377146b5e273d92b434f49716bd2a "pdflatex"
   "informe.bbl" 1726004386 0 d41d8cd98f00b204e9800998ecf8427e "biber informe"
-  "informe.out" 1726008483 638 1635a8127b3c5556cd29920f94b23476 "pdflatex"
-  "informe.run.xml" 1726008483 2245 8abb3da92309ccea6277a35c95efbdba "pdflatex"
-  "informe.tex" 1726008474 9645 fe7fb649b9a1f2e5b7e0203cc40a6d85 ""
+  "informe.out" 1726008939 1289 64015ede7fadea20a6b200055795aa70 "pdflatex"
+  "informe.run.xml" 1726008939 2245 8abb3da92309ccea6277a35c95efbdba "pdflatex"
+  "informe.tex" 1726008929 12870 9b7f284e703d41ae1f3eacd5d1338c98 ""
   "ud_Combined.png" 1726004345 14442 92469db450f761b510ecc4adab523b32 ""
   "ud_PapelPapel.png" 1726004345 14327 ea45672d21efaf883e2d0842cec98e69 ""
   "ud_PisoMadera.png" 1726004345 13695 c9972a4ea04857d014a7426d2cab8c54 ""
