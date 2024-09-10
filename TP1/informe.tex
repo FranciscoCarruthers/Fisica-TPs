@@ -67,111 +67,151 @@ Ordenada al origen: ($-0.5 \pm 0.5$) cm\\
 
 Distancia para 600: ($10.5 \pm 0.4$) cm \\
 
+\newpage
+
 \section{Resultados}
 
-\subsection{Papel y Papel}
+\subsection{Posicion}
 
-\subsubsection{M O}
+\subsubsection*{Madera y Trineo}
 
-En un primer caso pusimos el metro en el carrito y la pesa dorada en el extremo de la soga.
+En un primer caso dejamos el trineo deslizar sobre la mesa de madera. \\
 
-Usando los datos del sensor Arduino, podemos calcular la distancia recorrida en función del tiempo.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoMadera2PB_O.png}
+    \includegraphics[width=0.44\linewidth]{ajuste2_PisoMadera2PB_O.png}
+    \caption{$M = 161 \pm 1 g, m = 72 \pm 1 g$}
+    \label{fig:2PB_O piso trineo}
+
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoMaderaMPB_O.png}
+    \includegraphics[width=0.44\linewidth]{ajuste2_PisoMaderaMPB_O.png}
+    \caption{$M = 243 \pm 1 g, m = 95 \pm 1 g$}
+    \label{fig:M_OP piso trineo}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoMaderaV_2P.png}
+    \includegraphics[width=0.44\linewidth]{ajuste2_PisoMaderaV_2P.png}
+    \caption{$M = 109 \pm 1 g, m = 46 \pm 1 g$}
+    \label{fig:V_2P piso trineo}
+\end{figure}
+
+
+Vemos en las figuras \ref{fig:2PB_O piso trineo} y \ref{fig:M_OP piso trineo} que ambas mediciones se parecen bastante entre si en cada caso pero que en \ref{fig:V_2P piso trineo} hay una diferencia en la pendiente. Esto nos va a llevar a que la incerteza del $\mu_d$ sea grande.
+
+\subsubsection*{Papel y trineo}
+
+Luego, le pegamos papel a la mesa y repetimos el experimento.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoHoja2PB_O.png}
+    \includegraphics[width=0.44\linewidth]{ajuste2_PisoHoja2PB_O.png}
+    \caption{$M = 161 \pm 1 g, m = 72 \pm 1 g$}
+    \label{fig:2PB_O piso hoja}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoHojaM_OP.png}
+    \includegraphics[width=0.44\linewidth]{ajuste2_PisoHojaM_OP.png}
+    \caption{$M = 243 \pm 1 g, m = 95 \pm 1 g$}
+    \label{fig:M_OP piso hoja}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoHojaV_2P.png}
+    \includegraphics[width=0.44\linewidth]{ajuste2_PisoHojaV_2P.png}
+    \caption{$M = 109 \pm 1 g, m = 46 \pm 1 g$}
+    \label{fig:V_2P piso hoja}
+\end{figure}
+
+Vemos que en las figuras \ref{fig:2PB_O piso hoja} y \ref{fig:M_OP piso hoja} las pendientes son muy parecidas, pero en \ref{fig:V_2P piso hoja} hay una diferencia en la pendiente. Esto nos va a llevar a que la incerteza del $\mu_d$ sea grande.
+
+\subsubsection*{Papel y Papel}
+
+Por ultimo, pegamos otro papel al trineo y repetimos el experimento.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPapelPapelM_O.png}
-    \includegraphics[width=0.4\linewidth]{ajuste2_PapelPapelM_O.png}
-    \caption{Papel y Papel, M = Metro y m = Pesa dorada}
-    \label{fig:PyPM_O}
+    \includegraphics[width=0.44\linewidth]{ajuste2_PapelPapelM_O.png}
+    \caption{$M = 243 \pm 1 g, m = 72 \pm 1 g$}
+    \label{fig:M_O papel papel}
 \end{figure}
-
-Con $Pos_1(t) = (3.9 \pm 0.3) t^2 + (0.2 \pm 0.8) t + (-0.8 \pm 0.4)$
-
-\subsubsection{M OP}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{TiempoVsDistanciaPapelPapelM_OP.png}
-    \caption{Tiempo vs Distancia Papel Papel}
-    \label{fig:TvDM_OP papel papel}
+    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPapelPapelM_OP.png}
+    \includegraphics[width=0.44\linewidth]{ajuste2_PapelPapelM_OP.png}
+    \caption{$M = 243 \pm 1 g, m = 95 \pm 1 g$}
+    \label{fig:M_OP papel papel}
 \end{figure}
 
-\subsubsection{V O}
-
-\begin{figure}[H]
+\begin{figure}[H] %check esto
     \centering
-    \includegraphics[width=0.9\linewidth]{TiempoVsDistanciaPapelPapelV_O.png}
-    \caption{Tiempo vs Distancia Papel Papel}
+    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPapelPapelV_O.png}
+    \includegraphics[width=0.44\linewidth]{ajuste2_PapelPapelV_O.png}
+    \caption{$M = 109 \pm 1 g, m = 72 \pm 1 g$}
     \label{fig:TvDV_O papel papel}
 \end{figure}
 
-\subsubsection{M O}
+\subsection{Obtencion del $\mu_d$}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{TiempoVsDistanciaPapelPapelM_O.png}
-    \caption{Tiempo vs Distancia Papel Papel}
-    \label{fig:TvDM_O papel papel}
+    \includegraphics[width=0.6\linewidth]{ud_PisoMadera.png}
+    \caption{Madera y trineo}
+    \label{fig:mu_d piso trineo}
 \end{figure}
 
-\subsection{Madera y Papel}
-
-\subsubsection{2PB O}
-
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{TiempoVsDistanciaPisoHoja2PB_O.png}
-    \caption{Tiempo vs Distancia Madera Papel}
-    \label{fig:TvD2PB_O piso hoja}
+    \includegraphics[width=0.6\linewidth]{ud_PisoPapel.png}
+    \caption{Papel y trineo}
+    \label{fig:mu_d piso hoja}
 \end{figure}
 
-\subsubsection{M OP}
-
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{TiempoVsDistanciaPisoHojaM_OP.png}
-    \caption{Tiempo vs Distancia Madera Papel}
-    \label{fig:TvDM_OP piso hoja}
+    \includegraphics[width=0.6\linewidth]{ud_PapelPapel.png}
+    \caption{Papel y papel}
+    \label{fig:mu_d papel papel}
 \end{figure}
 
-\subsubsection{V 2P}
+Sacando un promedio de los valores obtenidos en las figuras \ref{fig:mu_d piso trineo}, \ref{fig:mu_d piso hoja} y \ref{fig:mu_d papel papel} obtenemos un valor de $\mu_d$ para cada superficie.
 
 \begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{TiempoVsDistanciaPisoHojaV_2P.png}
-    \caption{Tiempo vs Distancia Madera Papel}
-    \label{fig:TvDV_2P piso hoja}
-\end{figure}
-
-
-\subsection{Madera y Trineo}
-
-\subsubsection{2PB O}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{TiempoVsDistanciaPisoMadera2PB_O.png}
-    \caption{Tiempo vs Distancia Madera Trineo}
-    \label{fig:TvD2PB_O piso trineo}
-
-\end{figure}
-
-\subsubsection{MPB O}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{TiempoVsDistanciaPisoMaderaMPB_O.png}
-    \caption{Tiempo vs Distancia Madera Trineo}
-    \label{fig:TvDM_OP piso trineo}
-\end{figure}
-
-\subsubsection{V 2P}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.9\linewidth]{TiempoVsDistanciaPisoMaderaV_2P.png}
-    \caption{Tiempo vs Distancia Madera Trineo}
-    \label{fig:TvDV_2P piso trineo}
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=0.9\linewidth]{ud_Combined.png}
+        \caption{Promedio de $\mu_d$ para cada superficie}
+        \label{fig:mu_d promedio}
+    \end{minipage}\hfill
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \begin{table}[H]
+            \centering
+            \begin{tabular}{|c|c|}
+                \hline
+                \textbf{Superficie} & \textbf{$\mu_d$}\\
+                \hline
+                Madera y trineo & $0.4 \pm 0.1$\\
+                Papel y trineo & $0.45 \pm 0.03$ \\
+                Papel y Papel & $0.5 \pm 0.2$ \\
+                \hline
+            \end{tabular}
+            \caption{Valores de $\mu_d$ y sus incertezas para cada superficie}
+            \label{tab:mu_d}
+        \end{table}
+    \end{minipage}
 \end{figure}
 
 \end{document}

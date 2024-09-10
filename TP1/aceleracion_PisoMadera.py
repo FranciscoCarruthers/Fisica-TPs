@@ -170,5 +170,5 @@ plt.plot(t_ajuste3, modelo_cuadratico(t_ajuste3, *popt3), 'b', label=f'Ajuste cu
 plt.xlabel('Tiempo [s]')
 plt.ylabel('Posición [cm]')
 plt.legend()
-plt.savefig('TP1/aceleracion_PisoMaderaV_2P.png')
+plt.savefig('TP1/ajuste2_PisoMaderaV_2P.png')
 plt.show()
