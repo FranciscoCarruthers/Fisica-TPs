@@ -1,11 +1,11 @@
 # Fdb version 4
-["biber informe"] 0 "informe.bcf" "informe.bbl" "informe" 1726008366.98707 -1
-  "informe.bcf" 1726008366 107186 ad70a2d448736df146eacb51839de2bc "pdflatex"
+["biber informe"] 0 "informe.bcf" "informe.bbl" "informe" 1726008483.71661 -1
+  "informe.bcf" 1726008483 107186 ad70a2d448736df146eacb51839de2bc "pdflatex"
   (generated)
   "informe.bbl"
   "informe.blg"
   (rewritten before read)
-["pdflatex"] 1726008360.43026 "c:/Users/Franc/Desktop/UdeSA/Fisica/Fisica-TPs/TP1/informe.tex" "informe.pdf" "informe" 1726008366.98889 0
+["pdflatex"] 1726008475.74787 "c:/Users/Franc/Desktop/UdeSA/Fisica/Fisica-TPs/TP1/informe.tex" "informe.pdf" "informe" 1726008483.71807 0
   "Calibracion.png" 1726004345 30653 fdbdd87547d69aa5ea45a9207871516c ""
   "TiempoVsDistanciaPapelPapelM_O.png" 1725451998 30327 a62d19618ffbce264cbfea8d0abbd670 ""
   "TiempoVsDistanciaPapelPapelM_OP.png" 1725451998 30303 c1177c52bb3bf2c0ef91d06d73aa4dcf ""
@@ -25,15 +25,17 @@
   "ajuste2_PisoMadera2PB_O.png" 1726004345 31503 31228baffb88c898e35a025d32529d18 ""
   "ajuste2_PisoMaderaMPB_O.png" 1726004345 31742 f8cf25b28c0967cbc745ef3baa677e6c ""
   "ajuste2_PisoMaderaV_2P.png" 1726004345 29328 035163117e4425900236bab2c1418795 ""
-  "c:/Users/Franc/Desktop/UdeSA/Fisica/Fisica-TPs/TP1/informe.tex" 1726008353 9112 389c4cd63fa8ba3824084968445040b7 ""
+  "c:/Users/Franc/Desktop/UdeSA/Fisica/Fisica-TPs/TP1/informe.tex" 1726008474 9645 fe7fb649b9a1f2e5b7e0203cc40a6d85 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1725421339 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "c:/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1725425032 3524 cb3e574dea2d1052e39280babc910dc8 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1725423457 1536 02c06700a42be0f5a28664c7273f82e7 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1200.tfm" 1725423457 1536 74b7293ec3713bb7fdca8dd1bd1f469c ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1725418068 1004 54797486969f23fa377b128694d548df ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1725418068 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx10.tfm" 1725421284 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm" 1725421284 1324 c910af8c371558dc20f2d7822f66fe64 ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmex10.tfm" 1725421284 992 662f679a0b3d2d53c1b94050fdaa3f50 ""
+  "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi10.tfm" 1725421284 1528 abec98dbc43e172678c11b3b9031252a ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm" 1725421284 1524 4414a8315f39513458b80dfc63bff03a ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm" 1725421284 1512 f21f83efb36853c0b70002322c1ab3ad ""
   "c:/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmmi8.tfm" 1725421284 1520 eccf95517727cb11801f4f1aee3a21b4 ""
@@ -56,6 +58,7 @@
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1725418068 32362 bc3f3eec7ab7d65fe700963d4017d32c ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1725418068 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1725418068 31099 342ef5a582aacbd3346f3cf4579679fa ""
+  "c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb" 1725421340 145929 5c9aebea9ba6e33fc93158c04a3bdcd8 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb" 1725421340 136101 b18d10b3436f8cb0cd04046deb340fe7 ""
   "c:/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1725430619 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "c:/texlive/2024/texmf-dist/tex/generic/atbegshi/atbegshi.sty" 1725418603 24708 5584a51a7101caf7e6bbf1fc27d8f7b1 ""
@@ -134,11 +137,11 @@
   "c:/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1725440053 5543950 2aa73a438b7054b2327b796fbe5f4275 ""
   "c:/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1725440397 8239325 022b8a30c3163f01e8133b6a7fbbd8cc ""
   "c:/texlive/2024/texmf.cnf" 1725440006 713 e69b156964470283e0530f5060668171 ""
-  "informe.aux" 1726008366 4739 e8034d1dfef6201a4340c79e43de5931 "pdflatex"
+  "informe.aux" 1726008483 4739 e8034d1dfef6201a4340c79e43de5931 "pdflatex"
   "informe.bbl" 1726004386 0 d41d8cd98f00b204e9800998ecf8427e "biber informe"
-  "informe.out" 1726008366 638 1635a8127b3c5556cd29920f94b23476 "pdflatex"
-  "informe.run.xml" 1726008366 2245 8abb3da92309ccea6277a35c95efbdba "pdflatex"
-  "informe.tex" 1726008353 9112 389c4cd63fa8ba3824084968445040b7 ""
+  "informe.out" 1726008483 638 1635a8127b3c5556cd29920f94b23476 "pdflatex"
+  "informe.run.xml" 1726008483 2245 8abb3da92309ccea6277a35c95efbdba "pdflatex"
+  "informe.tex" 1726008474 9645 fe7fb649b9a1f2e5b7e0203cc40a6d85 ""
   "ud_Combined.png" 1726004345 14442 92469db450f761b510ecc4adab523b32 ""
   "ud_PapelPapel.png" 1726004345 14327 ea45672d21efaf883e2d0842cec98e69 ""
   "ud_PisoMadera.png" 1726004345 13695 c9972a4ea04857d014a7426d2cab8c54 ""
