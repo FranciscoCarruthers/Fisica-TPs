@@ -6,10 +6,9 @@
 \usepackage{amsmath} %paquete para escribir ecuaciones matemáticas
 \usepackage{float} %Para posicionar figuras
 \usepackage{graphicx} %Para poder poner figuras
-\usepackage{hyperref} %Permite usar hipervínculos
-\usepackage{multicol} %Para hacer doble columna
-\usepackage[sorting=none]{biblatex} %Imports biblatex package. To cite use \cite{reference_label}
-\usepackage{csquotes}
+\usepackage{tikz}
+\usetikzlibrary{positioning}
+\usetikzlibrary{shapes.geometric, decorations.pathreplacing}
 
 \title{Informe de Física: Encontrando el coeficiente de fricción dinámica}
 \author{Francisco Carruthers, Facundo Firpo y Joel Jablonski\\ [2mm]
@@ -23,52 +22,70 @@
 \maketitle
 
 \begin{abstract}
-    Se investigó el coeficiente de fricción dinámica entre un carrito y varias superficies utilizando un sistema de carrito, soga y polea. Para garantizar la precisión de las mediciones, se realizó una calibración previa del sistema, ajustando los sensores y asegurando que las lecturas de posición y tiempo fueran precisas. A continuación, se varió la masa del carrito y se midió la aceleración para calcular el coeficiente de fricción dinámica en diferentes condiciones superficiales. Las superficies evaluadas incluyeron madera, papel sobre madera y papel sobre papel. Los valores obtenidos para el coeficiente de fricción dinámica ($\mu_d$) fueron: 0.4 ± 0.1 para madera y trineo, 0.45 ± 0.03 para papel y trineo, y 0.5 ± 0.2 para papel y papel. Los resultados demostraron que la superficie tiene un impacto significativo en la fricción dinámica del sistema.
+    Se investigó el coeficiente de fricción dinámica entre un carrito y varias superficies utilizando un sistema de carrito, soga y polea. Para garantizar la precisión de las mediciones, se realizó una calibración previa del sistema, ajustando los sensores y asegurando que las lecturas de posición y tiempo fueran precisas. A continuación, se varió la masa del carrito y se midió la aceleración para calcular el coeficiente de fricción dinámica ($\mu_d$) en diferentes superficies. Las superficies evaluadas incluyeron el carrito sobre madera, carrito sobre papel y papel sobre papel. Los valores obtenidos para el $\mu_d$ fueron: 0.4 ± 0.1 para madera y trineo, 0.45 ± 0.03 para papel y trineo, y 0.5 ± 0.2 para papel y papel. Los resultados demostraron que la superficie tiene un impacto significativo en la fricción dinámica del sistema.
 \end{abstract}
 
 \section{Introducción}
 
-(Descripción del experimento)
-
-(Desarrollo de Newton y Vinculos del problema)
-
 La fricción es una fuerza de resistencia que actúa en oposición al movimiento relativo entre dos superficies en contacto. Existen dos tipos principales de fricción: la fricción estática, que previene el inicio del movimiento, y la fricción dinámica (o cinética), que actúa cuando el objeto ya está en movimiento. En este experimento, nos centraremos en la fricción dinámica, cuyo coeficiente, denotado como \(\mu_d\), se define como la relación entre la fuerza de fricción y la fuerza normal ejercida sobre el objeto:
 
 \[
-F_f = \mu_d \cdot F_n
+F_r = \mu_d \cdot F_n
 \]
 
-donde \(F_f\) es la fuerza de fricción y \(F_n\) es la fuerza normal, que para superficies horizontales es equivalente al peso del objeto en contacto con la superficie. Este coeficiente depende del tipo de materiales en contacto y su textura, por lo que es esencial conocer las propiedades del mismo para predecir el comportamiento de un objeto en movimiento.
+donde \(F_r\) es la fuerza de fricción y \(F_n\) es la fuerza normal, que para superficies horizontales es equivalente al peso del objeto en contacto con la superficie. Este coeficiente depende del tipo de materiales en contacto y su textura.
 
-\subsection{Relevancia teórica}
-
-La determinación del coeficiente de fricción es fundamental en la física aplicada, ya que afecta el diseño de sistemas mecánicos, el análisis de movimientos y la estabilidad de objetos en distintas superficies. En este contexto, comprender la relación entre la fuerza de fricción y la aceleración del objeto es crucial. Para este experimento, utilizamos la segunda ley de Newton, que establece que la fuerza neta que actúa sobre un objeto es proporcional a la masa del objeto y su aceleración:
+La determinación del $\mu_d$ es fundamental en la física aplicada, ya que afecta el diseño de sistemas mecánicos, el análisis de movimientos y la estabilidad de objetos en distintas superficies. En este contexto, comprender la relación entre la fuerza de fricción y la aceleración del objeto es crucial. Para este experimento, utilizamos la segunda ley de Newton, que establece que la fuerza neta que actúa sobre un objeto es proporcional a la masa del objeto y su aceleración:
 
 \[
 F = m \cdot a
 \]
 
-Combinando esta ecuación con la expresión de la fuerza de fricción, podemos deducir que la aceleración del carrito estará influenciada por el coeficiente de fricción y la masa total del sistema. En nuestro caso, el sistema se conforma de un carrito y varias superficies, lo que nos permite explorar cómo el coeficiente de fricción cambia según el material.
+Combinando esta ecuación con la expresión de la fuerza de fricción podemos deducir que la aceleración del carrito estará influenciada por el coeficiente de fricción y la masa total del sistema. Podemos despejar la formula como:
 
-\subsection{Ecuaciones clave}
+\begin{equation}
+    \mu_d = \frac{a \cdot (M + m) + m \cdot g }{M \cdot g}
+    \label{eq:mu_d}
+\end{equation}
 
-Además de la relación de la fricción dinámica, el análisis experimental implica calibraciones precisas y la medición de la aceleración utilizando las siguientes relaciones:
+En nuestro caso, el sistema se conforma de un carrito y varias superficies, lo que nos permite explorar cómo el coeficiente de fricción cambia según el material.
 
-\[
-a = \frac{v_f - v_i}{t}
-\]
+El objetivo principal de esta práctica es medir el $\mu_d$ en diferentes superficies mediante el uso de un carrito y un sistema de polea. Para ello, se realizan mediciones de la aceleración y se compara cómo varía el coeficiente de fricción con el tipo de superficie y la masa utilizada. Este análisis teórico es esencial para comprender los resultados que se presentan en la sección siguiente.
 
-donde \(a\) es la aceleración, \(v_f\) la velocidad final, \(v_i\) la velocidad inicial, y \(t\) el tiempo. Estas ecuaciones serán utilizadas para calcular el coeficiente de fricción a partir de las mediciones experimentales.
+Armamos el sistema de la siguiente manera:
 
-\subsection{Objetivo de la práctica}
+\begin{figure}[H]
+    \centering
+    \begin{tikzpicture}
+        % Dibuja la base
+        \draw[thick] (-3,0) -- (1.5,0); % Línea base
 
-El objetivo principal de esta práctica es medir el coeficiente de fricción dinámica en diferentes superficies mediante el uso de un carrito y un sistema de polea. Para ello, se realizan mediciones de la aceleración y se compara cómo varía el coeficiente de fricción con el tipo de superficie y la masa utilizada. Este análisis teórico es esencial para comprender los resultados que se presentan en la sección siguiente.
+        % Dibuja el trineo
+        \node at (-0.8,0.78) {\includegraphics[height=1.5cm]{trineo.png} $M$} ; % Puedes añadir un símbolo del trineo aquí si tienes un archivo o usar símbolos de personajes ASCII.
 
-\subsection{Estructura del informe}
+        % Dibuja la cuerda que conecta al motor
+        \draw[dashed] (-0.2,0.7) -- (2,0.7) -- (2,-2);
+        
+        % Dibuja la polea
+        \draw[thick] (1.7,0.4) circle(0.3); % Polea
 
-El trabajo se estructura de la siguiente manera: en la próxima sección, se describen los procedimientos experimentales y la metodología aplicada. A continuación, se presentan los resultados obtenidos y su análisis. Finalmente, se incluye una discusión y conclusión que vincula los resultados con los objetivos planteados al inicio del experimento.
+        % Dibuja el motor
+        \node[draw, fill=gray!50, circle, minimum size=0.8cm] at (2,-2) {$m$};
 
-\begin{table}
+        % Sensor de posición
+        \draw[fill=black] (-3,0) rectangle (-2.5,1.5); % Sensor
+        \node[align=center] at (-2.5,2.3) {Sensor de\\posición};
+
+        % Dibuja la línea tipo seno
+        \draw[thick, domain=-3:-1.8, samples=100] plot (\x, {0.2*sin(8*pi*\x r) + 0.75});
+
+    \end{tikzpicture}
+    \label{fig:system}
+\end{figure}
+
+Dispusimos de los siguientes materiales para realizar el experimento:
+
+\begin{table}[H]
     \centering
     \begin{tabular}{|c|c|}
         \hline
@@ -81,7 +98,6 @@ El trabajo se estructura de la siguiente manera: en la próxima sección, se des
         Metro & $134 \pm 1$ \\
         \hline
     \end{tabular}
-    \caption{Mediciones de masa}
     \label{tab:mediciones}
 \end{table}
 
@@ -139,7 +155,7 @@ En un primer caso dejamos el trineo deslizar sobre la mesa de madera. \\
 \end{figure}
 
 
-Vemos en las figuras \ref{fig:2PB_O piso trineo} y \ref{fig:M_OP piso trineo} que ambas mediciones se parecen bastante entre si en cada caso pero que en \ref{fig:V_2P piso trineo} hay una diferencia en la pendiente. Esto nos va a llevar a que la incerteza del $\mu_d$ sea grande.
+De \ref{fig:2PB_O piso trineo}, \ref{fig:M_OP piso trineo} y \ref{fig:V_2P piso trineo} obtenemos valores de la aceleración del sistema. En promedio, la aceleración fue de $0.32 \pm 0.02$ cm/s\(^2\).
 
 \subsubsection*{Papel y trineo}
 
@@ -169,7 +185,8 @@ Luego, le pegamos papel a la mesa y repetimos el experimento.
     \label{fig:V_2P piso hoja}
 \end{figure}
 
-Vemos que en las figuras \ref{fig:2PB_O piso hoja} y \ref{fig:M_OP piso hoja} las pendientes son muy parecidas, pero en \ref{fig:V_2P piso hoja} hay una diferencia en la pendiente. Esto nos va a llevar a que la incerteza del $\mu_d$ sea grande.
+
+De \ref{fig:2PB_O piso hoja}, \ref{fig:M_OP piso hoja} y \ref{fig:V_2P piso hoja} obtenemos valores de la aceleración del sistema. En promedio, la aceleración fue de $0.22 \pm 0.03$ cm/s\(^2\).
 
 \subsubsection*{Papel y Papel}
 
@@ -199,30 +216,12 @@ Por ultimo, pegamos otro papel al trineo y repetimos el experimento.
     \label{fig:TvDV_O papel papel}
 \end{figure}
 
+
+De \ref{fig:M_O papel papel}, \ref{fig:M_OP papel papel} y \ref{fig:TvDV_O papel papel} obtenemos valores de la aceleración del sistema. En promedio, la aceleración fue de $0.39 \pm 0.04$ cm/s\(^2\).
+
 \subsection{Obtencion del $\mu_d$}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\linewidth]{ud_PisoMadera.png}
-    \caption{Madera y trineo}
-    \label{fig:mu_d piso trineo}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\linewidth]{ud_PisoPapel.png}
-    \caption{Papel y trineo}
-    \label{fig:mu_d piso hoja}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.6\linewidth]{ud_PapelPapel.png}
-    \caption{Papel y papel}
-    \label{fig:mu_d papel papel}
-\end{figure}
-
-Sacando un promedio de los valores obtenidos en las figuras \ref{fig:mu_d piso trineo}, \ref{fig:mu_d piso hoja} y \ref{fig:mu_d papel papel} obtenemos un valor de $\mu_d$ para cada superficie.
+Sacando un promedio de los valores obtenidos de \ref{eq:mu_d} usando cada aceleración obtenemos un valor de $\mu_d$ para cada superficie.
 
 \begin{figure}[H]
     \begin{minipage}{0.5\textwidth}
@@ -252,13 +251,11 @@ Sacando un promedio de los valores obtenidos en las figuras \ref{fig:mu_d piso t
 
 \section{Conclusiones}
 
-En conclusión, este experimento ha logrado cumplir con los objetivos planteados de determinar el coeficiente de fricción dinámica entre un carrito y diferentes superficies utilizando métodos experimentales. A través de las mediciones de aceleración en diversas configuraciones de masa y superficie, se obtuvieron valores para el coeficiente de fricción dinámica $\mu_d$, destacándose variaciones significativas entre las diferentes superficies analizadas, como madera, papel sobre madera, y papel sobre papel.
+A través de las mediciones de aceleración en diversas configuraciones de masa y superficie, se obtuvieron valores para el $\mu_d$, destacándose variaciones entre las diferentes superficies analizadas.
 
-Los resultados obtenidos evidencian que la fricción varía no solo en función de la masa sino también de la textura de las superficies en contacto. Por ejemplo, el valor de $\mu_d$ en la superficie de madera fue de 0.4 ± 0.1, mientras que en papel sobre papel fue mayor, alcanzando un promedio de 0.5 ± 0.2. Esta variación en el coeficiente es indicativa de la influencia de la rugosidad y la naturaleza del material en la interacción de fricción.
+Los resultados obtenidos evidencian que la fricción varía dependiendo de la textura de las superficies en contacto. Por ejemplo, el valor de $\mu_d$ en la superficie de madera fue de 0.4 ± 0.1, mientras que en papel sobre papel fue mayor, alcanzando un promedio de 0.5 ± 0.2. Esta variación en el coeficiente es indicativa de la influencia de la rugosidad y la naturaleza del material en la interacción de fricción.
 
-La incertidumbre en los resultados, sobre todo en algunas mediciones, refleja la necesidad de tener en cuenta las posibles fuentes de error en los experimentos, como la calibración de los instrumentos. Sin embargo, los valores obtenidos permiten confirmar que las diferencias observadas en las superficies afectan significativamente la dinámica del movimiento del trineo.
-
-En definitiva, este trabajo ha permitido no solo calcular el coeficiente de fricción dinámica, sino también comprender la importancia de las condiciones experimentales y cómo pequeñas variaciones pueden impactar en los resultados, reforzando el valor de una correcta medición y calibración en estudios físicos.
+Por las incertezas de los resultados, podemos comprender la importancia de las condiciones experimentales y cómo pequeñas variaciones pueden impactar en los resultados, reforzando el valor de una correcta medición y calibración en estudios físicos.
 
 
 \end{document}

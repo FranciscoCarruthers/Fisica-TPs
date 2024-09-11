@@ -128,12 +128,12 @@ plt.show()
 ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/piso madera/V_2P-2.csv')
 ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/piso madera/V_2P-3.csv')
 
-tiempo2 = change_ms_to_s(ms2[4:13]) - 0.5
-posicion2 = change_data_to_distance(sensor_data2[4:13]) - 15
+tiempo2 = change_ms_to_s(ms2[5:13]) - 0.6
+posicion2 = change_data_to_distance(sensor_data2[5:13]) - 15
 errores_y2 = np.full(len(posicion2), 0.44)
 
-tiempo3 = change_ms_to_s(ms3[4:13]) - 0.5
-posicion3 = change_data_to_distance(sensor_data3[4:13]) - 15
+tiempo3 = change_ms_to_s(ms3[4:12]) - 0.5
+posicion3 = change_data_to_distance(sensor_data3[4:12]) - 15
 errores_y3 = np.full(len(posicion3), 0.44)
 
 # Definir la función cuadrática con v_0 = 0
@@ -142,7 +142,7 @@ def modelo_cuadratico(t, a, v_0, x_0):
 
 # ajustar las curvas
 popt2, pcov2 = curve_fit(modelo_cuadratico, tiempo2, posicion2, sigma=errores_y2, absolute_sigma=True)
-popt3, pcov3 = curve_fit(modelo_cuadratico, tiempo3[:-1], posicion3[:-1], sigma=errores_y3[:-1], absolute_sigma=True)
+popt3, pcov3 = curve_fit(modelo_cuadratico, tiempo3, posicion3, sigma=errores_y3, absolute_sigma=True)
 
 # obtener los coeficientes ajustados y sus errores
 
