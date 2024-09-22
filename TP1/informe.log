@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  10 SEP 2024 23:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  22 SEP 2024 20:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -459,137 +459,45 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}]
-<trineo.png, id=20, 506.89375pt x 471.7625pt>
-File: trineo.png Graphic file (type png)
-<use trineo.png>
-Package pdftex.def Info: trineo.png  used on input line 64.
-(pdftex.def)             Requested size: 45.8505pt x 42.67912pt.
- [2 <./trineo.png>]
-<Calibracion.png, id=24, 433.62pt x 289.08pt>
+<esquema.png, id=20, 574.64688pt x 243.91125pt>
+File: esquema.png Graphic file (type png)
+<use esquema.png>
+Package pdftex.def Info: esquema.png  used on input line 48.
+(pdftex.def)             Requested size: 460.6753pt x 195.54237pt.
+ [2 <./esquema.png>]
+<Calibracion.png, id=26, 433.62pt x 289.08pt>
 File: Calibracion.png Graphic file (type png)
 <use Calibracion.png>
-Package pdftex.def Info: Calibracion.png  used on input line 111.
-(pdftex.def)             Requested size: 460.6753pt x 307.1335pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 116--117
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 118--119
+Package pdftex.def Info: Calibracion.png  used on input line 99.
+(pdftex.def)             Requested size: 409.49348pt x 273.01001pt.
+ [3 <./Calibracion.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 132--134
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 120--121
-
- []
-
-[3 <./Calibracion.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 130--131
-
- []
-
-<TiempoVsDistanciaPisoMadera2PB_O.png, id=30, 462.528pt x 346.896pt>
-File: TiempoVsDistanciaPisoMadera2PB_O.png Graphic file (type png)
-<use TiempoVsDistanciaPisoMadera2PB_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoMadera2PB_O.png  used on input line 134.
-(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
-<ajuste2_PisoMadera2PB_O.png, id=31, 462.528pt x 346.896pt>
-File: ajuste2_PisoMadera2PB_O.png Graphic file (type png)
-<use ajuste2_PisoMadera2PB_O.png>
-Package pdftex.def Info: ajuste2_PisoMadera2PB_O.png  used on input line 135.
-(pdftex.def)             Requested size: 225.2218pt x 168.91658pt.
-<TiempoVsDistanciaPisoMaderaMPB_O.png, id=32, 462.528pt x 346.896pt>
-File: TiempoVsDistanciaPisoMaderaMPB_O.png Graphic file (type png)
-<use TiempoVsDistanciaPisoMaderaMPB_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoMaderaMPB_O.png  used on input line 143.
-(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
-<ajuste2_PisoMaderaMPB_O.png, id=33, 462.528pt x 346.896pt>
+<ajuste2_PisoMaderaMPB_O.png, id=31, 462.528pt x 346.896pt>
 File: ajuste2_PisoMaderaMPB_O.png Graphic file (type png)
 <use ajuste2_PisoMaderaMPB_O.png>
-Package pdftex.def Info: ajuste2_PisoMaderaMPB_O.png  used on input line 144.
+Package pdftex.def Info: ajuste2_PisoMaderaMPB_O.png  used on input line 137.
 (pdftex.def)             Requested size: 225.2218pt x 168.91658pt.
-<TiempoVsDistanciaPisoMaderaV_2P.png, id=34, 462.528pt x 346.896pt>
-File: TiempoVsDistanciaPisoMaderaV_2P.png Graphic file (type png)
-<use TiempoVsDistanciaPisoMaderaV_2P.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoMaderaV_2P.png  used on input line 151.
-(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
-<ajuste2_PisoMaderaV_2P.png, id=35, 462.528pt x 346.896pt>
-File: ajuste2_PisoMaderaV_2P.png Graphic file (type png)
-<use ajuste2_PisoMaderaV_2P.png>
-Package pdftex.def Info: ajuste2_PisoMaderaV_2P.png  used on input line 152.
-(pdftex.def)             Requested size: 225.2218pt x 168.91658pt.
-[4 <./TiempoVsDistanciaPisoMadera2PB_O.png> <./ajuste2_PisoMadera2PB_O.png> <./TiempoVsDistanciaPisoMaderaMPB_O.png> <./ajuste2_PisoMaderaMPB_O.png>]
-<TiempoVsDistanciaPisoHoja2PB_O.png, id=43, 462.528pt x 346.896pt>
-File: TiempoVsDistanciaPisoHoja2PB_O.png Graphic file (type png)
-<use TiempoVsDistanciaPisoHoja2PB_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoHoja2PB_O.png  used on input line 166.
-(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
-<ajuste2_PisoHoja2PB_O.png, id=44, 462.528pt x 346.896pt>
-File: ajuste2_PisoHoja2PB_O.png Graphic file (type png)
-<use ajuste2_PisoHoja2PB_O.png>
-Package pdftex.def Info: ajuste2_PisoHoja2PB_O.png  used on input line 167.
-(pdftex.def)             Requested size: 225.2218pt x 168.91658pt.
-<TiempoVsDistanciaPisoHojaM_OP.png, id=45, 462.528pt x 346.896pt>
-File: TiempoVsDistanciaPisoHojaM_OP.png Graphic file (type png)
-<use TiempoVsDistanciaPisoHojaM_OP.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoHojaM_OP.png  used on input line 174.
-(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
-<ajuste2_PisoHojaM_OP.png, id=46, 462.528pt x 346.896pt>
+[4]
+<ajuste2_PisoHojaM_OP.png, id=36, 462.528pt x 346.896pt>
 File: ajuste2_PisoHojaM_OP.png Graphic file (type png)
 <use ajuste2_PisoHojaM_OP.png>
-Package pdftex.def Info: ajuste2_PisoHojaM_OP.png  used on input line 175.
+Package pdftex.def Info: ajuste2_PisoHojaM_OP.png  used on input line 154.
 (pdftex.def)             Requested size: 225.2218pt x 168.91658pt.
- [5 <./TiempoVsDistanciaPisoMaderaV_2P.png> <./ajuste2_PisoMaderaV_2P.png> <./TiempoVsDistanciaPisoHoja2PB_O.png> <./ajuste2_PisoHoja2PB_O.png>]
-<TiempoVsDistanciaPisoHojaV_2P.png, id=55, 462.528pt x 346.896pt>
-File: TiempoVsDistanciaPisoHojaV_2P.png Graphic file (type png)
-<use TiempoVsDistanciaPisoHojaV_2P.png>
-Package pdftex.def Info: TiempoVsDistanciaPisoHojaV_2P.png  used on input line 182.
-(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
-<ajuste2_PisoHojaV_2P.png, id=56, 462.528pt x 346.896pt>
-File: ajuste2_PisoHojaV_2P.png Graphic file (type png)
-<use ajuste2_PisoHojaV_2P.png>
-Package pdftex.def Info: ajuste2_PisoHojaV_2P.png  used on input line 183.
-(pdftex.def)             Requested size: 225.2218pt x 168.91658pt.
-<TiempoVsDistanciaPapelPapelM_O.png, id=57, 462.528pt x 346.896pt>
-File: TiempoVsDistanciaPapelPapelM_O.png Graphic file (type png)
-<use TiempoVsDistanciaPapelPapelM_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_O.png  used on input line 197.
-(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
-<ajuste2_PapelPapelM_O.png, id=58, 462.528pt x 346.896pt>
+ [5 <./ajuste2_PisoMaderaMPB_O.png> <./ajuste2_PisoHojaM_OP.png>]
+<ajuste2_PapelPapelM_O.png, id=43, 462.528pt x 346.896pt>
 File: ajuste2_PapelPapelM_O.png Graphic file (type png)
 <use ajuste2_PapelPapelM_O.png>
-Package pdftex.def Info: ajuste2_PapelPapelM_O.png  used on input line 198.
+Package pdftex.def Info: ajuste2_PapelPapelM_O.png  used on input line 172.
 (pdftex.def)             Requested size: 225.2218pt x 168.91658pt.
- [6 <./TiempoVsDistanciaPisoHojaM_OP.png> <./ajuste2_PisoHojaM_OP.png> <./TiempoVsDistanciaPisoHojaV_2P.png> <./ajuste2_PisoHojaV_2P.png>]
-<TiempoVsDistanciaPapelPapelM_OP.png, id=66, 462.528pt x 346.896pt>
-File: TiempoVsDistanciaPapelPapelM_OP.png Graphic file (type png)
-<use TiempoVsDistanciaPapelPapelM_OP.png>
-Package pdftex.def Info: TiempoVsDistanciaPapelPapelM_OP.png  used on input line 205.
-(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
-<ajuste2_PapelPapelM_OP.png, id=67, 462.528pt x 346.896pt>
-File: ajuste2_PapelPapelM_OP.png Graphic file (type png)
-<use ajuste2_PapelPapelM_OP.png>
-Package pdftex.def Info: ajuste2_PapelPapelM_OP.png  used on input line 206.
-(pdftex.def)             Requested size: 225.2218pt x 168.91658pt.
-<TiempoVsDistanciaPapelPapelV_O.png, id=68, 462.528pt x 346.896pt>
-File: TiempoVsDistanciaPapelPapelV_O.png Graphic file (type png)
-<use TiempoVsDistanciaPapelPapelV_O.png>
-Package pdftex.def Info: TiempoVsDistanciaPapelPapelV_O.png  used on input line 213.
-(pdftex.def)             Requested size: 204.74283pt x 153.55573pt.
-<ajuste2_PapelPapelV_O.png, id=69, 462.528pt x 346.896pt>
-File: ajuste2_PapelPapelV_O.png Graphic file (type png)
-<use ajuste2_PapelPapelV_O.png>
-Package pdftex.def Info: ajuste2_PapelPapelV_O.png  used on input line 214.
-(pdftex.def)             Requested size: 225.2218pt x 168.91658pt.
- [7 <./TiempoVsDistanciaPapelPapelM_O.png> <./ajuste2_PapelPapelM_O.png> <./TiempoVsDistanciaPapelPapelM_OP.png> <./ajuste2_PapelPapelM_OP.png>]
-<ud_Combined.png, id=78, 462.528pt x 346.896pt>
+<ud_Combined.png, id=44, 462.528pt x 346.896pt>
 File: ud_Combined.png Graphic file (type png)
 <use ud_Combined.png>
-Package pdftex.def Info: ud_Combined.png  used on input line 229.
+Package pdftex.def Info: ud_Combined.png  used on input line 190.
 (pdftex.def)             Requested size: 230.33763pt x 172.75415pt.
- [8 <./TiempoVsDistanciaPapelPapelV_O.png> <./ajuste2_PapelPapelV_O.png> <./ud_Combined.png>] [9] (./informe.aux
+ [6 <./ajuste2_PapelPapelM_O.png>] [7 <./ud_Combined.png>] (./informe.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 )
@@ -603,18 +511,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16075 strings out of 474116
- 333606 string characters out of 5743682
- 1935187 words of memory out of 5000000
- 38180 multiletter control sequences out of 15000+600000
+ 15591 strings out of 474116
+ 321377 string characters out of 5743682
+ 1934187 words of memory out of 5000000
+ 37696 multiletter control sequences out of 15000+600000
  566656 words of font info for 66 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,93p,942b,705s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,13n,93p,916b,383s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1095.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on informe.pdf (9 pages, 620515 bytes).
+Output written on informe.pdf (7 pages, 299671 bytes).
 PDF statistics:
- 145 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 110 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

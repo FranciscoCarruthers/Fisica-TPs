@@ -10,7 +10,7 @@
 \usetikzlibrary{positioning}
 \usetikzlibrary{shapes.geometric, decorations.pathreplacing}
 
-\title{Informe de Física: Encontrando el coeficiente de fricción dinámica}
+\title{Encontrando el coeficiente de fricción dinámica}
 \author{Francisco Carruthers, Facundo Firpo y Joel Jablonski\\ [2mm]
 \small \texttt{\{fcarruthers, ffirpo, jjablonski\}@udesa.edu.ar}\\
 \small Fisica I, tutorial Vinograd}
@@ -22,202 +22,163 @@
 \maketitle
 
 \begin{abstract}
-    Se investigó el coeficiente de fricción dinámica entre un carrito y varias superficies utilizando un sistema de carrito, soga y polea. Para garantizar la precisión de las mediciones, se realizó una calibración previa del sistema, ajustando los sensores y asegurando que las lecturas de posición y tiempo fueran precisas. A continuación, se varió la masa del carrito y se midió la aceleración para calcular el coeficiente de fricción dinámica ($\mu_d$) en diferentes superficies. Las superficies evaluadas incluyeron el carrito sobre madera, carrito sobre papel y papel sobre papel. Los valores obtenidos para el $\mu_d$ fueron: 0.4 ± 0.1 para madera y trineo, 0.45 ± 0.03 para papel y trineo, y 0.5 ± 0.2 para papel y papel. Los resultados demostraron que la superficie tiene un impacto significativo en la fricción dinámica del sistema.
+    Se investigó el coeficiente de fricción dinámica entre un trineo y varias superficies utilizando un sistema de trineo, soga y polea. En primer lugar, se realizó una calibración previa del sistema, ajustando los sensores y asegurando que las lecturas de posición y tiempo fueran precisas. A continuación, se varió la masa del trineo y se midió la aceleración para calcular el coeficiente de fricción dinámica ($\mu_d$) en diferentes superficies. Las superficies evaluadas incluyeron el trineo sobre madera, trineo sobre papel y papel sobre papel. Los valores obtenidos para el $\mu_d$ fueron: 0.4 ± 0.1 para madera y trineo, 0.45 ± 0.03 para papel y trineo, y 0.5 ± 0.2 para papel y papel. [Los resultados demostraron que la superficie tiene un impacto significativo en la fricción dinámica del sistema.] CORREGIR
 \end{abstract}
 
 \section{Introducción}
 
-La fricción es una fuerza de resistencia que actúa en oposición al movimiento relativo entre dos superficies en contacto. Existen dos tipos principales de fricción: la fricción estática, que previene el inicio del movimiento, y la fricción dinámica (o cinética), que actúa cuando el objeto ya está en movimiento. En este experimento, nos centraremos en la fricción dinámica, cuyo coeficiente, denotado como \(\mu_d\), se define como la relación entre la fuerza de fricción y la fuerza normal ejercida sobre el objeto:
+La fricción es una fuerza de resistencia que actúa en oposición al movimiento relativo entre dos superficies en contacto. Existen dos tipos principales de fricción: la fricción estática, que previene el movimiento, y la fricción dinámica (o cinética), que actúa cuando el objeto ya está en movimiento. En este experimento, nos centraremos en la fricción dinámica, cuyo coeficiente, denotado como \(\mu_d\), se define como la relación entre la fuerza de fricción y la fuerza normal ejercida sobre el objeto:
 
 \[
-F_r = \mu_d \cdot F_n
+\vec{F_r} = \mu_d \cdot \vec{F_n}
 \]
 
-donde \(F_r\) es la fuerza de fricción y \(F_n\) es la fuerza normal, que para superficies horizontales es equivalente al peso del objeto en contacto con la superficie. Este coeficiente depende del tipo de materiales en contacto y su textura.
+donde \(\vec{F_r}\) es la fuerza de fricción y \(\vec{F_n}\) es la fuerza normal, que para superficies horizontales es equivalente al peso del objeto en contacto con la superficie. Este coeficiente depende del tipo de materiales en contacto y su textura.
 
 La determinación del $\mu_d$ es fundamental en la física aplicada, ya que afecta el diseño de sistemas mecánicos, el análisis de movimientos y la estabilidad de objetos en distintas superficies. En este contexto, comprender la relación entre la fuerza de fricción y la aceleración del objeto es crucial. Para este experimento, utilizamos la segunda ley de Newton, que establece que la fuerza neta que actúa sobre un objeto es proporcional a la masa del objeto y su aceleración:
 
 \[
-F = m \cdot a
+\vec{F} = m \cdot \vec{a}
 \]
 
-Combinando esta ecuación con la expresión de la fuerza de fricción podemos deducir que la aceleración del carrito estará influenciada por el coeficiente de fricción y la masa total del sistema. Podemos despejar la formula como:
-
-\begin{equation}
-    \mu_d = \frac{a \cdot (M + m) + m \cdot g }{M \cdot g}
-    \label{eq:mu_d}
-\end{equation}
-
-En nuestro caso, el sistema se conforma de un carrito y varias superficies, lo que nos permite explorar cómo el coeficiente de fricción cambia según el material.
-
-El objetivo principal de esta práctica es medir el $\mu_d$ en diferentes superficies mediante el uso de un carrito y un sistema de polea. Para ello, se realizan mediciones de la aceleración y se compara cómo varía el coeficiente de fricción con el tipo de superficie y la masa utilizada. Este análisis teórico es esencial para comprender los resultados que se presentan en la sección siguiente.
-
-Armamos el sistema de la siguiente manera:
+\section{Practica experimental}
 
 \begin{figure}[H]
     \centering
-    \begin{tikzpicture}
-        % Dibuja la base
-        \draw[thick] (-3,0) -- (1.5,0); % Línea base
-
-        % Dibuja el trineo
-        \node at (-0.8,0.78) {\includegraphics[height=1.5cm]{trineo.png} $M$} ; % Puedes añadir un símbolo del trineo aquí si tienes un archivo o usar símbolos de personajes ASCII.
-
-        % Dibuja la cuerda que conecta al motor
-        \draw[dashed] (-0.2,0.7) -- (2,0.7) -- (2,-2);
-        
-        % Dibuja la polea
-        \draw[thick] (1.7,0.4) circle(0.3); % Polea
-
-        % Dibuja el motor
-        \node[draw, fill=gray!50, circle, minimum size=0.8cm] at (2,-2) {$m$};
-
-        % Sensor de posición
-        \draw[fill=black] (-3,0) rectangle (-2.5,1.5); % Sensor
-        \node[align=center] at (-2.5,2.3) {Sensor de\\posición};
-
-        % Dibuja la línea tipo seno
-        \draw[thick, domain=-3:-1.8, samples=100] plot (\x, {0.2*sin(8*pi*\x r) + 0.75});
-
-    \end{tikzpicture}
+    \includegraphics[width=0.9\linewidth]{esquema.png}
+    \caption{Esquema experimental para la propuesta. La masa m y M son variables.}
     \label{fig:system}
 \end{figure}
 
+Dispusimos de un sistema de trineo, soga, polea y sensor de posicion. El sistema se muestra en la Figura \ref{fig:system}. La masa del trineo y la masa total del sistema son variables, lo que nos permite explorar varias configuraciones para ver como las masas afectan al $\mu_d$.
+
+En primera instancia, nos propusimos calibrar el sensor. El sensor envia una señal, la cual rebota contra el trineo y vuelve al sensor. La señal es proporcional a la distancia entre el sensor y el trineo. La calibración consistió en determinar la pendiente y la ordenada al origen de la relación entre la señal y la distancia. Estos valores son necesarios para determinar la distancia recorrida por el trineo en función de la señal del sensor. Para ello, con una regla fuimos ubicando el trineo a distancias conocidas y anotamos la señal del sensor. Luego, ajustamos una recta a los datos obtenidos.
+
+Una vez calibrado el sensor, procedimos a realizar el experimento. Primero, colocamos el trineo sobre la mesa de madera y lo dejamos deslizar. Medimos la distancia recorrida por el trineo en función del tiempo. Este procedimiento lo repetimos para $m = 161 \pm 1 g$ y $M = 72 \pm 1 g$, $m = 243 \pm 1 g$ y $M = 95 \pm 1 g$ y $m = 109 \pm 1 g$ y $M = 46 \pm 1 g$. Con estos datos, haciendo un ajuste cuadratico, podemos determinar la aceleración del trineo. 
+Luego, repetimos el experimento pero pegandole un papel a la mesa. Usamos $m = 161 \pm 1 g$ y $M = 72 \pm 1 g$, $m = 243 \pm 1 g$ y $M = 95 \pm 1 g$ y $m = 109 \pm 1 g$ y $M = 46 \pm 1 g$. 
+Por ultimo, pegamos un papel al trineo y repetimos el experimento.
+
+Combinando esta ecuación con la expresión de la fuerza de fricción podemos deducir que la aceleración del trineo estará influenciada por el coeficiente de fricción y la masa total del sistema. Podemos despejar la formula como:
+
+\begin{equation}
+    \mu_d = \frac{\vec{a} \cdot (M + m) + M \cdot \vec{g} }{m \cdot \vec{g}}
+    \label{eq:mu_d}
+\end{equation}
+
+En nuestro caso, el sistema se conforma de un trineo y varias superficies, lo que nos permite explorar cómo el coeficiente de fricción cambia según el material.
+
+Armamos el sistema de la siguiente manera:
+
 Dispusimos de los siguientes materiales para realizar el experimento:
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{|c|c|}
-        \hline
-        \textbf{Objeto} & \textbf{Masa(g)} \\
-        \hline
-        Pesa dorada & $72 \pm 1$ \\
-        Pesa plateada & $23 \pm 1$ \\
-        Pesa madera & $6 \pm 1$ \\
-        Trineo & $109 \pm 1$ \\
-        Metro & $134 \pm 1$ \\
-        \hline
-    \end{tabular}
-    \label{tab:mediciones}
-\end{table}
+% \begin{table}[H]
+%     \centering
+%     \begin{tabular}{|c|c|}
+%         \hline
+%         \textbf{Objeto} & \textbf{Masa(g)} \\
+%         \hline
+%         Pesa dorada & $72 \pm 1$ \\
+%         Pesa plateada & $23 \pm 1$ \\
+%         Pesa madera & $6 \pm 1$ \\
+%         Trineo & $109 \pm 1$ \\
+%         Metro & $134 \pm 1$ \\
+%         \hline
+%     \end{tabular}
+%     \label{tab:mediciones}
+% \end{table}
 
-\newpage
 \section{Calibración}
 
-Utilizamos un sistema de referencia para calibrar el sistema.
+Para calibrar el sistema, empleamos un sistema de referencia basado en mediciones de distancia que oscilan entre 15 cm y 35 cm, utilizando una regla previamente calibrada como
+ instrumento de medición. El sensor en cuestión proporciona unidades arbitrarias. Al comparar estos valores con las distancias reales, determinamos que existe una relación lineal
+  entre la señal del sensor y la distancia medida. Con esta información, realizamos un ajuste lineal a los datos obtenidos, lo que nos permitió derivar una ecuación de la recta que
+   describe esta relación. Los valores resultantes de este ajuste, junto con sus respectivas incertidumbres, se presentan a continuación:
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.9\linewidth]{Calibracion.png}
-    \caption{Calibración del sistema}
+    \includegraphics[width=0.8\linewidth]{Calibracion.png}
+    \caption{Calibracion del sistema mediante la comparacion de la señal del sensor con la distancia real}
     \label{fig:calibracion}
 \end{figure}
 
-Pendiente: $0.0184 \pm 0.0005$ \\
+El grafico de la Figura \ref{fig:calibracion} muestra la recta:
 
-Ordenada al origen: ($-0.5 \pm 0.5$) cm\\
+\begin{equation}
+    dist(a) = (0.0184 \pm 0.0005) \cdot a + (-0.5 \pm 0.5) cm
+    \label{eq:dist}
+\end{equation}
 
-Distancia para 600: ($10.5 \pm 0.4$) cm \\
+La pendiente representa la tasa de cambio de la señal del sensor con respecto a la distancia medida, indicando que por cada centímetro de distancia, la señal del sensor cambia en
+ aproximadamente 0.0184 unidades arbitrarias. La incertidumbre asociada a la pendiente, de ±0.0005 unidades arbitrarias, refleja la precisión del ajuste lineal realizado.
 
-\newpage
+
+Por otro lado, la ordenada al origen de -0.5 cm, con una incertidumbre de ±0.5 cm, sugiere que cuando la señal del sensor es cero, la distancia medida sería aproximadamente -0.5 cm.
+ Esta ordenada al origen negativa puede interpretarse como un desplazamiento sistemático en las mediciones del sensor, posiblemente debido a factores como el posicionamiento inicial 
+ del sensor o pequeñas desviaciones en la calibración de la regla utilizada.
 
 \section{Resultados}
 
 \subsection{Posicion}
 
+Registramos la distancia recorrida y el tiempo empleado para calcular la velocidad y la aceleración del trineo. Al tener estas mediciones, podemos evaluar cómo factores como la
+ fricción influyen en el rendimiento del trineo en las diferentes superficies.
+
+Posteriormente, realizamos un ajuste cuadrático a los datos obtenidos. Este ajuste nos permitió analizar si una relación no lineal describe mejor el comportamiento del trineo.
+ Al incluir un término cuadrático en el modelo, pudimos capturar posibles curvaturas en los datos que un ajuste lineal no podría representar adecuadamente. Este enfoque nos
+  proporcionó una visión más precisa del movimiento del trineo.
+
 \subsubsection*{Madera y Trineo}
 
-En un primer caso dejamos el trineo deslizar sobre la mesa de madera. \\
+En un primer caso, dejamos que el trineo se deslizara sobre la superficie de una mesa de madera. Este experimento inicial nos permitió observar cómo la fricción de la madera
+ afecta el movimiento del trineo.\\
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoMadera2PB_O.png}
-    \includegraphics[width=0.44\linewidth]{ajuste2_PisoMadera2PB_O.png}
-    \caption{$M = 161 \pm 1 g, m = 72 \pm 1 g$}
-    \label{fig:2PB_O piso trineo}
-
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoMaderaMPB_O.png}
     \includegraphics[width=0.44\linewidth]{ajuste2_PisoMaderaMPB_O.png}
-    \caption{$M = 243 \pm 1 g, m = 95 \pm 1 g$}
+    \caption{$m = (243 \pm 1) g, M = (95 \pm 1) g$}
     \label{fig:M_OP piso trineo}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoMaderaV_2P.png}
-    \includegraphics[width=0.44\linewidth]{ajuste2_PisoMaderaV_2P.png}
-    \caption{$M = 109 \pm 1 g, m = 46 \pm 1 g$}
-    \label{fig:V_2P piso trineo}
-\end{figure}
+Del ajuste cuadratico visto en la figura \ref{fig:M_OP piso trineo} obtenemos una ecuacion de la forma:
 
-
-De \ref{fig:2PB_O piso trineo}, \ref{fig:M_OP piso trineo} y \ref{fig:V_2P piso trineo} obtenemos valores de la aceleración del sistema. En promedio, la aceleración fue de $0.32 \pm 0.02$ cm/s\(^2\).
+\[
+pos(t) = (0.11 \pm 0.01) \frac{cm}{s^2} \cdot t^2 + (0.03 \pm 0.01) \frac{cm}{s} \cdot t + (-0.002 \pm 0.002) cm
+\]
 
 \subsubsection*{Papel y trineo}
 
-Luego, le pegamos papel a la mesa y repetimos el experimento.
+Luego, cubrimos la superficie de la mesa con papel y repetimos el experimento. Esto nos permitió comparar cómo la fricción del papel afecta el movimiento del trineo en comparación con la madera.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoHoja2PB_O.png}
-    \includegraphics[width=0.44\linewidth]{ajuste2_PisoHoja2PB_O.png}
-    \caption{$M = 161 \pm 1 g, m = 72 \pm 1 g$}
-    \label{fig:2PB_O piso hoja}
-\end{figure}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoHojaM_OP.png}
     \includegraphics[width=0.44\linewidth]{ajuste2_PisoHojaM_OP.png}
-    \caption{$M = 243 \pm 1 g, m = 95 \pm 1 g$}
+    \caption{$m = (243 \pm 1) g, M = (95 \pm 1) g$}
     \label{fig:M_OP piso hoja}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPisoHojaV_2P.png}
-    \includegraphics[width=0.44\linewidth]{ajuste2_PisoHojaV_2P.png}
-    \caption{$M = 109 \pm 1 g, m = 46 \pm 1 g$}
-    \label{fig:V_2P piso hoja}
-\end{figure}
 
+Del ajuste cuadratico visto en la figura \ref{fig:M_OP piso hoja} obtenemos una ecuacion de la forma:
 
-De \ref{fig:2PB_O piso hoja}, \ref{fig:M_OP piso hoja} y \ref{fig:V_2P piso hoja} obtenemos valores de la aceleración del sistema. En promedio, la aceleración fue de $0.22 \pm 0.03$ cm/s\(^2\).
+\[
+pos(t) = (0.19 \pm 0.02) \frac{cm}{s^2} \cdot t^2 + (0.08 \pm 0.02)\frac{cm}{s} \cdot t + (-0.004 \pm 0.004) cm
+\]
 
 \subsubsection*{Papel y Papel}
 
-Por ultimo, pegamos otro papel al trineo y repetimos el experimento.
+Por último, adherimos un papel adicional al trineo y repetimos el experimento. Esta variación nos permitió observar cómo la fricción entre dos superficies de papel afecta el movimiento del trineo, en comparación con las pruebas anteriores.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPapelPapelM_O.png}
     \includegraphics[width=0.44\linewidth]{ajuste2_PapelPapelM_O.png}
-    \caption{$M = 243 \pm 1 g, m = 72 \pm 1 g$}
+    \caption{$m = (243 \pm 1) g, M = (72 \pm 1) g$}
     \label{fig:M_O papel papel}
 \end{figure}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPapelPapelM_OP.png}
-    \includegraphics[width=0.44\linewidth]{ajuste2_PapelPapelM_OP.png}
-    \caption{$M = 243 \pm 1 g, m = 95 \pm 1 g$}
-    \label{fig:M_OP papel papel}
-\end{figure}
+Del ajuste cuadratico visto en la figura \ref{fig:M_O papel papel} obtenemos una ecuacion de la forma:
 
-\begin{figure}[H] %check esto
-    \centering
-    \includegraphics[width=0.4\linewidth]{TiempoVsDistanciaPapelPapelV_O.png}
-    \includegraphics[width=0.44\linewidth]{ajuste2_PapelPapelV_O.png}
-    \caption{$M = 109 \pm 1 g, m = 72 \pm 1 g$}
-    \label{fig:TvDV_O papel papel}
-\end{figure}
-
-
-De \ref{fig:M_O papel papel}, \ref{fig:M_OP papel papel} y \ref{fig:TvDV_O papel papel} obtenemos valores de la aceleración del sistema. En promedio, la aceleración fue de $0.39 \pm 0.04$ cm/s\(^2\).
+\[
+pos(t) = (0.040 \pm 0.004) \frac{cm}{s^2} \cdot t^2 + (0.001 \pm 0.009) \frac{cm}{s} \cdot t + (-0.008 \pm 0.004) cm
+\]
 
 \subsection{Obtencion del $\mu_d$}
 
