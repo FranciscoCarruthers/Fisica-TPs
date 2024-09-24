@@ -73,14 +73,14 @@ plt.show()
 # 'Fisica-TPs/TP1/Mediciones Fisica/piso madera/MPB_O.csv'
 
 ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/piso madera/MPB_O-2.csv')
-ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/piso madera/MPB_O-3.csv')
+ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/piso madera/2PB_O-3.csv')
 
 tiempo2 = change_ms_to_s(ms2[14:26]) - 1.5
 posicion2 = change_data_to_distance(sensor_data2[14:26]) - 15
 errores_y2 = np.full(len(posicion2), 0.44)
 
-tiempo3 = change_ms_to_s(ms3[14:26]) - 1.5
-posicion3 = change_data_to_distance(sensor_data3[14:26]) - 15
+tiempo3 = change_ms_to_s(ms3[6:14]) - 0.7
+posicion3 = change_data_to_distance(sensor_data3[6:14]) - 15
 errores_y3 = np.full(len(posicion3), 0.44)
 
 # Definir la función cuadrática con v_0 = 0
@@ -111,11 +111,11 @@ t_ajuste2 = np.linspace(tiempo2.min(), tiempo2.max(), 100)
 plt.errorbar(tiempo2, posicion2, yerr=errores_y2, fmt='o', color = 'red')
 
 t_ajuste3 = np.linspace(tiempo3.min(), tiempo3.max(), 100)
-# plt.errorbar(tiempo3, posicion3, yerr=errores_y3, fmt='o', color = 'blue')
+plt.errorbar(tiempo3, posicion3, yerr=errores_y3, fmt='o', color = 'blue')
 
 # plt.plot(t_ajuste, modelo_cuadratico(t_ajuste, *popt), 'r', label=f'Ajuste cuadrático')
-plt.plot(t_ajuste2, modelo_cuadratico(t_ajuste2, *popt2), 'r', label=f'Ajuste cuadrático')
-# plt.plot(t_ajuste3, modelo_cuadratico(t_ajuste3, *popt3), 'b', label=f'Ajuste cuadrático 2')
+plt.plot(t_ajuste2, modelo_cuadratico(t_ajuste2, *popt2), 'r', label=f'Ajuste cuadrático m = 243 g')
+plt.plot(t_ajuste3, modelo_cuadratico(t_ajuste3, *popt3), 'b', label=f'Ajuste cuadrático m = 161 g')
 plt.xlabel('Tiempo [s]')
 plt.ylabel('Posición [cm]')
 plt.legend()

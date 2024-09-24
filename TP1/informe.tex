@@ -65,31 +65,9 @@ Combinando esta ecuación con la expresión de la fuerza de fricción podemos de
     \label{eq:mu_d}
 \end{equation}
 
-En nuestro caso, el sistema se conforma de un trineo y varias superficies, lo que nos permite explorar cómo el coeficiente de fricción cambia según el material.
-
-Armamos el sistema de la siguiente manera:
-
-Dispusimos de los siguientes materiales para realizar el experimento:
-
-% \begin{table}[H]
-%     \centering
-%     \begin{tabular}{|c|c|}
-%         \hline
-%         \textbf{Objeto} & \textbf{Masa(g)} \\
-%         \hline
-%         Pesa dorada & $72 \pm 1$ \\
-%         Pesa plateada & $23 \pm 1$ \\
-%         Pesa madera & $6 \pm 1$ \\
-%         Trineo & $109 \pm 1$ \\
-%         Metro & $134 \pm 1$ \\
-%         \hline
-%     \end{tabular}
-%     \label{tab:mediciones}
-% \end{table}
-
 \section{Calibración}
 
-Para calibrar el sistema, empleamos un sistema de referencia basado en mediciones de distancia que oscilan entre 15 cm y 35 cm, utilizando una regla previamente calibrada como
+Para calibrar el sistema, empleamos un sistema de referencia basado en mediciones de distancia que varian entre 15 cm y 35 cm, utilizando una regla previamente calibrada como
  instrumento de medición. El sensor en cuestión proporciona unidades arbitrarias. Al comparar estos valores con las distancias reales, determinamos que existe una relación lineal
   entre la señal del sensor y la distancia medida. Con esta información, realizamos un ajuste lineal a los datos obtenidos, lo que nos permitió derivar una ecuación de la recta que
    describe esta relación. Los valores resultantes de este ajuste, junto con sus respectivas incertidumbres, se presentan a continuación:
@@ -127,32 +105,33 @@ Posteriormente, realizamos un ajuste cuadrático a los datos obtenidos. Este aju
  Al incluir un término cuadrático en el modelo, pudimos capturar posibles curvaturas en los datos que un ajuste lineal no podría representar adecuadamente. Este enfoque nos
   proporcionó una visión más precisa del movimiento del trineo.
 
-\subsubsection*{Madera y Trineo}
+\subsubsection*{Consecuencia del cambio de masas}
 
-En un primer caso, dejamos que el trineo se deslizara sobre la superficie de una mesa de madera. Este experimento inicial nos permitió observar cómo la fricción de la madera
- afecta el movimiento del trineo.\\
+Al modificar la masa del trineo \textit{m} en nuestro experimento, observamos cambios significativos en la aceleración. En nuestros datos, al incrementar \textit{m}, las curvas de aceleración tienen una menor inclinacion, indicando una menor aceleración del trineo.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.44\linewidth]{ajuste2_PisoMaderaMPB_O.png}
-    \caption{$m = (243 \pm 1) g, M = (95 \pm 1) g$}
+    \includegraphics{ajuste2_PisoMaderaMPB_O.png}
+    \caption{Grafico de posicion del trineo sobre la mesa con \textit{M} = 72 y variando \textit{m}}
     \label{fig:M_OP piso trineo}
 \end{figure}
 
-Del ajuste cuadratico visto en la figura \ref{fig:M_OP piso trineo} obtenemos una ecuacion de la forma:
+Con esto podemos afirmar que la masa del trineo influye en la aceleración del sistema. A mayor masa, menor aceleración, debido a que es mas dificil de traccionar con la misma fuerza provocada por el peso de \textit{M}.
+
+A su vez, del ajuste cuadratico visto en la figura \ref{fig:M_OP piso trineo} obtenemos una ecuacion de la forma:
 
 \[
 pos(t) = (0.11 \pm 0.01) \frac{cm}{s^2} \cdot t^2 + (0.03 \pm 0.01) \frac{cm}{s} \cdot t + (-0.002 \pm 0.002) cm
 \]
 
-\subsubsection*{Papel y trineo}
+\subsubsection*{Consecuencias del cambio de superficie}
 
-Luego, cubrimos la superficie de la mesa con papel y repetimos el experimento. Esto nos permitió comparar cómo la fricción del papel afecta el movimiento del trineo en comparación con la madera.
+Para evaluar cómo diferentes superficies afectan el rendimiento del trineo, realizamos experimentos cubriendo la mesa con papel y comparando los resultados con los obtenidos sobre una superficie de madera. En la Figura \ref{fig:M_OP piso hoja}, se presentan las curvas de aceleración para ambas superficies con los mismos \textit{m} y \textit{M}. Observamos que la fricción del papel es mayor que la de la madera, lo que se refleja en una menor aceleración del trineo sobre el papel. Estos resultados demuestran que la elección de la superficie tiene un impacto directo en la dinámica del trineo, afectando su velocidad y eficiencia de movimiento en el contexto de nuestro experimento.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.44\linewidth]{ajuste2_PisoHojaM_OP.png}
-    \caption{$m = (243 \pm 1) g, M = (95 \pm 1) g$}
+    \includegraphics{ajuste2_PisoHojaM_OP.png}
+    \caption{$m = (161 \pm 1) g, M = (72 \pm 1) g$}
     \label{fig:M_OP piso hoja}
 \end{figure}
 
@@ -161,23 +140,6 @@ Del ajuste cuadratico visto en la figura \ref{fig:M_OP piso hoja} obtenemos una 
 
 \[
 pos(t) = (0.19 \pm 0.02) \frac{cm}{s^2} \cdot t^2 + (0.08 \pm 0.02)\frac{cm}{s} \cdot t + (-0.004 \pm 0.004) cm
-\]
-
-\subsubsection*{Papel y Papel}
-
-Por último, adherimos un papel adicional al trineo y repetimos el experimento. Esta variación nos permitió observar cómo la fricción entre dos superficies de papel afecta el movimiento del trineo, en comparación con las pruebas anteriores.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.44\linewidth]{ajuste2_PapelPapelM_O.png}
-    \caption{$m = (243 \pm 1) g, M = (72 \pm 1) g$}
-    \label{fig:M_O papel papel}
-\end{figure}
-
-Del ajuste cuadratico visto en la figura \ref{fig:M_O papel papel} obtenemos una ecuacion de la forma:
-
-\[
-pos(t) = (0.040 \pm 0.004) \frac{cm}{s^2} \cdot t^2 + (0.001 \pm 0.009) \frac{cm}{s} \cdot t + (-0.008 \pm 0.004) cm
 \]
 
 \subsection{Obtencion del $\mu_d$}

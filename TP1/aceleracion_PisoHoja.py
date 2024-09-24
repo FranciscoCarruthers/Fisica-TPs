@@ -20,23 +20,24 @@ def change_ms_to_s(ms):
     return ms
 
 
-ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/piso hoja/2PB_O-2.csv')
-ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/piso hoja/2PB_O-3.csv')
+ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/piso hoja/2PB_O-3.csv')
+ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/piso madera/2PB_O-3.csv')
+
+
+tiempo3 = change_ms_to_s(ms3[6:14]) - 0.7
+posicion3 = change_data_to_distance(sensor_data3[6:14]) - 15
+errores_y3 = np.full(len(posicion3), 0.44)
 
 tiempo2 = change_ms_to_s(ms2[4:13]) - 0.5
 posicion2 = change_data_to_distance(sensor_data2[4:13]) - 15
 errores_y2 = np.full(len(posicion2), 0.44)
-
-tiempo3 = change_ms_to_s(ms3[4:13]) - 0.5
-posicion3 = change_data_to_distance(sensor_data3[4:13]) - 15
-errores_y3 = np.full(len(posicion3), 0.44)
 
 # Definir la función cuadrática con v_0 = 0
 def modelo_cuadratico(t, a, v_0, x_0):
     return a * t**2 + v_0 * t +  x_0
 
 # ajustar las curvas
-popt2, pcov2 = curve_fit(modelo_cuadratico, tiempo2[:-1], posicion2[:-1], sigma=errores_y2[:-1], absolute_sigma=True)
+popt2, pcov2 = curve_fit(modelo_cuadratico, tiempo2, posicion2, sigma=errores_y2, absolute_sigma=True)
 popt3, pcov3 = curve_fit(modelo_cuadratico, tiempo3, posicion3, sigma=errores_y3, absolute_sigma=True)
 
 
@@ -62,12 +63,12 @@ t_ajuste3 = np.linspace(tiempo3.min(), tiempo3.max(), 100)
 plt.errorbar(tiempo3, posicion3, yerr=errores_y3, fmt='o', color = 'blue')
 
 # plt.plot(t_ajuste, modelo_cuadratico(t_ajuste, *popt), 'r', label=f'Ajuste cuadrático')
-plt.plot(t_ajuste2, modelo_cuadratico(t_ajuste2, *popt2), 'r', label=f'Ajuste cuadrático 1')
-plt.plot(t_ajuste3, modelo_cuadratico(t_ajuste3, *popt3), 'b', label=f'Ajuste cuadrático 2')
+plt.plot(t_ajuste2, modelo_cuadratico(t_ajuste2, *popt2), 'r', label=f'Ajuste cuadrático para trineo sobre papel')
+plt.plot(t_ajuste3, modelo_cuadratico(t_ajuste3, *popt3), 'b', label=f'Ajuste cuadrático para trineo sobre mesa')
 plt.xlabel('Tiempo [s]')
 plt.ylabel('Posición [cm]')
 plt.legend()
-plt.savefig('TP1/ajuste2_PisoHoja2PB_O.png')
+plt.savefig('TP1/ajuste2_PisoHojaM_OP.png')
 plt.show()
 
 # 'Fisica-TPs/TP1/Mediciones Fisica/piso hoja/M_OP.csv'
@@ -120,7 +121,7 @@ plt.plot(t_ajuste2, modelo_cuadratico(t_ajuste2, *popt2), 'r', label=f'Ajuste cu
 plt.xlabel('Tiempo [s]')
 plt.ylabel('Posición [cm]')
 plt.legend()
-plt.savefig('TP1/ajuste2_PisoHojaM_OP.png')
+
 plt.show()
 
 # 'Fisica-TPs/TP1/Mediciones Fisica/piso hoja/V_2P.csv'
