@@ -49,7 +49,7 @@ a_opt3, v_0_opt3, x_0_opt3 = popt3
 errores3 = np.sqrt(np.diag(pcov3))
 
 
-print(f"Aceleración a: {a_opt2:.2f} ± {errores2[0]:.2f} m /s^2")
+print(f"Aceleración a: {2*a_opt2:.2f} ± {errores2[0]:.2f} m /s^2")
 print(f"Velocidad inicial v_0: {v_0_opt2:.2f} ± {errores2[1]:.2f} m /s")
 print(f"Posición inicial x_0: {x_0_opt2:.2f} ± {errores2[2]:.2f}m")
 
@@ -79,8 +79,8 @@ tiempo2 = change_ms_to_s(ms2[14:26]) - 1.5
 posicion2 = change_data_to_distance(sensor_data2[14:26]) - 15
 errores_y2 = np.full(len(posicion2), 0.44)
 
-tiempo3 = change_ms_to_s(ms3[6:14]) - 0.7
-posicion3 = change_data_to_distance(sensor_data3[6:14]) - 15
+tiempo3 = change_ms_to_s(ms3[7:14]) - 0.8
+posicion3 = change_data_to_distance(sensor_data3[7:14]) - 15
 errores_y3 = np.full(len(posicion3), 0.44)
 
 # Definir la función cuadrática con v_0 = 0
@@ -101,9 +101,13 @@ a_opt3, v_0_opt3, x_0_opt3 = popt3
 errores3 = np.sqrt(np.diag(pcov3))
 
 
-print(f"Aceleración a: {a_opt2:.2f} ± {errores2[0]:.2f} m /s^2")
+print(f"Aceleración a rojo: {a_opt2:.2f} ± {errores2[0]:.2f} m /s^2")
 print(f"Velocidad inicial v_0: {v_0_opt2:.2f} ± {errores2[1]:.2f} m /s")
 print(f"Posición inicial x_0: {x_0_opt2:.2f} ± {errores2[2]:.2f}m")
+
+print(f"Aceleración a azul: {2*a_opt3:.2f} ± {errores3[0]:.2f} m /s^2")
+print(f"Velocidad inicial v_0: {v_0_opt3:.2f} ± {errores3[1]:.2f} m /s")
+print(f"Posición inicial x_0: {x_0_opt3:.2f} ± {errores3[2]:.2f}m")
 
 # Graficar los datos y el ajuste
 
@@ -152,7 +156,7 @@ errores2 = np.sqrt(np.diag(pcov2))
 a_opt3, v_0_opt3, x_0_opt3 = popt3
 errores3 = np.sqrt(np.diag(pcov3))
 
-print(f"Aceleración a: {a_opt2:.2f} ± {errores2[0]:.2f} m /s^2")
+print(f"Aceleración a: {2*a_opt2:.2f} ± {errores2[0]:.2f} m /s^2")
 print(f"Velocidad inicial v_0: {v_0_opt2:.2f} ± {errores2[1]:.2f} m /s")
 print(f"Posición inicial x_0: {x_0_opt2:.2f} ± {errores2[2]:.2f}m")
 

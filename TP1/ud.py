@@ -2,15 +2,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def get_dinamic_friction(mC, mG, a):
-    return (a * (mC + mG) + mC * 9.8 ) / (mG * 9.8)
+    return (a * (mC + mG) + mC * 9800 ) / (mG * 9800)
 
 ######## PapelPapel ########
 
 # M_O, M_OP, V_O
 
-ace1 = [3.91/100, 24.80/100, 87.20/100]
+ace1 = [3.91, 24.80, 87.20]
 print(np.mean(ace1))
-sigma_ace1 = [0.33/100, 4.80/100, 7.20/100]
+sigma_ace1 = [0.33, 4.80, 7.20]
 print(np.mean(sigma_ace1))
 m_chiquita1 = [72, 72 + 23, 72]
 M_grande1 = [109 + 134, 109 + 134, 109]
@@ -34,9 +34,9 @@ print(mG_mC1)
 
 # 2PB_O, M_OP, V_2P
 
-ace2 = [29.03/100, 18.84/100, 17.65/100]
+ace2 = [29.03, 18.84, 17.65]
 print(np.mean(ace2))
-sigma_ace2 = [3.39/100, 2.51/100, 2.51/100]
+sigma_ace2 = [3.39, 2.51, 2.51]
 print(np.mean(sigma_ace2))
 m_chiquita2 = [72, 72 + 23, 23*2]
 M_grande2 = [2*23 + 6 + 109, 109 + 134, 109]
@@ -61,9 +61,9 @@ print(mG_mC2)
 
 # 2PB_O, MPB_O, V_2P
 
-ace3 = [47.70/100, 10.81/100, 41.02/100]
+ace3 = [47.70, 10.81, 41.02]
 print(np.mean(ace3))
-sigma_ace3 = [3.39/100, 1.20/100, 2.51/100]
+sigma_ace3 = [3.39, 1.20, 2.51]
 print(np.mean(sigma_ace3))
 m_chiquita3 = [72, 72, 23*2]
 M_grande3 = [2*23 + 6 + 109, 109 + 134 + 23 + 6, 109 + 23*2]

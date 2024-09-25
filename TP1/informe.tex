@@ -22,7 +22,7 @@
 \maketitle
 
 \begin{abstract}
-    Se investigó el coeficiente de fricción dinámica entre un trineo y varias superficies utilizando un sistema de trineo, soga y polea. En primer lugar, se realizó una calibración previa del sistema, ajustando los sensores y asegurando que las lecturas de posición y tiempo fueran precisas. A continuación, se varió la masa del trineo y se midió la aceleración para calcular el coeficiente de fricción dinámica ($\mu_d$) en diferentes superficies. Las superficies evaluadas incluyeron el trineo sobre madera, trineo sobre papel y papel sobre papel. Los valores obtenidos para el $\mu_d$ fueron: 0.4 ± 0.1 para madera y trineo, 0.45 ± 0.03 para papel y trineo, y 0.5 ± 0.2 para papel y papel. [Los resultados demostraron que la superficie tiene un impacto significativo en la fricción dinámica del sistema.] CORREGIR
+    Se investigó el coeficiente de fricción dinámica entre un trineo y varias superficies utilizando un sistema de trineo, soga y polea. En primer lugar, se realizó una calibración previa del sistema, ajustando los sensores y asegurando que las lecturas de posición y tiempo fueran precisas. A continuación, se varió la masa del trineo y se midió la aceleración para calcular el coeficiente de fricción dinámica ($\mu_d$) en diferentes superficies. Las superficies evaluadas incluyeron el trineo sobre madera, trineo sobre papel y papel sobre papel. Los valores obtenidos para el $\mu_d$ fueron: 0.4 ± 0.1 para madera y trineo, 0.45 ± 0.03 para papel y trineo, y 0.5 ± 0.2 para papel y papel. A medida que incluimos mas papel en la friccion, el $\mu_d$ aumenta. Estos resultados sugieren que la textura del papel es mas rugosa que la madera pulida de la mesa.
 \end{abstract}
 
 \section{Introducción}
@@ -52,18 +52,25 @@ La determinación del $\mu_d$ es fundamental en la física aplicada, ya que afec
 
 Dispusimos de un sistema de trineo, soga, polea y sensor de posicion. El sistema se muestra en la Figura \ref{fig:system}. La masa del trineo y la masa total del sistema son variables, lo que nos permite explorar varias configuraciones para ver como las masas afectan al $\mu_d$.
 
-En primera instancia, nos propusimos calibrar el sensor. El sensor envia una señal, la cual rebota contra el trineo y vuelve al sensor. La señal es proporcional a la distancia entre el sensor y el trineo. La calibración consistió en determinar la pendiente y la ordenada al origen de la relación entre la señal y la distancia. Estos valores son necesarios para determinar la distancia recorrida por el trineo en función de la señal del sensor. Para ello, con una regla fuimos ubicando el trineo a distancias conocidas y anotamos la señal del sensor. Luego, ajustamos una recta a los datos obtenidos.
+Para adquirir datos usamos el microcontrolador Arduino Mega, al que le conectamos un
+sensor de posición de ultrasonido. Este aparato envía ondas sonoras desde el transmisor, que luego rebotan
+en un objeto y regresan al receptor. Se puede determinar qué tan lejos está algo por el tiempo que tardan las
+ondas sonoras en regresar al sensor.
+
+En primera instancia, nos propusimos calibrar el sensor. La señal es proporcional a la distancia entre el sensor y el trineo. La calibración consistió en determinar la pendiente y la ordenada al origen de la relación entre la señal y la distancia. Estos valores son necesarios para determinar la distancia recorrida por el trineo en función de la señal del sensor. Para ello, con una regla fuimos ubicando el trineo a distancias conocidas y anotamos la señal del sensor. Luego, ajustamos una recta a los datos obtenidos.
 
 Una vez calibrado el sensor, procedimos a realizar el experimento. Primero, colocamos el trineo sobre la mesa de madera y lo dejamos deslizar. Medimos la distancia recorrida por el trineo en función del tiempo. Este procedimiento lo repetimos para $m = 161 \pm 1 g$ y $M = 72 \pm 1 g$, $m = 243 \pm 1 g$ y $M = 95 \pm 1 g$ y $m = 109 \pm 1 g$ y $M = 46 \pm 1 g$. Con estos datos, haciendo un ajuste cuadratico, podemos determinar la aceleración del trineo. 
 Luego, repetimos el experimento pero pegandole un papel a la mesa. Usamos $m = 161 \pm 1 g$ y $M = 72 \pm 1 g$, $m = 243 \pm 1 g$ y $M = 95 \pm 1 g$ y $m = 109 \pm 1 g$ y $M = 46 \pm 1 g$. 
 Por ultimo, pegamos un papel al trineo y repetimos el experimento.
 
-Combinando esta ecuación con la expresión de la fuerza de fricción podemos deducir que la aceleración del trineo estará influenciada por el coeficiente de fricción y la masa total del sistema. Podemos despejar la formula como:
+Con los datos obtenidos, podemos calcular el $\mu_d$ para cada combinación de masas y superficies. Para ello, utilizamos la ecuación \ref{eq:mu_d}, donde $\vec{a}$ es la aceleración del trineo y $\vec{g}$ es la aceleración de la gravedad.
 
 \begin{equation}
     \mu_d = \frac{\vec{a} \cdot (M + m) + M \cdot \vec{g} }{m \cdot \vec{g}}
     \label{eq:mu_d}
 \end{equation}
+
+La aceleración de la gravedad esta dada por $9.8 m/s^2$ y la aceleración del trineo la obtenemos realizando un ajuste cuadratico a los datos de posicion obtenidos. Al realizar un ajuste cuadratico obtenemos una ecuacion del tipo $pos(t) = a \cdot t^2 + b \cdot t + c$. La aceleración es el doble del coeficiente de $t^2$.
 
 \section{Calibración}
 
@@ -101,7 +108,7 @@ Por otro lado, la ordenada al origen de -0.5 cm, con una incertidumbre de ±0.5 
 Registramos la distancia recorrida y el tiempo empleado para calcular la velocidad y la aceleración del trineo. Al tener estas mediciones, podemos evaluar cómo factores como la
  fricción influyen en el rendimiento del trineo en las diferentes superficies.
 
-Posteriormente, realizamos un ajuste cuadrático a los datos obtenidos. Este ajuste nos permitió analizar si una relación no lineal describe mejor el comportamiento del trineo.
+Posteriormente, realizamos un ajuste cuadrático a los datos obtenidos.
  Al incluir un término cuadrático en el modelo, pudimos capturar posibles curvaturas en los datos que un ajuste lineal no podría representar adecuadamente. Este enfoque nos
   proporcionó una visión más precisa del movimiento del trineo.
 
@@ -112,21 +119,19 @@ Al modificar la masa del trineo \textit{m} en nuestro experimento, observamos ca
 \begin{figure}[H]
     \centering
     \includegraphics{ajuste2_PisoMaderaMPB_O.png}
-    \caption{Grafico de posicion del trineo sobre la mesa con \textit{M} = 72 y variando \textit{m}}
+    \caption{Grafico de posicion del trineo deslizando sobre la mesa con \textit{M} = 72 y variando \textit{m}}
     \label{fig:M_OP piso trineo}
 \end{figure}
 
-Con esto podemos afirmar que la masa del trineo influye en la aceleración del sistema. A mayor masa, menor aceleración, debido a que es mas dificil de traccionar con la misma fuerza provocada por el peso de \textit{M}.
+Con esto podemos afirmar que la masa del trineo influye en la aceleración del sistema. A mayor masa, menor aceleración, debido a que es mas dificil de traccionar con la misma fuerza provocada por el peso de \textit{M}. 
 
-A su vez, del ajuste cuadratico visto en la figura \ref{fig:M_OP piso trineo} obtenemos una ecuacion de la forma:
+Como el hilo que usamos para tirar tiene masa despreciable y esta en tension todo el tiempo por lo que su longitud no varia signficativamente, podemos afirmar que lo contrario ocurre si aumentamos la masa de \textit{M}. A mayor masa de \textit{M}, mayor aceleración del sistema.
 
-\[
-pos(t) = (0.11 \pm 0.01) \frac{cm}{s^2} \cdot t^2 + (0.03 \pm 0.01) \frac{cm}{s} \cdot t + (-0.002 \pm 0.002) cm
-\]
+Del ajuste cuadratico visto en la figura \ref{fig:M_OP piso trineo} obtenemos las aceleraciones $(11 \pm 1) \frac{cm}{s^2}$ para $\textit{m} = (243 \pm 1) g$ y $(93 \pm 5) \frac{cm}{s^2}$ para $\textit{m} = (161 \pm 1) g$.
 
 \subsubsection*{Consecuencias del cambio de superficie}
 
-Para evaluar cómo diferentes superficies afectan el rendimiento del trineo, realizamos experimentos cubriendo la mesa con papel y comparando los resultados con los obtenidos sobre una superficie de madera. En la Figura \ref{fig:M_OP piso hoja}, se presentan las curvas de aceleración para ambas superficies con los mismos \textit{m} y \textit{M}. Observamos que la fricción del papel es mayor que la de la madera, lo que se refleja en una menor aceleración del trineo sobre el papel. Estos resultados demuestran que la elección de la superficie tiene un impacto directo en la dinámica del trineo, afectando su velocidad y eficiencia de movimiento en el contexto de nuestro experimento.
+Para evaluar cómo diferentes superficies afectan el rendimiento del trineo, realizamos experimentos cubriendo la mesa con papel y comparando los resultados con los obtenidos sobre una superficie de madera. En la Figura \ref{fig:M_OP piso hoja}, se presentan las curvas de aceleración para ambas superficies con los mismos \textit{m} y \textit{M}. Estos resultados demuestran que la elección de la superficie tiene un impacto directo en la dinámica del trineo, afectando su velocidad y eficiencia de movimiento en el contexto de nuestro experimento.
 
 \begin{figure}[H]
     \centering
@@ -135,12 +140,9 @@ Para evaluar cómo diferentes superficies afectan el rendimiento del trineo, rea
     \label{fig:M_OP piso hoja}
 \end{figure}
 
+Del ajuste cuadratico visto en la figura \ref{fig:M_OP piso hoja} obtenemos las aceleraciones $(26 \pm 2) \frac{cm}{s^2}$ para papel y $(46 \pm 5) \frac{cm}{s^2}$ para madera.
 
-Del ajuste cuadratico visto en la figura \ref{fig:M_OP piso hoja} obtenemos una ecuacion de la forma:
-
-\[
-pos(t) = (0.19 \pm 0.02) \frac{cm}{s^2} \cdot t^2 + (0.08 \pm 0.02)\frac{cm}{s} \cdot t + (-0.004 \pm 0.004) cm
-\]
+Observamos que la aceleracion del papel es menor que la de la madera. Viendo la ecuacion \ref{eq:mu_d}, para los mismos \textit{m} y \textit{M}, la aceleracion marca la diferencia del $\mu_d$, por lo que la friccion del papel es mayor que la de la madera de la mesa.
 
 \subsection{Obtencion del $\mu_d$}
 
@@ -152,9 +154,9 @@ Sacando un promedio de los valores obtenidos de la ecuacion \ref{eq:mu_d} usando
             \hline
             \textbf{Superficie} & \textbf{$\mu_d$}\\
             \hline
-            Madera y trineo & $0.4 \pm 0.1$\\
-            Papel y trineo & $0.45 \pm 0.03$ \\
-            Papel y Papel & $0.5 \pm 0.2$ \\
+            Madera y trineo & $0.3 \pm 0.08$\\
+            Papel y trineo & $0.42 \pm 0.02$ \\
+            Papel y Papel & $0.5 \pm 0.1$ \\
             \hline
         \end{tabular}
         \caption{Valores de $\mu_d$ y sus incertezas para cada superficie}

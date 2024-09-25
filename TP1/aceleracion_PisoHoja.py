@@ -24,8 +24,8 @@ ms2 , sensor_data2 = get_data_from_file('TP1/Mediciones Fisica/piso hoja/2PB_O-3
 ms3 , sensor_data3 = get_data_from_file('TP1/Mediciones Fisica/piso madera/2PB_O-3.csv')
 
 
-tiempo3 = change_ms_to_s(ms3[6:14]) - 0.7
-posicion3 = change_data_to_distance(sensor_data3[6:14]) - 15
+tiempo3 = change_ms_to_s(ms3[7:14]) - 0.8
+posicion3 = change_data_to_distance(sensor_data3[7:14]) - 15
 errores_y3 = np.full(len(posicion3), 0.44)
 
 tiempo2 = change_ms_to_s(ms2[4:13]) - 0.5
@@ -50,9 +50,9 @@ a_opt3, v_0_opt3, x_0_opt3 = popt3
 errores3 = np.sqrt(np.diag(pcov3))
 
 
-print(f"Aceleración a: {a_opt2:.2f} ± {errores2[0]:.2f} m /s^2")
-print(f"Velocidad inicial v_0: {v_0_opt2:.2f} ± {errores2[1]:.2f} m /s")
-print(f"Posición inicial x_0: {x_0_opt2:.2f} ± {errores2[2]:.2f}m")
+print(f"Aceleración rojo: {a_opt2:.2f} ± {errores2[0]:.2f} m /s^2")
+
+print(f"Aceleración azul: {a_opt3:.2f} ± {errores3[0]:.2f} m /s^2")
 
 # Graficar los datos y el ajuste
 
