@@ -1,0 +1,83 @@
+from operator import index
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+def get_data(file_path):
+    with open(file_path, 'r') as file:
+        t, r, theta = [], [], []
+        data = file.readlines()
+
+        # Ignorar las primeras 2 líneas
+        for line in data[2:]:
+            line = line.strip()
+            if line:  # Si la línea no está vacía
+                line = line.split(',')
+                t.append(float(line[0]))
+                r.append(float(line[1]))
+                theta.append(float(line[2]))
+
+        return t, r, theta
+
+def plot_trayectory(theta, angle):
+    plt.plot(theta, label=f"Ángulo inicial = {angle}°")
+    plt.xlabel('Tiempo (ms)')
+    plt.ylabel('Ángulo (°)')
+    plt.title('Ángulo vs Tiempo')
+    plt.legend()
+    plt.show()
+
+def plot_all_trayectories(thetas, angles=[10, 15, 25, 45, 60]):
+    # colors = ['r', 'b', 'g', 'y', 'm']
+    for i in range(len(thetas)):
+        plt.plot(thetas[i], label=f"Ángulo inicial = {angles[i]}°")
+    plt.xlabel('Tiempo (ms)')
+    plt.ylabel('Ángulo (°)')
+    plt.title('Ángulo vs Tiempo')
+    plt.legend()
+    plt.show()
+
+def plot_trayectory_based_lenght(thetas):
+    colors = ['r', 'b', 'g']
+    lengths = [15, 26, 41.9]
+    for theta in thetas:
+        plt.plot(theta, label=f"L = {lengths[thetas.index(theta)]} cm")
+    plt.xlabel('Tiempo (ms)')
+    plt.ylabel('Ángulo (°)')
+    plt.title('Ángulo vs Largo')
+    plt.legend()
+    plt.show()
+
+
+
+def main():
+    t10, r10, theta10 = get_data('tp2_fisica - angulo_10.csv')
+    t15, r15, theta15 = get_data('tp2_fisica - angulo_15.csv')
+    t25, r25, theta25 = get_data('tp2_fisica - caso_base.csv')
+    t45, r45, theta45 = get_data('tp2_fisica - angulo_45.csv')
+    t60, r60, theta60 = get_data('tp2_fisica - angulo_60.csv')
+
+    plot_trayectory(theta10[56:], 10)
+    plot_trayectory(theta15[86:], 15)
+    plot_trayectory(theta25[73:], 25)
+    plot_trayectory(theta45[99:], 45)
+    plot_trayectory(theta60, 60)
+
+    # print(theta60.index(max(theta60)))
+    # print(theta10.index(max(theta10)))
+    # print(theta15.index(max(theta15)))
+    # print(theta25.index(max(theta25)))
+    # print(theta45.index(max(theta45)))
+
+    plot_all_trayectories([theta10[56:306], theta15[86:336], theta25[73:326], theta45[99:349], theta60[:250]])
+
+    tl15, rl15, thetal15 = get_data('tp2_fisica - largo_15.csv')
+    tl26, rl26, thetal26 = get_data('tp2_fisica - largo_26.csv')
+
+    # print(thetal15.index(max(thetal15)))
+    # print(thetal26.index(max(thetal26)))
+
+    plot_trayectory_based_lenght([thetal15[46:], thetal26[51:], theta25[70:]])
+
+if __name__ == '__main__':
+    main()
