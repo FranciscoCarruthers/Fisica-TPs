@@ -40,7 +40,7 @@ def plot_all_trayectories(thetas, angles=[10, 15, 25, 45, 60]):
 
 def plot_trayectory_based_lenght(thetas):
     colors = ['r', 'b', 'black']
-    lengths = [15, 26, 41.9]
+    lengths = [15, 26, 42]
     for theta in thetas:
         theta_plot = theta[:250]
         plt.plot(theta_plot, label=f"L = {lengths[thetas.index(theta)]} cm", color=colors[thetas.index(theta)])
