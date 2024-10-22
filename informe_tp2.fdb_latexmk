@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1729632308.96039 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1729632309.66487 0
+["pdflatex"] 1729633566.54576 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1729633567.31591 0
   "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" 1729632308.75593 3438 a26f3399caecb69f3bb31508f9aa59bf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -133,11 +133,11 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1715637434.69241 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1715637080 8221425 1e78564c598dad7446ed1d069af6f381 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "angulos.png" 1729605779.83112 78691 2cfc3661b809c57a67368980acfa7b7e ""
-  "informe_tp2.aux" 1729632309.61019 1347 bcaa5b14c7ebbb1a0e5257623b519265 "pdflatex"
+  "angulos.png" 1729633565.98199 78691 f64a9a3305cdf9927ea506b9a1e5dae1 ""
+  "informe_tp2.aux" 1729633567.25449 1347 bcaa5b14c7ebbb1a0e5257623b519265 "pdflatex"
   "informe_tp2.tex" 1729632308.75593 3438 a26f3399caecb69f3bb31508f9aa59bf ""
-  "largo.png" 1729605781.3551 58015 60916dcc03ccfa9b14ec46c74d0a8eae ""
-  "peso.png" 1729605781.75663 57970 b7b640b469950c60407ea00e568e081d ""
+  "largo.png" 1729633565.98341 58015 b1604b538b39c51fd68b3eeb9ca6f791 ""
+  "peso.png" 1729633565.98466 57624 db786a5f86bd3fe7d319fb82a124acf5 ""
   (generated)
   "informe_tp2.aux"
   "informe_tp2.log"
