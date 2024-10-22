@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  22 OCT 2024 11:15
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  22 OCT 2024 18:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -459,21 +459,21 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 <angulos.png, id=4, 462.528pt x 346.896pt>
 File: angulos.png Graphic file (type png)
 <use angulos.png>
-Package pdftex.def Info: angulos.png  used on input line 41.
+Package pdftex.def Info: angulos.png  used on input line 61.
 (pdftex.def)             Requested size: 307.12207pt x 230.35475pt.
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<largo.png, id=17, 462.528pt x 346.896pt>
+<largo.png, id=20, 462.528pt x 346.896pt>
 File: largo.png Graphic file (type png)
 <use largo.png>
-Package pdftex.def Info: largo.png  used on input line 50.
+Package pdftex.def Info: largo.png  used on input line 70.
 (pdftex.def)             Requested size: 307.12207pt x 230.35475pt.
  [2 <./angulos.png>]
-<peso.png, id=23, 462.528pt x 346.896pt>
+<peso.png, id=25, 462.528pt x 346.896pt>
 File: peso.png Graphic file (type png)
 <use peso.png>
-Package pdftex.def Info: peso.png  used on input line 59.
+Package pdftex.def Info: peso.png  used on input line 79.
 (pdftex.def)             Requested size: 307.12207pt x 230.35475pt.
  [3 <./largo.png> <./peso.png>] [4] (./informe_tp2.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -489,18 +489,18 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 15538 strings out of 474116
- 320092 string characters out of 5743682
- 1928187 words of memory out of 5000000
- 37646 multiletter control sequences out of 15000+600000
+ 15545 strings out of 474116
+ 320237 string characters out of 5743682
+ 1932187 words of memory out of 5000000
+ 37653 multiletter control sequences out of 15000+600000
  564781 words of font info for 60 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,7n,93p,466b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on informe_tp2.pdf (4 pages, 271935 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on informe_tp2.pdf (4 pages, 282603 bytes).
 PDF statistics:
- 67 PDF objects out of 1000 (max. 8388607)
- 38 compressed objects within 1 object stream
+ 72 PDF objects out of 1000 (max. 8388607)
+ 41 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  28 words of extra memory for PDF output out of 10000 (max. 10000000)
 

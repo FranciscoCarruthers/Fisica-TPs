@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1729606512.4162 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1729606513.11164 0
-  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" 1729606512.21348 2137 a77c48b4179508baac0485f70d59b9e9 ""
+["pdflatex"] 1729631686.07421 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1729631686.77209 0
+  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" 1729631685.86257 2979 147fbd04cd4a43d9632f758469e690e0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -21,6 +21,7 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
+  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
@@ -131,8 +132,8 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1715637080 8221425 1e78564c598dad7446ed1d069af6f381 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "angulos.png" 1729605779.83112 78691 2cfc3661b809c57a67368980acfa7b7e ""
-  "informe_tp2.aux" 1729606513.06068 1240 1485b4f9c0295a53d9c59271ffa4c60a "pdflatex"
-  "informe_tp2.tex" 1729606512.21348 2137 a77c48b4179508baac0485f70d59b9e9 ""
+  "informe_tp2.aux" 1729631686.71812 1310 e5014c6adfe6b72fad633b306440ec0f "pdflatex"
+  "informe_tp2.tex" 1729631685.86257 2979 147fbd04cd4a43d9632f758469e690e0 ""
   "largo.png" 1729605781.3551 58015 60916dcc03ccfa9b14ec46c74d0a8eae ""
   "peso.png" 1729605781.75663 57970 b7b640b469950c60407ea00e568e081d ""
   (generated)
