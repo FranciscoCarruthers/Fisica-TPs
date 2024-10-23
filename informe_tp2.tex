@@ -39,6 +39,17 @@
 
 Vamos a ver como modificar el angulo inicial, la longitud de la soga y la masa de la bolita afectan el periodo del movimiento. Viendo la ecuacion \ref{eq:periodo} podemos ver que el periodo es independiente del angulo inicial y a la masa de la bolita. Sin embargo, si depende de la longitud de la soga. 
 
+De los datos obtenidos podemos encontrar una gravedad real del experimento, la cual es una modificacion de la conocida $g = 9.8 m/s^2$. Hay un cambio en la gravedad debido a la friccion del aire, la cual afecta el movimiento de la bolita y que ignoramos en este analisis.
+
+De la ecuacion \ref{eq:periodo} podemos despejar la gravedad:
+
+\begin{equation}
+    g = \frac{4 \pi^2 L}{T^2}
+    \label{eq:gravedad}
+\end{equation}
+
+Usando como datos $L = 42.0 \pm 0.1 cm$ y $T = 1.335 \pm 0.001 s$ obtenemos una gravedad de $g_{efectiva} = 9.30 \pm 0.03 m/s^2$.
+
 \section{Practica experimental}
 
 \begin{figure}[H]
@@ -58,7 +69,7 @@ Los errores que tuvimos en cuenta fueron los siguientes:
 
 \section{Seguimiento de la trayectoria}
 
-Usamos la aplicacion de \href{https://physlets.org/tracker/}{Tracker}
+Usamos la aplicacion de Tracker %\href{https://physlets.org/tracker/}{Tracker}
 
 \section{Resultados}
 
@@ -89,17 +100,6 @@ Se puede observar como el largo de la soga afecta la frecuencia del movimiento. 
     \label{fig:masa}
 \end{figure}
 
-Se puede observar como la masa de la bolita no afecta la frecuencia del movimiento.
-
-De todos estos datos podemos encontrar una gravedad real del experimento, la cual es una modificacion de la conocida $g = 9.8 m/s^2$. Hay un cambio en la gravedad debido a la friccion del aire, la cual afecta el movimiento de la bolita y que ignoramos en este analisis.
-
-De la ecuacion \ref{eq:periodo} podemos despejar la gravedad:
-
-\begin{equation}
-    g = \frac{4 \pi^2 L}{T^2}
-    \label{eq:gravedad}
-\end{equation}
-
-Usando como datos $L = 42.0 \pm 0.1 cm$ y $T = 1.335 \pm 0.001 s$ obtenemos una gravedad de $g_{efectiva} = 9.30 \pm 0.03 m/s^2$.
+Se puede observar como la masa de la bolita no afecta la frecuencia del movimiento excepto cuando la masa es chica. Esto se debe a en el experimento la soga no es perfectamente rigida, por lo que, al tener poca masa, el movimiento de la soga se deforma.
 
 \end{document}
