@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1729633865.68679 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1729633866.46878 2
+["pdflatex"] 1729633957.85263 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1729633958.67549 2
   "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex" 1729633864.59718 3677 da6f075cd31014ab1b54833226dda375 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
@@ -135,7 +135,7 @@
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "TP2/esquema.png" 1729633475.6603 184606 aa781651fd802dbcbb0d4ba00e0acd7b ""
   "angulos.png" 1729633565.98199 78691 f64a9a3305cdf9927ea506b9a1e5dae1 ""
-  "informe_tp2.aux" 1729633866.41236 1508 e849044d0acadb2b53e8fcfe2faaf7c6 "pdflatex"
+  "informe_tp2.aux" 1729633958.61064 1508 e849044d0acadb2b53e8fcfe2faaf7c6 "pdflatex"
   "informe_tp2.tex" 1729633864.59718 3677 da6f075cd31014ab1b54833226dda375 ""
   "largo.png" 1729633565.98341 58015 b1604b538b39c51fd68b3eeb9ca6f791 ""
   "peso.png" 1729633565.98466 57624 db786a5f86bd3fe7d319fb82a124acf5 ""
