@@ -15,7 +15,16 @@ def plot_all_trayectories(thetas, angles=[10, 15, 25, 45, 60]):
     for i in range (len(pequenas_x)):
         pequenas_y.append(-(angulo)*np.cos(w*pequenas_x[i]))
     
+    # Calculo de error cuadratico medio
+    errores = []
+    for i in range(len(thetas)):
+        error = 0
+        for j in range(len(thetas[i])):
+            error += (thetas[i][j] - pequenas_y[j])**2
+        errores.append(error)
+    print(f'Error cuadratico medio con angulo = {angulo}:', errores[0])
 
+    #Grafico
     for i in range(len(thetas)):
         plt.plot(thetas[i], label=f"Ángulo inicial = {angles[i]}°")
     plt.plot(pequenas_y, label='Pequeñas oscilaciones')
@@ -42,8 +51,8 @@ def main():
     # print(theta60.index(min(theta60)))
 
     # print(theta15[83])
-    print(theta45[89])
-    print(theta60[73])
+    # print(theta45[89])
+    # print(theta60[73])
 
     plot_all_trayectories([theta10[50:300]], [9.4])
     plot_all_trayectories([theta15[83:333]], [15.2])
