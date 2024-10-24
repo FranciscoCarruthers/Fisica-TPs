@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  23 OCT 2024 07:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  24 OCT 2024 19:31
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex
-(/Users/facu/Documents/UDESA/fisica/Fisica-TPs/informe_tp2.tex
+**/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex
+(/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
 (/usr/local/texlive/2024/texmf-dist/tex/latex/base/article.cls
@@ -372,14 +372,7 @@ File: l3backend-pdftex.def 2024-02-20 L3 backend support: PDF output (pdfTeX)
 LaTeX Warning: Unused global option(s):
     [a4].
 
-(./informe_tp2.aux
-LaTeX Info: Redefining \. on input line 8.
-LaTeX Info: Redefining \% on input line 8.
-
-
-LaTeX Warning: Label `fig:largo' multiply defined.
-
-)
+No file informe_tp2.aux.
 \openout1 = `informe_tp2.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
@@ -396,7 +389,6 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
 LaTeX Font Info:    ... okay on input line 20.
-
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
@@ -460,26 +452,42 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
 (Font)              for symbol `textbraceleft' on input line 22.
 
-<TP2/esquema.png, id=4, 764.8575pt x 589.20125pt>
-File: TP2/esquema.png Graphic file (type png)
-<use TP2/esquema.png>
-Package pdftex.def Info: TP2/esquema.png  used on input line 57.
-(pdftex.def)             Requested size: 307.12207pt x 236.58435pt.
+
+LaTeX Warning: Reference `eq:periodo' on page 1 undefined on input line 40.
+
+
+LaTeX Warning: Reference `eq:periodo' on page 1 undefined on input line 44.
+
+
+LaTeX Warning: File `TP2/esquema.png' not found on input line 57.
+
+
+/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex:57: Package pdftex.def Error: File `TP2/esquema.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.57 ...hics[width=0.6\linewidth]{TP2/esquema.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<angulos.png, id=22, 462.528pt x 346.896pt>
+<angulos.png, id=20, 462.528pt x 346.896pt>
 File: angulos.png Graphic file (type png)
 <use angulos.png>
 Package pdftex.def Info: angulos.png  used on input line 80.
 (pdftex.def)             Requested size: 307.12207pt x 230.35475pt.
- [2 <./TP2/esquema.png>]
-<largo.png, id=27, 462.528pt x 346.896pt>
+ [2]
+<largo.png, id=26, 722.7pt x 361.35pt>
 File: largo.png Graphic file (type png)
 <use largo.png>
 Package pdftex.def Info: largo.png  used on input line 89.
-(pdftex.def)             Requested size: 307.12207pt x 230.35475pt.
-<peso.png, id=28, 462.528pt x 346.896pt>
+(pdftex.def)             Requested size: 307.12207pt x 153.55794pt.
+<peso.png, id=27, 462.528pt x 346.896pt>
 File: peso.png Graphic file (type png)
 <use peso.png>
 Package pdftex.def Info: peso.png  used on input line 98.
@@ -497,22 +505,25 @@ L3 programming layer <2024-02-20>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 15553 strings out of 474116
- 320403 string characters out of 5743682
+ 15576 strings out of 474116
+ 320992 string characters out of 5743682
  1932187 words of memory out of 5000000
- 37661 multiletter control sequences out of 15000+600000
- 564781 words of font info for 60 fonts, out of 8000000 for 9000
+ 37685 multiletter control sequences out of 15000+600000
+ 565257 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,93p,466b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on informe_tp2.pdf (4 pages, 419728 bytes).
+ 84i,7n,93p,470b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on informe_tp2.pdf (4 pages, 311727 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 47 compressed objects within 1 object stream
+ 87 PDF objects out of 1000 (max. 8388607)
+ 50 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
