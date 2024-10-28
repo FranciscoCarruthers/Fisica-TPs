@@ -36,6 +36,9 @@ def get_avg_periodo_time(times, theta):
 def linear_func(x, a, b):
         return a * x + b
 
+def cuadratic_func(x, a, b, c):
+    return a * x**2 + b * x + c
+
 def get_gravedad_local(T, times, thetas):
     l = [0.15, 0.26, 0.42]
     T = []
@@ -57,27 +60,44 @@ def get_gravedad_local(T, times, thetas):
     print('Gravedad local:', gravedad)
     print('Error de la gravedad:', error_gravedad)
 
-def plot_trayectory(theta, angle):
-    plt.plot(theta, label=f"Ángulo inicial = {angle}°")
-    plt.xlabel('Tiempo (ms)')
-    plt.ylabel('Ángulo (°)')
-    plt.title('Ángulo vs Tiempo')
-    plt.legend()
-    plt.show()
+# def plot_trayectory(theta, angle):
+#     plt.plot(theta, label=f"Ángulo inicial = {angle}°")
+#     plt.xlabel('Tiempo (ms)')
+#     plt.ylabel('Ángulo (°)')
+#     plt.title('Ángulo vs Tiempo')
+#     plt.legend()
+#     plt.show()
 
-def plot_all_trayectories(thetas, angles=[10, 15, 25, 45, 60]):
+def plot_all_trayectories(times, thetas):
+    angles=[10, 15, 25, 45, 55]
     # colors = ['r', 'b', 'g', 'y', 'm']
-    for i in range(len(thetas)):
-        plt.plot(thetas[i], label=f"Ángulo inicial = {angles[i]}°")
+    plt.figure(figsize=(10, 5))
+    plt.subplot(1, 2, 1)
+    for theta in thetas:
+        theta_plot = theta[:175]
+        plt.plot(theta_plot, label=f"Ángulo inicial = {angles[thetas.index(theta)]}°")
     plt.xlabel('Tiempo (ms)')
     plt.ylabel('Ángulo (°)')
     # plt.title('Ángulo vs Tiempo')
-    plt.legend()
-    plt.savefig('angulos.png')
-    plt.show()
 
-def cuadratic_func(x, a, b, c):
-    return a * x**2 + b * x + c
+    plt.subplot(1, 2, 2)
+    w = []
+    for i in range(len(thetas)):
+        w.append(1/get_avg_periodo_time(times[i], thetas[i]))
+
+    # calcular bien el error en y para cada w --> chat gpt
+    params, p_cov = curve_fit(linear_func, angles, w, sigma=0.05*np.ones_like(w), absolute_sigma=True)
+    x = np.linspace(0, 60, 100)
+    plt.scatter(angles, w)
+    # plt.fill_between(x, cuadratic_func(x, params[0] + np.sqrt(p_cov[0, 0]), params[1] + np.sqrt(p_cov[1, 1]), params[2] + np.sqrt(p_cov[2, 2])), cuadratic_func(x, params[0] - np.sqrt(p_cov[0, 0]), params[1] - np.sqrt(p_cov[1, 1]), params[2] - np.sqrt(p_cov[2, 2])), color='tab:blue', alpha=0.5)
+    plt.plot(x, linear_func(np.array(x), *params))
+    plt.xlabel('Ángulo inicial (°)')
+    plt.ylabel('Frecuencia (Hz)')
+    # plt.title('Frecuencia vs Ángulo inicial')
+
+    plt.legend()
+    plt.savefig('TP2/angulos.png')
+    plt.show()
 
 def plot_trayectory_based_lenght(times, thetas):
     colors = ['r', 'b', 'black']
@@ -96,9 +116,13 @@ def plot_trayectory_based_lenght(times, thetas):
     for i in range(len(thetas)):
         w.append(1/get_avg_periodo_time(times[i], thetas[i]))
 
+    # calcular bien el error en y para cada w --> chat gpt
+
     params, p_cov = curve_fit(cuadratic_func, lengths, w, sigma=0.05*np.ones_like(w), absolute_sigma=True)
+    x = np.linspace(0, 0.5, 100)
     plt.scatter(lengths, w)
-    plt.plot(lengths, cuadratic_func(np.array(lengths), *params))
+    # plt.fill_between(x, cuadratic_func(x, params[0] + np.sqrt(p_cov[0, 0]), params[1] + np.sqrt(p_cov[1, 1]), params[2] + np.sqrt(p_cov[2, 2])), cuadratic_func(x, params[0] - np.sqrt(p_cov[0, 0]), params[1] - np.sqrt(p_cov[1, 1]), params[2] - np.sqrt(p_cov[2, 2])), color='tab:blue', alpha=0.5)
+    plt.plot(x, cuadratic_func(np.array(x), *params))   
     plt.xlabel('Largo (m)')
     plt.ylabel('Frecuencia (Hz)')
     # plt.title('Frecuencia vs Largo')
@@ -107,54 +131,64 @@ def plot_trayectory_based_lenght(times, thetas):
     plt.savefig('TP2/largo.png')
     plt.show()
 
-def plot_trayectory_based_weight(thetas):
+def plot_trayectory_based_weight(times, thetas):
     colors = ['r', 'b', 'black']
     weights = [5, 23, 72]
+    plt.figure(figsize=(10, 5))
+    plt.subplot(1, 2, 1)
     for theta in thetas:
         theta_plot = theta [:200]
         plt.plot(theta_plot, label=f"m = {weights[thetas.index(theta)]} g", color=colors[thetas.index(theta)])
     plt.xlabel('Tiempo (ms)')
     plt.ylabel('Ángulo (°)')
     # plt.title('Ángulo vs Peso')
+
+    plt.subplot(1, 2, 2)
+    w = []
+    for i in range(len(thetas)):
+        w.append(1/get_avg_periodo_time(times[i], thetas[i]))
+    
+    # calcular bien el error en y para cada w --> chat gpt
+    params, p_cov = curve_fit(linear_func, weights[1:], w[1:], sigma=0.05*np.ones_like(w[1:]), absolute_sigma=True)
+    x = np.linspace(0, 100, 100)
+    plt.scatter(weights, w)
+    # plt.fill_between(x, cuadratic_func(x, params[0] + np.sqrt(p_cov[0, 0]), params[1] + np.sqrt(p_cov[1, 1]), params[2] + np.sqrt(p_cov[2, 2])), cuadratic_func(x, params[0] - np.sqrt(p_cov[0, 0]), params[1] - np.sqrt(p_cov[1, 1]), params[2] - np.sqrt(p_cov[2, 2])), color='tab:blue', alpha=0.5)
+    plt.plot(x, linear_func(np.array(x), *params))   
+    plt.xlabel('Largo (m)')
+    plt.ylabel('Frecuencia (Hz)')
+    plt.ylim(0,1)
+    # plt.title('Frecuencia vs masa')
+
     plt.legend()
-    plt.savefig('peso.png')
+    plt.savefig('TP2/peso.png')
     plt.show()
 
 
 
 def main():
     t10, r10, theta10 = get_data('TP2/tp2_fisica - angulo_10.csv')
+    t10 = [a-1 for a in t10]
     t15, r15, theta15 = get_data('TP2/tp2_fisica - angulo_15.csv')
+    t15 = [a-1 for a in t15]
     t25, r25, theta25 = get_data('TP2/tp2_fisica - caso_base.csv')
     t25 = [a-1 for a in t25]
     t45, r45, theta45 = get_data('TP2/tp2_fisica - angulo_45.csv')
-    t60, r60, theta60 = get_data('TP2/tp2_fisica - angulo_60.csv')
+    t45 = [a-1 for a in t45]
+    t55, r55, theta55 = get_data('TP2/tp2_fisica - angulo_60.csv')
 
-    # plot_trayectory(theta10[56:], 10)
-    # plot_trayectory(theta15[86:], 15)
-    # plot_trayectory(theta25[73:], 25)
-    # plot_trayectory(theta45[99:], 45)
-    # plot_trayectory(theta60, 60)
-
-    # print(theta60.index(max(theta60)))
-    # print(theta10.index(max(theta10)))
-    # print(theta15.index(max(theta15)))
-    # print(theta25.index(max(theta25)))
-    # print(theta45.index(max(theta45)))
-
-    # plot_all_trayectories([theta10[56:306], theta15[86:336], theta25[73:326], theta45[99:349], theta60[:250]])
+    # plot_all_trayectories([t10,t15,t25,t45,t55],[theta10[2:], theta15[30:], theta25[7:], theta45[33:], theta55[:]])
 
     tl15, rl15, thetal15 = get_data('TP2/tp2_fisica - largo_15.csv')
     tl15 = [a-1 for a in tl15]
     tl26, rl26, thetal26 = get_data('TP2/tp2_fisica - largo_26.csv')
     tl26 = [a-1 for a in tl26]
 
-    plot_trayectory_based_lenght([tl15, tl26, t25], [thetal15[3:], thetal26[1:], theta25[7:]])
+    # plot_trayectory_based_lenght([tl15, tl26, t25], [thetal15[3:], thetal26[1:], theta25[7:]])
 
     tw5, rw5, thetaw5 = get_data('TP2/tp2_fisica - peso_madera.csv')
     tw72, rw72, thetaw72 = get_data('TP2/tp2_fisica - peso_oro.csv')
 
-    # plot_trayectory_based_weight([thetaw5[30:], theta25[70:], thetaw72[179:]])
+    # plot_trayectory_based_weight([tw5, t25, tw72],[thetaw5[2:], theta25[7:], thetaw72[9:]])
 
     # get_gravedad_local(1, [tl15, tl26, t25], [thetal15, thetal26, theta25])
 

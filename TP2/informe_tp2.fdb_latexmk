@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1729809111.85347 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1729809112.5466 2
-  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1729680796.71719 3858 3d6af67d4f2ac805fd240b1250008550 ""
+["pdflatex"] 1730125078.91134 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1730125079.7354 0
+  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1730125053.4065 3856 6269ee31340a6efa9ec5d63308af6ffd ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -19,7 +19,6 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm" 1136768653 1116 933a60c408fc0a863a92debe84b2d294 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm" 1136768653 1120 8b7d695260f3cff42e636090a8002094 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt10.tfm" 1136768653 768 1321e9409b4137d6fb428ac9dc956269 ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm" 1136768653 772 9a936b7f5e2ff0557fce0f62822f0bbf ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb" 1248133631 34811 78b52f49e893bcba91bd7581cdc144c0 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1248133631 32080 340ef9bf63678554ee606688e7b5339d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
@@ -31,7 +30,6 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb" 1248133631 31099 c85edf1dd5b9e826d67c9c7293b6786c ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb" 1248133631 24252 1e4e051947e12dfb50fee0b7f4e26e3a ""
   "/usr/local/texlive/2024/texmf-dist/tex/context/base/mkii/supp-pdf.mkii" 1461363279 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/babel-spanish/spanish.ldf" 1622145181 26965 3b6d1655ad716f98e788b1fb9f2e87b8 ""
   "/usr/local/texlive/2024/texmf-dist/tex/generic/babel/babel.sty" 1707339808 146276 10a40dabec03ce18494af0c3a51bcbdc ""
@@ -135,12 +133,12 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1715637434.69241 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1715637080 8221425 1e78564c598dad7446ed1d069af6f381 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "TP2/esquema.png" 0 -1 0 ""
-  "angulos.png" 1729803160.76577 78691 f64a9a3305cdf9927ea506b9a1e5dae1 ""
-  "informe_tp2.aux" 1729809112.48928 1508 5b6ce94a65edcaef06380cdddc0cd12e "pdflatex"
-  "informe_tp2.tex" 1729680796.71719 3858 3d6af67d4f2ac805fd240b1250008550 ""
-  "largo.png" 1729809110.65297 62786 a122c931652eed0ecfc6b6d78330472a ""
-  "peso.png" 1729803160.76657 57624 db786a5f86bd3fe7d319fb82a124acf5 ""
+  "angulos.png" 1730125064.08278 76640 7b024581b26165e4cadfa9ae5b1995f0 ""
+  "esquema.png" 1729633475.6603 184606 aa781651fd802dbcbb0d4ba00e0acd7b ""
+  "informe_tp2.aux" 1730125079.67926 1510 08735ed8043f9d6ef0b5bf85c19c1fc0 "pdflatex"
+  "informe_tp2.tex" 1730125053.4065 3856 6269ee31340a6efa9ec5d63308af6ffd ""
+  "largo.png" 1730123214.0449 63533 eaf3bc7d12a8a49ffa52f205ae2100d1 ""
+  "peso.png" 1730125078.52399 57867 fadb02b2bb1ebcdd649543093859dae6 ""
   (generated)
   "informe_tp2.aux"
   "informe_tp2.log"
