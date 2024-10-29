@@ -190,7 +190,7 @@ def main():
 
     # plot_trayectory_based_weight([tw5, t25, tw72],[thetaw5[2:], theta25[7:], thetaw72[9:]])
 
-    # get_gravedad_local(1, [tl15, tl26, t25], [thetal15, thetal26, theta25])
+    get_gravedad_local(1, [tl15, tl26, t25], [thetal15, thetal26, theta25])
 
 if __name__ == '__main__':
     main()
