@@ -54,11 +54,11 @@ def main():
     # print(theta45[89])
     # print(theta60[73])
 
-    plot_all_trayectories([theta10[50:300]], [9.4])
-    plot_all_trayectories([theta15[83:333]], [15.2])
-    plot_all_trayectories([theta25[70:320]], [25])
-    plot_all_trayectories([theta45[89:338]], [43])
-    plot_all_trayectories([theta60[73:310]], [52.4])
+    plot_all_trayectories([theta10[3:300]], [9.4])
+    plot_all_trayectories([theta15[31:333]], [15.2])
+    plot_all_trayectories([theta25[8:320]], [25])
+    plot_all_trayectories([theta45[30:338]], [43])
+    plot_all_trayectories([theta60[39:310]], [52.4])
         # [theta10[56:306]]), 
                             # theta15[86:336], theta25[73:326], theta45[99:349], theta60[:250]])
     

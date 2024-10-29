@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1730225946.60424 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1730225947.44406 0
-  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1730225946.31706 7568 ea95024d5c02eacd210c9fa80eabbfdd ""
+["pdflatex"] 1730234924.22066 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1730234925.1124 0
+  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1730234923.98721 8374 e33bf051b419efdc574c134597017956 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc" 1136849721 2900 1537cc8184ad1792082cd229ecc269f4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/jknappen/ec/tcrm1095.tfm" 1136768653 1536 02c06700a42be0f5a28664c7273f82e7 ""
@@ -28,11 +28,9 @@
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb" 1248133631 30251 6afa5cb1d0204815a708a080681d4674 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1248133631 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb" 1248133631 36741 fa121aac0049305630cf160b86157ee4 ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb" 1248133631 35469 70d41d2b9ea31d5d813066df7c99281c ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1248133631 32722 d7379af29a190c3f453aba36302ff5a9 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb" 1248133631 32362 179c33bbf43f19adbb3825bb4e36e57a ""
-  "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb" 1248133631 32734 69e00a6b65cedb993666e42eedb3d48f ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1248133631 32726 0a1aea6fcd6468ee2cf64d891f5c43c8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1248133631 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb" 1248133631 32626 4f5c1b83753b1dd3a97d1b399a005b4b ""
@@ -142,11 +140,11 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1715637434.69241 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1715637080 8221425 1e78564c598dad7446ed1d069af6f381 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "angulos.png" 1730125064.08278 76640 7b024581b26165e4cadfa9ae5b1995f0 ""
+  "angulos.png" 1730233874.11379 71743 34ce2d497a48bf5d08829366cff5f83c ""
   "esquema.png" 1730225726.40759 184389 9d8a5ceedaa09af8abc5a606f0bbc8fc ""
-  "gravedad.png" 1730225179.93089 19766 92aadeb23d74ccbf4448598679d0ed88 ""
-  "informe_tp2.aux" 1730225947.37913 1697 839a3b057ba6ef733de844cf6e776d28 "pdflatex"
-  "informe_tp2.tex" 1730225946.31706 7568 ea95024d5c02eacd210c9fa80eabbfdd ""
+  "gravedad.png" 1730232988.48628 19766 92aadeb23d74ccbf4448598679d0ed88 ""
+  "informe_tp2.aux" 1730234925.04549 1697 1b9f6e2314e1cfb5f936df80ec088cf1 "pdflatex"
+  "informe_tp2.tex" 1730234923.98721 8374 e33bf051b419efdc574c134597017956 ""
   "largo.png" 1730123214.0449 63533 eaf3bc7d12a8a49ffa52f205ae2100d1 ""
   "peso.png" 1730125078.52399 57867 fadb02b2bb1ebcdd649543093859dae6 ""
   (generated)

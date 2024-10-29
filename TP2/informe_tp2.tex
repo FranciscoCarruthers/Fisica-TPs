@@ -28,28 +28,31 @@
 
 \section{Introduccion}
 
+El estudio del péndulo simple ha sido fundamental en la comprensión de la dinámica oscilatoria y los principios físicos básicos que la rigen. A través de este experimento, se analizaron los efectos de variables clave, como el ángulo inicial, la longitud de la cuerda y la masa del péndulo, sobre el periodo de oscilación y la frecuencia angular. La ecuacion del periodo de un pendulo simple esta dada por:
+
 \begin{equation}
     T = 2 \pi \sqrt{\frac{L}{g}}
     \label{eq:periodo}
 \end{equation}
+
+La ecuacion \ref{eq:periodo} indica que este es independiente tanto de la masa del péndulo como de su ángulo inicial en el régimen de pequeñas oscilaciones, pero depende de la longitud de la cuerda.
+
+Asimismo, la frecuencia angular \(\omega\) se puede expresar en términos del periodo como:
 
 \begin{equation}
     \omega = \frac{1}{T}
     \label{eq:omega}
 \end{equation}
 
-Vamos a ver como modificar el angulo inicial, la longitud de la soga y la masa de la bolita afectan el periodo del movimiento. Viendo la ecuacion \ref{eq:periodo} podemos ver que el periodo es independiente del angulo inicial y a la masa de la bolita. Sin embargo, si depende de la longitud de la soga. 
+Esto sugiere que sugiere que, al reducir la longitud de la cuerda, la frecuencia angular aumentará, reflejando un ciclo de oscilación más rápido.
 
-De los datos obtenidos podemos encontrar una gravedad real del experimento, la cual es una modificacion de la conocida $g = 9.8 m/s^2$.
-
-De la ecuacion \ref{eq:periodo} podemos definir:
-
+A partir de las mediciones obtenidas, buscamos estimar una gravedad efectiva mediante el análisis de la pendiente en la gráfica de \( T^2 \) frente a la longitud \( L \), considerando que esta pendiente corresponde a:
 \begin{equation}
     T^2 = \frac{4 \pi^2}{g} L
     \label{eq:gravedad}
 \end{equation}
 
-Lo que nos deja a $\frac{4 \pi^2}{g}$ como la pendiente de la recta que se obtiene al graficar $T^2$ en funcion de $L$. Haciendo un ajuste lineal podemos encontrar la pendiente y, por lo tanto, la gravedad efectiva.
+Este enfoque permite no solo una estimación experimental de \( g \), sino también la evaluación de la precisión de nuestro sistema.
 
 \begin{figure}[H]
     \centering
@@ -58,7 +61,9 @@ Lo que nos deja a $\frac{4 \pi^2}{g}$ como la pendiente de la recta que se obtie
     \label{fig:gravedad}
 \end{figure}
 
-Despejando g de la pendiente de la recta obtenemos: $g = 9.5 \pm 0.6 m/s^2$
+Despejando g de la pendiente de la recta obtenemos: $g = 9.5 \pm 0.6 m/s^2$. Este parametro incluye a la gravedad real y a los errores de medicion del experimento.
+
+Este informe abordará el desarrollo experimental, los métodos de análisis de los datos y la discusión de los resultados, con el fin de proporcionar una comprensión detallada del comportamiento oscilatorio de un péndulo y su relación con los parámetros físicos involucrados.
 
 \section{Practica experimental}
 
@@ -90,7 +95,7 @@ Los errores que tuvimos en cuenta fueron los siguientes:
 
 \section{Seguimiento de la trayectoria}
 
-Usamos la aplicacion de Tracker %\href{https://physlets.org/tracker/}{Tracker}
+
 
 \section{Resultados}
 

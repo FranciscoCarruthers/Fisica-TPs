@@ -1,6 +1,5 @@
 from operator import index
 
-from arrow import get
 from scipy.optimize import curve_fit
 import numpy as np
 import matplotlib.pyplot as plt
@@ -24,13 +23,13 @@ def get_data(file_path):
 def get_avg_periodo_time(times, theta):
     p = []
     for i in range(len(theta)):
-        if abs(theta[i]) <= 1:
+        if abs(theta[i]) < 1:
             p.append(times[i])
     
     t = []
     for i in range(len(p)-2):
         t.append(p[i+2] - p[i])
-    
+    print(t)
     return np.mean(t)
 
 def linear_func(x, a, b):
@@ -91,10 +90,11 @@ def plot_all_trayectories(times, thetas):
     plt.scatter(angles, w)
     # plt.fill_between(x, cuadratic_func(x, params[0] + np.sqrt(p_cov[0, 0]), params[1] + np.sqrt(p_cov[1, 1]), params[2] + np.sqrt(p_cov[2, 2])), cuadratic_func(x, params[0] - np.sqrt(p_cov[0, 0]), params[1] - np.sqrt(p_cov[1, 1]), params[2] - np.sqrt(p_cov[2, 2])), color='tab:blue', alpha=0.5)
     plt.plot(x, linear_func(np.array(x), *params))
+    plt.errorbar(angles, w, yerr=0.01*np.ones_like(w), fmt='o', color='black')
     plt.xlabel('Ángulo inicial (°)')
     plt.ylabel('Frecuencia (Hz)')
     # plt.title('Frecuencia vs Ángulo inicial')
-
+    plt.ylim(0.6,0.9)
     plt.legend()
     plt.savefig('TP2/angulos.png')
     plt.show()
@@ -176,7 +176,7 @@ def main():
     t45 = [a-1 for a in t45]
     t55, r55, theta55 = get_data('TP2/tp2_fisica - angulo_60.csv')
 
-    # plot_all_trayectories([t10,t15,t25,t45,t55],[theta10[2:], theta15[30:], theta25[7:], theta45[33:], theta55[:]])
+    plot_all_trayectories([t10,t15,t25,t45,t55],[theta10[21:], theta15[48:], theta25[29:], theta45[56:], theta55[17:]])
 
     tl15, rl15, thetal15 = get_data('TP2/tp2_fisica - largo_15.csv')
     tl15 = [a-1 for a in tl15]
@@ -190,7 +190,7 @@ def main():
 
     # plot_trayectory_based_weight([tw5, t25, tw72],[thetaw5[2:], theta25[7:], thetaw72[9:]])
 
-    get_gravedad_local(1, [tl15, tl26, t25], [thetal15, thetal26, theta25])
+    # get_gravedad_local(1, [tl15, tl26, t25], [thetal15, thetal26, theta25])
 
 if __name__ == '__main__':
     main()
