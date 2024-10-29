@@ -77,6 +77,7 @@ def main():
     plt.xticks(angulos)
     plt.xlabel('Ángulo inicial (°)')
     plt.ylabel('Error cuadrático medio')
+    plt.savefig('TP2/peq_oscilaciones.png')
     plt.show()
     
 
