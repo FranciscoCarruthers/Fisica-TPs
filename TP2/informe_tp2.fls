@@ -226,6 +226,11 @@ INPUT ./esquema.png
 INPUT ./esquema.png
 INPUT ./esquema.png
 INPUT /usr/local/texlive/2024/texmf-dist/fonts/tfm/public/cm/cmti12.tfm
+INPUT ./tracker.png
+INPUT ./tracker.png
+INPUT ./tracker.png
+INPUT ./tracker.png
+INPUT ./tracker.png
 INPUT ./angulos.png
 INPUT ./angulos.png
 INPUT ./angulos.png
