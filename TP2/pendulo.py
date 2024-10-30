@@ -29,7 +29,7 @@ def get_avg_periodo_time(times, theta):
     t = []
     for i in range(len(p)-2):
         t.append(p[i+2] - p[i])
-    print(t)
+    
     return np.mean(t)
 
 def linear_func(x, a, b):
@@ -115,16 +115,18 @@ def plot_trayectory_based_lenght(times, thetas):
     w = []
     for i in range(len(thetas)):
         w.append(1/get_avg_periodo_time(times[i], thetas[i]))
-
+    print(w)
     # calcular bien el error en y para cada w --> chat gpt
 
     params, p_cov = curve_fit(cuadratic_func, lengths, w, sigma=0.05*np.ones_like(w), absolute_sigma=True)
     x = np.linspace(0, 0.5, 100)
     plt.scatter(lengths, w)
     # plt.fill_between(x, cuadratic_func(x, params[0] + np.sqrt(p_cov[0, 0]), params[1] + np.sqrt(p_cov[1, 1]), params[2] + np.sqrt(p_cov[2, 2])), cuadratic_func(x, params[0] - np.sqrt(p_cov[0, 0]), params[1] - np.sqrt(p_cov[1, 1]), params[2] - np.sqrt(p_cov[2, 2])), color='tab:blue', alpha=0.5)
-    plt.plot(x, cuadratic_func(np.array(x), *params))   
+    plt.plot(x, cuadratic_func(np.array(x), *params))  
+    plt.errorbar(lengths, w, yerr=0.01*np.ones_like(w), fmt='o', color='black')
     plt.xlabel('Largo (m)')
     plt.ylabel('Frecuencia (Hz)')
+    plt.ylim(0.7,1.5)
     # plt.title('Frecuencia vs Largo')
 
     plt.legend()
@@ -154,6 +156,7 @@ def plot_trayectory_based_weight(times, thetas):
     plt.scatter(weights, w)
     # plt.fill_between(x, cuadratic_func(x, params[0] + np.sqrt(p_cov[0, 0]), params[1] + np.sqrt(p_cov[1, 1]), params[2] + np.sqrt(p_cov[2, 2])), cuadratic_func(x, params[0] - np.sqrt(p_cov[0, 0]), params[1] - np.sqrt(p_cov[1, 1]), params[2] - np.sqrt(p_cov[2, 2])), color='tab:blue', alpha=0.5)
     plt.plot(x, linear_func(np.array(x), *params))   
+    plt.errorbar(weights, w, yerr=0.01*np.ones_like(w), fmt='o', color='black')
     plt.xlabel('Largo (m)')
     plt.ylabel('Frecuencia (Hz)')
     plt.ylim(0,1)
@@ -176,14 +179,14 @@ def main():
     t45 = [a-1 for a in t45]
     t55, r55, theta55 = get_data('TP2/tp2_fisica - angulo_60.csv')
 
-    plot_all_trayectories([t10,t15,t25,t45,t55],[theta10[21:], theta15[48:], theta25[29:], theta45[56:], theta55[17:]])
+    # plot_all_trayectories([t10,t15,t25,t45,t55],[theta10[21:], theta15[48:], theta25[29:], theta45[56:], theta55[17:]])
 
     tl15, rl15, thetal15 = get_data('TP2/tp2_fisica - largo_15.csv')
     tl15 = [a-1 for a in tl15]
     tl26, rl26, thetal26 = get_data('TP2/tp2_fisica - largo_26.csv')
     tl26 = [a-1 for a in tl26]
 
-    # plot_trayectory_based_lenght([tl15, tl26, t25], [thetal15[3:], thetal26[1:], theta25[7:]])
+    plot_trayectory_based_lenght([tl15, tl26, t25], [thetal15[3:], thetal26[1:], theta25[7:]])
 
     tw5, rw5, thetaw5 = get_data('TP2/tp2_fisica - peso_madera.csv')
     tw72, rw72, thetaw72 = get_data('TP2/tp2_fisica - peso_oro.csv')
