@@ -57,29 +57,44 @@ def main():
     # print(theta45[89])
     # print(theta60[73])
 
+    # Cálculo de errores cuadráticos medios (ejemplo basado en tu código)
     errores_cuadrarico_medio = []
     errores_cuadrarico_medio.append(plot_all_trayectories([theta10[1:251]], [9.4]))
     errores_cuadrarico_medio.append(plot_all_trayectories([theta15[28:278]], [15.2]))
     errores_cuadrarico_medio.append(plot_all_trayectories([theta25[8:258]], [25.3]))
     errores_cuadrarico_medio.append(plot_all_trayectories([theta45[32:282]], [43]))
     errores_cuadrarico_medio.append(plot_all_trayectories([theta60[0:250]], [53]))
-        # [theta10[56:306]]), 
-                            # theta15[86:336], theta25[73:326], theta45[99:349], theta60[:250]])
 
-    # bar chart de los errores cuadraticos medios
-    errores_cuadrarico_medio_2 = [0,errores_cuadrarico_medio[0], errores_cuadrarico_medio[1], errores_cuadrarico_medio[2], errores_cuadrarico_medio[4], 0]
-    params, p_cov = curve_fit(cuadratic_func, [0,10,15,25,55,360], errores_cuadrarico_medio_2, sigma=0.05*np.ones_like(errores_cuadrarico_medio_2), absolute_sigma=True)
+    # Preparación de datos de ajuste
+    errores_cuadrarico_medio_2 = [0, errores_cuadrarico_medio[0], errores_cuadrarico_medio[1], 
+                                errores_cuadrarico_medio[2], errores_cuadrarico_medio[4], 0]
+    params, p_cov = curve_fit(cuadratic_func, [0, 10, 15, 25, 55, 360], errores_cuadrarico_medio_2, 
+                            sigma=0.05 * np.ones_like(errores_cuadrarico_medio_2), absolute_sigma=True)
+
+    # Configuración de los ángulos
     angulos = [10, 15, 25, 45, 55]
-    plt.bar(angulos, errores_cuadrarico_medio)
+
+    # Gráfica de barras para los errores cuadráticos medios
+    plt.bar(angulos, errores_cuadrarico_medio, label="Datos experimentales")
+
+
+    # Configuración de la línea de ajuste cuadrático en rojo
     x = np.linspace(0, 60, 100)
+    plt.plot(x, cuadratic_func(x, *params), 'r-', label="Ajuste cuadrático")  # Línea en rojo con etiqueta
+
+    # Configuraciones del gráfico
     plt.ylim(0, 80)
-    plt.plot(x, cuadratic_func(np.array(x), *params))
     plt.xticks(angulos)
     plt.xlabel('Ángulo inicial (°)')
     plt.ylabel('Error cuadrático medio')
-    plt.savefig('TP2/peq_oscilaciones.png')
+    plt.legend()
+    plt.grid(True)  # Activar grid
+    plt.savefig('TP2/peq_oscilaciones.png')  # Guardar la imagen
     plt.show()
-    
+
+
+
+        
 
 
 if __name__ == '__main__':
