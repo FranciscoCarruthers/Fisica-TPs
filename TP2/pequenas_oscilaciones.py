@@ -76,14 +76,30 @@ def main():
 
     # Gráfica de barras para los errores cuadráticos medios
     plt.bar(angulos, errores_cuadrarico_medio, label="Datos experimentales")
-
+    plt.hlines(40, 0, 60, 'black', linestyle='-', label="Error máximo tolerado")  # Línea horizontal para el error máximo tolerado
 
     # Configuración de la línea de ajuste cuadrático en rojo
     x = np.linspace(0, 60, 100)
     plt.plot(x, cuadratic_func(x, *params), 'r-', label="Ajuste cuadrático")  # Línea en rojo con etiqueta
 
+    # Calcular la intersección entre el ajuste cuadrático y el error máximo tolerado (y = 40)
+    error_maximo = 40
+    # Resolución de la ecuación cuadrática: a * x^2 + b * x + (c - error_maximo) = 0
+    a, b, c = params
+    coeficientes = [a, b, c - error_maximo]
+    intersecciones = np.roots(coeficientes)
+
+    # Filtrar las soluciones reales que están en el rango del gráfico
+    intersecciones = [sol.real for sol in intersecciones if sol.imag == 0 and 0 <= sol.real <= 60]
+
+    # Agregar las líneas punteadas en las intersecciones
+    for interseccion in intersecciones:
+        plt.vlines(interseccion, 0, error_maximo, colors='gray', linestyles='--')  # Línea vertical punteada
+        plt.plot(interseccion, error_maximo, 'ko')  # Punto de intersección
+
     # Configuraciones del gráfico
     plt.ylim(0, 80)
+    plt.xlim(0, 60)
     plt.xticks(angulos)
     plt.xlabel('Ángulo inicial (°)')
     plt.ylabel('Error cuadrático medio')
@@ -91,10 +107,6 @@ def main():
     plt.grid(True)  # Activar grid
     plt.savefig('TP2/peq_oscilaciones.png')  # Guardar la imagen
     plt.show()
-
-
-
-        
 
 
 if __name__ == '__main__':
