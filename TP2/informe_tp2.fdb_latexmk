@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1730999492.13067 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1730999493.16058 0
-  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1730999492.05034 14009 7fbb74efe2a7633c837cfe5faf0a7646 ""
+["pdflatex"] 1731000736.4561 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1731000737.46922 0
+  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1731000735.89217 14348 46e384c39debc91ad93bd3ee51db98f1 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -144,10 +144,10 @@
   "angulos.png" 1730233874.11379 71743 34ce2d497a48bf5d08829366cff5f83c ""
   "esquema.png" 1730225726.40759 184389 9d8a5ceedaa09af8abc5a606f0bbc8fc ""
   "gravedad.png" 1730232988.48628 19766 92aadeb23d74ccbf4448598679d0ed88 ""
-  "informe_tp2.aux" 1730999493.09774 2060 f1e0d42c0aae46ef8e3830706ac1683c "pdflatex"
-  "informe_tp2.tex" 1730999492.05034 14009 7fbb74efe2a7633c837cfe5faf0a7646 ""
+  "informe_tp2.aux" 1731000737.40759 2060 4f4524059c67bd7e7fc9c531e8ce9e49 "pdflatex"
+  "informe_tp2.tex" 1731000735.89217 14348 46e384c39debc91ad93bd3ee51db98f1 ""
   "largo.png" 1730998097.10673 63380 09818691edca8f2264724623ae101de2 ""
-  "peq_oscilaciones.png" 1730999067.02125 28139 563fd25fbbf18883abb10929d567b022 ""
+  "peq_oscilaciones.png" 1731000669.64174 31957 de3c3b159b9d0e7f67a2519a3f41a984 ""
   "peso.png" 1730125078.52399 57867 fadb02b2bb1ebcdd649543093859dae6 ""
   "tracker.png" 1730237343.13756 1040428 5acb928fdff79a76f429227949867d66 ""
   (generated)
