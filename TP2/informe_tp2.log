@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  7 NOV 2024 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  8 NOV 2024 20:50
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -375,10 +375,6 @@ LaTeX Warning: Unused global option(s):
 (./informe_tp2.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
-
-
-LaTeX Warning: Label `eq:omega' multiply defined.
-
 )
 \openout1 = `informe_tp2.aux'.
 
@@ -463,53 +459,49 @@ LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
 [1
 
 {/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+lasy on input line 53.
- (/usr/local/texlive/2024/texmf-dist/tex/latex/base/ulasy.fd
-File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
 <esquema.png, id=21, 727.71875pt x 570.13pt>
 File: esquema.png Graphic file (type png)
 <use esquema.png>
-Package pdftex.def Info: esquema.png  used on input line 72.
+Package pdftex.def Info: esquema.png  used on input line 59.
 (pdftex.def)             Requested size: 307.12207pt x 240.6187pt.
- [2] [3 <./esquema.png>]
-<tracker.png, id=32, 586.19pt x 625.33624pt>
+ [2 <./esquema.png>]
+<tracker.png, id=27, 586.19pt x 625.33624pt>
 File: tracker.png Graphic file (type png)
 <use tracker.png>
-Package pdftex.def Info: tracker.png  used on input line 104.
+Package pdftex.def Info: tracker.png  used on input line 91.
 (pdftex.def)             Requested size: 204.74673pt x 218.41295pt.
 
-Overfull \hbox (20.23589pt too wide) in paragraph at lines 99--106
+Overfull \hbox (20.23589pt too wide) in paragraph at lines 86--93
 []$[]$ $[]$ 
  []
 
-[4 <./tracker.png>]
-<gravedad.png, id=37, 462.528pt x 346.896pt>
+[3] [4 <./tracker.png>]
+<gravedad.png, id=36, 462.528pt x 346.896pt>
 File: gravedad.png Graphic file (type png)
 <use gravedad.png>
-Package pdftex.def Info: gravedad.png  used on input line 121.
+Package pdftex.def Info: gravedad.png  used on input line 108.
 (pdftex.def)             Requested size: 307.12207pt x 230.35475pt.
-<largo.png, id=38, 722.7pt x 361.35pt>
+<largo.png, id=37, 722.7pt x 361.35pt>
 File: largo.png Graphic file (type png)
 <use largo.png>
-Package pdftex.def Info: largo.png  used on input line 132.
+Package pdftex.def Info: largo.png  used on input line 119.
 (pdftex.def)             Requested size: 307.12207pt x 153.55794pt.
  [5 <./gravedad.png>]
-<peso.png, id=43, 722.7pt x 361.35pt>
+<peso.png, id=44, 722.7pt x 361.35pt>
 File: peso.png Graphic file (type png)
 <use peso.png>
-Package pdftex.def Info: peso.png  used on input line 141.
-(pdftex.def)             Requested size: 307.12207pt x 153.55794pt.
-<angulos.png, id=44, 722.7pt x 361.35pt>
-File: angulos.png Graphic file (type png)
-<use angulos.png>
-Package pdftex.def Info: angulos.png  used on input line 152.
+Package pdftex.def Info: peso.png  used on input line 128.
 (pdftex.def)             Requested size: 307.12207pt x 153.55794pt.
  [6 <./largo.png> <./peso.png>]
-<peq_oscilaciones.png, id=50, 462.528pt x 346.896pt>
+<angulos.png, id=50, 722.7pt x 361.35pt>
+File: angulos.png Graphic file (type png)
+<use angulos.png>
+Package pdftex.def Info: angulos.png  used on input line 139.
+(pdftex.def)             Requested size: 307.12207pt x 153.55794pt.
+<peq_oscilaciones.png, id=51, 462.528pt x 346.896pt>
 File: peq_oscilaciones.png Graphic file (type png)
 <use peq_oscilaciones.png>
-Package pdftex.def Info: peq_oscilaciones.png  used on input line 171.
+Package pdftex.def Info: peq_oscilaciones.png  used on input line 158.
 (pdftex.def)             Requested size: 307.12207pt x 230.35475pt.
  [7 <./angulos.png>] [8 <./peq_oscilaciones.png>] [9] (./informe_tp2.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -523,20 +515,17 @@ L3 programming layer <2024-02-20>
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 15615 strings out of 474116
- 321640 string characters out of 5743682
- 1934187 words of memory out of 5000000
- 37718 multiletter control sequences out of 15000+600000
- 565817 words of font info for 64 fonts, out of 8000000 for 9000
+ 15591 strings out of 474116
+ 321115 string characters out of 5743682
+ 1937187 words of memory out of 5000000
+ 37698 multiletter control sequences out of 15000+600000
+ 565711 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,7n,93p,1324b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb>
-Output written on informe_tp2.pdf (9 pages, 1305858 bytes).
+</usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on informe_tp2.pdf (9 pages, 1310096 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  71 compressed objects within 1 object stream
