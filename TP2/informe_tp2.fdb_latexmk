@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1731109815.98465 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1731109817.00542 0
-  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1731109815.76084 15168 21d1118fe98392bd776095100da720c5 ""
+["pdflatex"] 1731947037.80702 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1731947038.69808 0
+  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1731947037.56139 15660 9d58b5ca8e1779eee81d25ef8f6df5d4 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -140,14 +140,14 @@
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1715637080 8221425 1e78564c598dad7446ed1d069af6f381 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
   "angulos.png" 1731107812.19727 72296 e2b127cf84842b10ece78f86c0123082 ""
-  "esquema.png" 1730225726.40759 184389 9d8a5ceedaa09af8abc5a606f0bbc8fc ""
+  "esquema.png" 1731943241.20844 72068 98aee6835c9cc0956aeeaca264aa4065 ""
   "gravedad.png" 1731108272.87671 25217 0f8406a790d27139ff1eab3618f9d826 ""
-  "informe_tp2.aux" 1731109816.94164 2419 9f501f3e8a1db443f8167d807b48f229 "pdflatex"
-  "informe_tp2.tex" 1731109815.76084 15168 21d1118fe98392bd776095100da720c5 ""
+  "informe_tp2.aux" 1731947038.63514 2697 6bd9e65082b9fe67533a8119fd7f3993 "pdflatex"
+  "informe_tp2.tex" 1731947037.56139 15660 9d58b5ca8e1779eee81d25ef8f6df5d4 ""
   "largo.png" 1731108042.24034 64823 fe6c8e01e0dac6e6135702951b67466f ""
+  "pendulo_frente.png" 1731941967.82135 62385 aa0f97b8b5ad66b661cbe6c4669be9fb ""
   "peq_oscilaciones.png" 1731104976.33426 31957 b647b12754e5a14053bfb1a514cf7fdf ""
   "peso.png" 1731108813.69023 63535 37b25abf8b2bb649d3ae8ad5635c3bde ""
-  "tracker.png" 1730237343.13756 1040428 5acb928fdff79a76f429227949867d66 ""
   (generated)
   "informe_tp2.aux"
   "informe_tp2.log"
