@@ -7,6 +7,7 @@
 \usepackage{float} %Para posicionar figuras
 \usepackage{graphicx} %Para poder poner figuras
 \usepackage{tikz}
+\usepackage{subcaption}
 \usetikzlibrary{positioning}
 \usetikzlibrary{shapes.geometric, decorations.pathreplacing}
 
@@ -166,7 +167,9 @@ Se puede observar como el largo de la soga afecta la frecuencia del movimiento. 
     \label{fig:masa}
 \end{figure}
 
-En la Figura \ref{fig:masa} se puede observar como la masa de la bolita no afecta la frecuencia del movimiento. Esto tiene sentido con los conocimientos teóricos ya que la frecuencia no depende de la masa sino del largo de la soga. Por ende la dependencia lineal que se observa en la frecuencia tiene sentido, por otro lado, esta no es completamente lineal ya que en el experimento la soga no es perfectamente rígida. 
+En la Figura \ref{fig:masa} se observa cómo la frecuencia del movimiento parece depender de la masa de la bolita. Sin embargo, teóricamente, para pequeñas oscilaciones en un péndulo simple ideal, la frecuencia no debería depender de la masa, ya que viene determinada únicamente por la longitud de la soga y la gravedad.
+
+La tendencia observada en el experimento puede deberse a que la soga no es perfectamente rígida, lo que introduce una dependencia con la masa debido a deformaciones o tensiones adicionales. Esto podría explicar la desviación de la teoría ideal en los resultados experimentales.
 
 Luego, variamos los ángulos iniciales dejando fijo la masa en ($23 \pm 1) g$ y largo de la soga en ($42.0 \pm 0.1) cm$ para poder analizar la suposición de pequeñas oscilaciones. Para los distintos ángulos iniciales se obtuvieron los siguientes resultados:
 
@@ -186,6 +189,21 @@ Para determinar el rango de ángulos en el cual se cumple la aproximación de pe
 \]
 
 Donde $y_i$ es la posición de la masa en el tiempo $i$ medida experimentalmente y $\hat{y}_i$ es la posición de la masa en el tiempo $i$ calculada mediante la aproximación de pequeñas oscilaciones.
+\begin{figure}[H]
+    \centering
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{peq_osc_10.png}
+    \end{minipage}%
+    \begin{minipage}{0.5\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{peq_osc_55.png}
+    \end{minipage}
+    \caption{Comparacion entre datos obtenidos y su prediccion teorica correspondiente para angulos iniciales de $10^\circ$ y $55^\circ$.}
+    \label{fig:comparacion_angulos}
+\end{figure}
+
+En la Figura \ref{fig:comparacion_angulos} se puede observar que para el ángulo de $10^\circ$ la aproximación de pequeñas oscilaciones es válida, mientras que para el ángulo de $55^\circ$ la aproximación no lo es, ya que no aproxima lo suficientemente bien a la prediccion teorica.
 
 El valor del ECM se presenta en la Figura \ref{fig:pequeñas_oscilaciones}, donde se observa cómo varía con el ángulo inicial.
 
