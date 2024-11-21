@@ -37,7 +37,7 @@ def main():
     theta_theory_15 = theoretical_oscillation(15, t_theory, L=L_nominal)
     theta_theory_25 = theoretical_oscillation(25, t_theory, L=L_nominal)
     theta_theory_45 = theoretical_oscillation(45, t_theory, L=L_nominal)
-    theta_theory_60 = theoretical_oscillation(60, t_theory, L=L_nominal)
+    theta_theory_60 = theoretical_oscillation(55, t_theory, L=L_nominal)
 
     # Calcular errores normalizados
     error_10 = interpolate_and_calculate_error(t10, theta10, t_theory, theta_theory_10)
@@ -47,7 +47,7 @@ def main():
     error_60 = interpolate_and_calculate_error(t60, theta60, t_theory, theta_theory_60)
 
     # Calcular incertezas en el error por ángulo y longitud
-    angles = np.array([10, 15, 25, 45, 60])
+    angles = np.array([10, 15, 25, 45, 55])
     errors = np.array([error_10, error_15, error_25, error_45, error_60])
     uncertainty_angle = (errors / angles) * d_angle
     uncertainty_length = (errors / L_nominal) * d_L
@@ -56,7 +56,7 @@ def main():
     # Gráfico de dispersión con barras de error
     plt.figure(figsize=(8, 5))
     plt.errorbar(angles, errors, yerr=total_uncertainty, fmt='o', color='blue', label='Errores normalizados con incertezas')
-    plt.axhline(40, color='red', linestyle='--', label='Error máximo tolerado (40%)')  # Línea de error máximo tolerado
+    plt.axhline(30, color='red', linestyle='--', label='Error máximo tolerado (30%)')  # Línea de error máximo tolerado
 
     # Configuración del gráfico
     plt.xlabel('Ángulo inicial (°)', fontsize=12)
