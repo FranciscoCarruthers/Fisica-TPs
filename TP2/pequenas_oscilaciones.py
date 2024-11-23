@@ -25,7 +25,7 @@ def plot_all_trayectories(thetas, angles=[10, 15, 25, 45, 60]):
         errores = error / len(thetas[i])
     print(f'Error cuadratico medio con angulo = {angulo}:', errores)
 
-    #Grafico
+    # Grafico
     # for i in range(len(thetas)):
     #     plt.plot(thetas[i], label=f"Ángulo inicial = {angles[i]}°")
     # plt.plot(pequenas_y, label='Pequeñas oscilaciones')
@@ -39,6 +39,28 @@ def plot_all_trayectories(thetas, angles=[10, 15, 25, 45, 60]):
 
 def cuadratic_func(x, a, b, c):
     return a * x**2 + b * x + c
+
+def plot_real_vs_theory(thetas, angles=[10, 15, 25, 45, 60]):
+    # colors = ['r', 'b', 'g', 'y', 'm']
+    w = (1/(2*np.pi * np.sqrt(41.9/9.8)))
+    pequenas_x = np.linspace(0, 250, 250)
+    pequenas_y = []
+    angulo = angles[0]
+    for i in range (len(pequenas_x)):
+        pequenas_y.append(-(angulo)*np.cos(w*pequenas_x[i]))
+    
+    # Grafico
+    for i in range(len(thetas)):
+        plt.plot(thetas[i], label=f"Ángulo inicial = 10°")
+    plt.plot(pequenas_y, label='Predicción teórica')
+    plt.xlabel('Tiempo (ms)')
+    plt.ylabel('Ángulo (°)')
+    # plt.title('Ángulo vs Tiempo')
+    plt.legend()
+    plt.show()
+    
+
+
 
 def main():
     t10, r10, theta10 = get_data('TP2/tp2_fisica - angulo_10.csv')
@@ -107,6 +129,12 @@ def main():
     plt.grid(True)  # Activar grid
     plt.savefig('TP2/peq_oscilaciones.png')  # Guardar la imagen
     plt.show()
+
+    # Gráfico de comparación entre los datos experimentales y la teoría
+
+    plot_real_vs_theory([theta10[1:251]], [9.4])
+
+
 
 
 if __name__ == '__main__':

@@ -80,6 +80,7 @@ def plot_all_trayectories(times, thetas):
         plt.plot(times_plot, theta_plot, label=f"Ángulo inicial = {angles[thetas.index(theta)]}°")
     plt.xlabel('Tiempo (s)')
     plt.ylabel('Ángulo (°)')
+    plt.legend()
     # plt.title('Ángulo vs Tiempo')
 
     plt.subplot(1, 2, 2)
@@ -142,39 +143,43 @@ def plot_trayectory_based_weight(times, thetas):
     colors = ['r', 'b', 'black']
     weights = [5, 23, 72]
     plt.figure(figsize=(10, 5))
+    
+    # Plot 1: Trajectories
     plt.subplot(1, 2, 1)
     for idx, theta in enumerate(thetas):
         theta_plot = theta[:200]  # Limit the data to the first 200 points
         times_plot = times[idx][:200]
-        plt.plot(times_plot, theta_plot,label=f"m = {weights[idx]} g", color=colors[idx])
+        plt.plot(times_plot, theta_plot, label=f"m = ({weights[idx]} ± 1) g", color=colors[idx])
+        
+        # Scatter the maximum point
+        max_idx = np.argmax(theta_plot)
+        plt.scatter(times_plot[max_idx], theta_plot[max_idx], color=colors[idx], s=50, zorder=5)
+    
     plt.xlabel('Tiempo (s)')
     plt.ylabel('Ángulo (°)')
     plt.legend()
-    plt.xlim(-0.1,3.3)
+    plt.xlim(-0.1, 3.3)
     # plt.title('Ángulo vs Peso')
 
+    # Plot 2: Linear adjustment of frequencies vs weights
     plt.subplot(1, 2, 2)
     w = []
     for i in range(len(thetas)):
-        w.append(1/get_avg_periodo_time(times[i], thetas[i]))
-    print(w)
-    
-    # calcular bien el error en y para cada w --> chat gpt
-    params, p_cov = curve_fit(linear_func, weights, w, sigma=0.05*np.ones_like(w), absolute_sigma=True)
+        w.append(1 / get_avg_periodo_time(times[i], thetas[i]))
+
+    params, p_cov = curve_fit(linear_func, weights, w, sigma=0.05 * np.ones_like(w), absolute_sigma=True)
     x = np.linspace(0, 100, 100)
-    plt.scatter(weights, w)
-    # plt.fill_between(x, cuadratic_func(x, params[0] + np.sqrt(p_cov[0, 0]), params[1] + np.sqrt(p_cov[1, 1]), params[2] + np.sqrt(p_cov[2, 2])), cuadratic_func(x, params[0] - np.sqrt(p_cov[0, 0]), params[1] - np.sqrt(p_cov[1, 1]), params[2] - np.sqrt(p_cov[2, 2])), color='tab:blue', alpha=0.5)
-    plt.plot(x, linear_func(np.array(x), *params))   
-    plt.errorbar(weights, w, yerr=0.02*np.ones_like(w), fmt='o', color='black')
+    plt.scatter(weights, w, label='Datos experimentales', color='blue')
+    plt.plot(x, linear_func(np.array(x), *params), label='Ajuste lineal', color='red')
+    plt.errorbar(weights, w, yerr=0.02 * np.ones_like(w), fmt='o', color='black')
+    
     plt.xlabel('Masa (g)')
     plt.ylabel('Frecuencia (Hz)')
-    plt.ylim(0,1)
+    plt.ylim(0, 1)
     # plt.title('Frecuencia vs masa')
-
     plt.legend()
     plt.savefig('TP2/peso.png')
     plt.show()
-
 
 
 def main():
@@ -188,7 +193,7 @@ def main():
     t45 = [a-1 for a in t45]
     t55, r55, theta55 = get_data('TP2/tp2_fisica - angulo_60.csv')
 
-    # plot_all_trayectories([t10,t15,t25,t45,t55],[theta10[21:], theta15[48:], theta25[29:], theta45[56:], theta55[17:]])
+    plot_all_trayectories([t10,t15,t25,t45,t55],[theta10[21:], theta15[48:], theta25[29:], theta45[56:], theta55[17:]])
 
     tl15, rl15, thetal15 = get_data('TP2/tp2_fisica - largo_15.csv')
     tl15 = [a-1 for a in tl15]
