@@ -46,7 +46,7 @@ def get_gravedad_local(T, times, thetas):
 
     params, p_cov = curve_fit(linear_func, l, T, sigma=0.05*np.ones_like(T), absolute_sigma=True)
     plt.scatter(l, T)
-    plt.plot(l, linear_func(np.array(l), 4*np.pi**2/9.8, 0), label='Recta real')
+    plt.plot(l, linear_func(np.array(l), 4*np.pi**2/9.8, 0), label='Recta usando g=9.8')
     plt.plot(l, linear_func(np.array(l), *params), label='Ajuste lineal')
     plt.errorbar(l, T, yerr=0.04*np.ones_like(T), fmt='o', color='black')
     plt.xlabel('Largo (m)')
@@ -195,14 +195,14 @@ def main():
     tl26, rl26, thetal26 = get_data('TP2/tp2_fisica - largo_26.csv')
     tl26 = [a-1 for a in tl26]
 
-    # plot_trayectory_based_lenght([tl15, tl26, t25], [thetal15[16:], thetal26[16:], theta25[28:]])
+    plot_trayectory_based_lenght([tl15, tl26, t25], [thetal15[16:], thetal26[16:], theta25[28:]])
 
     tw5, rw5, thetaw5 = get_data('TP2/tp2_fisica - peso_madera.csv')
     tw5 = [a-0.5 for a in tw5]
     tw72, rw72, thetaw72 = get_data('TP2/tp2_fisica - peso_oro.csv')
     tw72 = [a-0.5 for a in tw72]
 
-    plot_trayectory_based_weight([tw5[14:], t25, tw72[30:]],[thetaw5[14:], theta25[28:], thetaw72[30:]])
+    # plot_trayectory_based_weight([tw5[14:], t25, tw72[30:]],[thetaw5[14:], theta25[28:], thetaw72[30:]])
 
     # get_gravedad_local(1, [tl15, tl26, t25], [thetal15, thetal26, theta25])
 
