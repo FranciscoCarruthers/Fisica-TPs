@@ -53,6 +53,7 @@ def main():
     uncertainty_length = (errors / L_nominal) * d_L
     total_uncertainty = np.sqrt(uncertainty_angle**2 + uncertainty_length**2)
 
+
     # Gráfico de dispersión con barras de error
     plt.figure(figsize=(8, 5))
     plt.errorbar(angles, errors, yerr=total_uncertainty, fmt='o', color='blue', label='Errores normalizados con incertezas')
