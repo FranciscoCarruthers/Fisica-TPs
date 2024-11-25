@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1732453568.2162 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1732453569.22212 0
-  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1732453567.9342 18443 71164f751fea8726f242d70bef859eaf ""
+["pdflatex"] 1732497141.17479 "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" "informe_tp2.pdf" "informe_tp2" 1732497142.1767 0
+  "/Users/facu/Documents/UDESA/fisica/Fisica-TPs/TP2/informe_tp2.tex" 1732497139.58953 18511 ce954fae9d85aefedc1a987fc43d2366 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2024/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1246382020 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -146,8 +146,8 @@
   "errores_normalizados_incertezas.png" 1732372276.28296 41721 f8c4db394b19713e33bc38e3f9af27d3 ""
   "esquema.png" 1731943241.20844 72068 98aee6835c9cc0956aeeaca264aa4065 ""
   "gravedad.png" 1732370843.06601 26644 6dda467f952105044e07318f4145ae63 ""
-  "informe_tp2.aux" 1732453569.15811 3081 8cb7ef673a76ea0d47df322609ac3864 "pdflatex"
-  "informe_tp2.tex" 1732453567.9342 18443 71164f751fea8726f242d70bef859eaf ""
+  "informe_tp2.aux" 1732497142.11153 3086 22ba83d422410059a8a5f346ec9ad616 "pdflatex"
+  "informe_tp2.tex" 1732497139.58953 18511 ce954fae9d85aefedc1a987fc43d2366 ""
   "largo.png" 1732370926.00438 64808 044edfade7c0f07ebe4d8d87b7e9a369 ""
   "pendulo_frente.png" 1731941967.82135 62385 aa0f97b8b5ad66b661cbe6c4669be9fb ""
   "peq_osc_10.png" 1732371909.75507 48656 cb6c1842965c4c0b82460610647f4cc1 ""

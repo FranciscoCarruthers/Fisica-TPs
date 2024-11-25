@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  24 NOV 2024 10:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.13)  24 NOV 2024 22:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -496,45 +496,44 @@ File: esquema.png Graphic file (type png)
 <use esquema.png>
 Package pdftex.def Info: esquema.png  used on input line 109.
 (pdftex.def)             Requested size: 307.12207pt x 236.16457pt.
- [3] [4 <./esquema.png>]
-<gravedad.png, id=37, 462.528pt x 346.896pt>
+ [3] [4 <./esquema.png>] [5]
+<gravedad.png, id=40, 462.528pt x 346.896pt>
 File: gravedad.png Graphic file (type png)
 <use gravedad.png>
-Package pdftex.def Info: gravedad.png  used on input line 159.
+Package pdftex.def Info: gravedad.png  used on input line 160.
 (pdftex.def)             Requested size: 307.12207pt x 230.35475pt.
- [5]
 <largo.png, id=41, 722.7pt x 361.35pt>
 File: largo.png Graphic file (type png)
 <use largo.png>
-Package pdftex.def Info: largo.png  used on input line 170.
+Package pdftex.def Info: largo.png  used on input line 171.
 (pdftex.def)             Requested size: 307.12207pt x 153.55794pt.
-<peso.png, id=42, 722.7pt x 361.35pt>
+ [6 <./gravedad.png>]
+<peso.png, id=47, 722.7pt x 361.35pt>
 File: peso.png Graphic file (type png)
 <use peso.png>
-Package pdftex.def Info: peso.png  used on input line 179.
+Package pdftex.def Info: peso.png  used on input line 180.
 (pdftex.def)             Requested size: 307.12207pt x 153.55794pt.
- [6 <./gravedad.png> <./largo.png>]
-<angulos.png, id=49, 722.7pt x 361.35pt>
+ [7 <./largo.png> <./peso.png>]
+<angulos.png, id=54, 722.7pt x 361.35pt>
 File: angulos.png Graphic file (type png)
 <use angulos.png>
-Package pdftex.def Info: angulos.png  used on input line 192.
+Package pdftex.def Info: angulos.png  used on input line 193.
 (pdftex.def)             Requested size: 307.12207pt x 153.55794pt.
- [7 <./peso.png>]
 <peq_osc_10.png, id=55, 462.528pt x 346.896pt>
 File: peq_osc_10.png Graphic file (type png)
 <use peq_osc_10.png>
-Package pdftex.def Info: peq_osc_10.png  used on input line 210.
+Package pdftex.def Info: peq_osc_10.png  used on input line 211.
 (pdftex.def)             Requested size: 255.93245pt x 191.95259pt.
 <peq_osc_55.png, id=56, 462.528pt x 346.896pt>
 File: peq_osc_55.png Graphic file (type png)
 <use peq_osc_55.png>
-Package pdftex.def Info: peq_osc_55.png  used on input line 214.
+Package pdftex.def Info: peq_osc_55.png  used on input line 215.
 (pdftex.def)             Requested size: 255.93245pt x 191.95259pt.
  [8 <./angulos.png>]
 <errores_normalizados_incertezas.png, id=61, 578.16pt x 361.35pt>
 File: errores_normalizados_incertezas.png Graphic file (type png)
 <use errores_normalizados_incertezas.png>
-Package pdftex.def Info: errores_normalizados_incertezas.png  used on input line 226.
+Package pdftex.def Info: errores_normalizados_incertezas.png  used on input line 227.
 (pdftex.def)             Requested size: 307.12207pt x 191.95016pt.
  [9 <./peq_osc_10.png> <./peq_osc_55.png> <./errores_normalizados_incertezas.png>] [10] (./informe_tp2.aux
 LaTeX Info: Redefining \. on input line 8.
@@ -558,7 +557,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  84i,9n,93p,1382b,365s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on informe_tp2.pdf (10 pages, 582371 bytes).
+Output written on informe_tp2.pdf (10 pages, 582303 bytes).
 PDF statistics:
  134 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream

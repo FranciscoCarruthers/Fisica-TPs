@@ -27,7 +27,7 @@
     El objetivo principal fue registrar y caracterizar su trayectoria, determinar el rango angular donde se cumplen las condiciones de pequeñas oscilaciones, calcular la frecuencia de oscilación y estimar la gravedad efectiva. 
     Primero, se mantuvo una longitud fija de cuerda, variando los ángulos iniciales con diferentes masas, y luego se analizó cómo la longitud de la cuerda afecta el movimiento al fijar el ángulo y la masa. 
     La gravedad efectiva obtenida fue de $(9.5 \pm 0.6) \text{m/s}^2$ que tiene sentido ya que incluye a la gravedad real. 
-    Además, evaluamos la influencia de los parámetros sobre la frecuencia de oscilación ($\omega$) del péndulo, concluyendo que, aunque la masa no altera la frecuencia, la longitud sí lo hace con una relacion cuadratica. 
+    Además, evaluamos la influencia de los parámetros sobre la frecuencia de oscilación ($\omega$) del péndulo, concluyendo que, aunque la masa no altera la frecuencia, la longitud sí lo hace con una relación cuadrática. 
     Finalmente, se identificó el rango de ángulos donde se cumplen pequeñas oscilaciones, siendo de aproximadamente ángulos menores a $25^\circ$.
 
 \end{abstract}
@@ -45,9 +45,9 @@ Para esto, utilizamos un enfoque experimental basado en grabaciones de video y u
 Con estos datos, pudimos calcular parámetros como la frecuencia angular y el periodo de oscilación, y compararlos con las predicciones teóricas. 
 El objetivo principal fue entender cómo se comporta un péndulo real frente a las expectativas del modelo ideal, considerando también los errores en las mediciones.
 
-\section{Marco teorico}
+\section{Marco teórico}
 
-El pendulo se modela de la siguiente forma:
+El péndulo simple se modela de la siguiente forma:
 
 \begin{figure}[H]
     \centering
@@ -71,7 +71,7 @@ Para pequeñas oscilaciones, podemos aproximar $sin(\phi) \approx \phi$ y obtene
 
 Donde $A$ y $\varphi$ son determinados por las condiciones iniciales. 
 En nuestro caso, $\dot{\phi}(t=0) = 0$ y $\phi(t=0) = \phi_0$. 
-Por otro lado, $\omega$ , la frecuencia de un péndulo simple, esta dada por:
+Por otro lado, $\omega$ , la frecuencia de un péndulo simple, está dada por:
 
 \begin{equation}
     \omega = \sqrt{\frac{g}{L}}
@@ -85,12 +85,12 @@ Por otro lado, $\omega$ , la frecuencia de un péndulo simple, esta dada por:
 
 Esta ecuación asume que el péndulo oscila en el régimen de pequeñas oscilaciones. 
 Donde podemos definir que $sin(\phi) \approx \phi$ para ángulos pequeños. 
-En la practica intentamos verificar esta aproximación y encontrar hasta que $\phi$ se cumple al variar los ángulos iniciales y comparando el movimiento con el esperado.
+En la práctica intentamos verificar esta aproximación y encontrar hasta que $\phi$ se cumple al variar los ángulos iniciales y comparando el movimiento con el esperado.
 
 La ecuación \ref{eq:omega} indica que este es independiente tanto de la masa del péndulo como de su ángulo inicial en el régimen de pequeñas oscilaciones, pero depende de la longitud de la cuerda. 
 Esto sugiere que, al reducir la longitud de la cuerda, la frecuencia angular aumentará, reflejando un ciclo de oscilación más rápido.
 
-Por otro lado, las mediciones tienen errores asociados, por lo que es importante tener en cuenta estos errores al analizar los resultados experimentales. Para ello, usamos la siguiente formula de propagacion de errores:
+Por otro lado, las mediciones tienen errores asociados, por lo que es importante tener en cuenta estos errores al analizar los resultados experimentales. Para ello, usamos la siguiente fórmula de propagación de errores:
 
 \begin{equation} \label{eq:propagacion}
     \Delta f = \sqrt{\left( \frac{\partial f}{\partial x_1} \Delta x_1 \right)^2 + \left( \frac{\partial f}{\partial x_2} \Delta x_2 \right)^2 + \dots + \left( \frac{\partial f}{\partial x_n} \Delta x_n \right)^2}
@@ -102,7 +102,7 @@ Siendo f la función que depende de las variables $x_i$ y $\Delta x_i$ el error 
 
 Para poder estudiar el movimiento de la masa en el péndulo simple, se realizó un experimento en el cual se variaron los parámetros del sistema, como la longitud de la soga, la masa de la bolita y el ángulo inicial.
 Se filmaron los movimientos de la masa y se analizaron los videos para obtener datos sobre la posición de la masa en función del tiempo.
-El pendulo se armo como el visto en la Figura \ref{fig:pendulo} al cual se le coloco una camara para poder seguir el movimiento de la masa.
+El péndulo se armó como el visto en la Figura \ref{fig:pendulo} al cual se le colocó una cámara para poder seguir el movimiento de la masa.
 
 \begin{figure}[H]
     \centering
@@ -119,20 +119,20 @@ Para obtener una referencia de distancia, colocamos una cinta métrica en el fon
 Una vez construido el sistema, procedimos con el experimento. Hicimos 9 mediciones en total, variando la longitud de la soga, la masa de la bolita y el ángulo inicial.
 
 Primero, para estudiar la dependencia de la frecuencia de oscilación con respecto a la longitud de la soga, mantuvimos una masa constante de $(23 \pm 1) \, \text{g}$ y un ángulo inicial de $(25 \pm 2)^\circ$ y variamos la longitud de la soga con valores entre 
-42 y 15 cm donde el error de los largos esta dado por la medicion minima de la cinta metrica usada siendo esta de $\pm 0.1 cm$.
+42 y 15 cm donde el error de los largos está dado por la medición mínima de la cinta métrica usada siendo esta de $\pm 0.1 cm$.
 
 Luego, para estudiar la dependencia de la frecuencia de oscilación con respecto a la masa, mantuvimos una longitud fija de $(42.0 \pm 0.1) \, \text{cm}$ y un ángulo inicial de $(25 \pm 2)^\circ$ y variamos la masa con valores entre 
-5 y 72 g donde el error asociado a las masas se define por la unidad minima mostrada por la balanza usada siendo esta de $\pm 1 g$.
+5 y 72 g donde el error asociado a las masas se define por la unidad mínima mostrada por la balanza usada siendo esta de $\pm 1 g$.
 
 Para estudiar la dependencia de la frecuencia de oscilación con respecto al ángulo inicial, mantuvimos una longitud fija de $(42.0 \pm 0.1) \, \text{cm}$ y una masa de $(23 \pm 1) \, \text{g}$ y variamos los ángulos iniciales con valores entre 
-$55^\circ$ y $10^\circ$ donde el error de cada angulo se consigue con la formula de propagacion de errores. 
-Teniendo en cuenta que usamos: $sin(\phi) = \frac{opuesto}{hipotenusa}$ para definir el $\phi_0$, el error de $\phi$, usando la ecuacion \ref{eq:propagacion}, se calcula como:
+$55^\circ$ y $10^\circ$ donde el error de cada ángulo se consigue con la formula de propagación de errores. 
+Teniendo en cuenta que usamos: $sin(\phi) = \frac{opuesto}{hipotenusa}$ para definir el $\phi_0$, el error de $\phi$, usando la ecuación \ref{eq:propagacion}, se calcula como:
 
 \begin{equation}
     \Delta \phi = \sqrt{\left( \frac{\partial \phi}{\partial (\text{opuesto})} \Delta (\text{opuesto}) \right)^2 + \left( \frac{\partial \phi}{\partial (\text{hipotenusa})} \Delta (\text{hipotenusa}) \right)^2}
 \end{equation}
 
-Donde $\Delta (\text{opuesto}) = 1 cm$ por nuestro error al medir la distancia entre la posicion inicial de la masa y la barra del pendulo,
+Donde $\Delta (\text{opuesto}) = 1 cm$ por nuestro error al medir la distancia entre la posición inicial de la masa y la barra del péndulo,
  y $\Delta (\text{hipotenusa}) = 0.1 cm$.
 
 Para seguir la trayectoria descargamos los videos de los experimentos y los abrimos en el programa \textit{Tracker}. 
@@ -140,19 +140,20 @@ Luego, seleccionamos la masa y seguimos su trayectoria en función del tiempo us
 También, definimos un sistema de coordenadas polares con el origen en el inicio de la soga. 
 Para determinar distancias en el video, colocamos una cinta métrica en el fondo de la escena y calibramos el programa para que pueda determinar distancias en el video. 
 El seguimiento de la masa en el programa no es perfecto, por lo que se observan errores en la trayectoria obtenida.
-El programa al seguir a la masa, no siempre esta centrado en el centro de la masa por lo que a la posicion de la masa se le debe agregar un error adicional de 1 cm (el radio de la masa) tanto verticalmente como horizontalmente.
+El programa al seguir a la masa, no siempre está centrado en el centro de la masa por lo que a la posición de la masa se le debe agregar un error adicional de 1 cm (el radio de la masa) tanto verticalmente como horizontalmente.
 
-A partir de las mediciones obtenidas, buscamos estimar una gravedad efectiva mediante el análisis de la pendiente en la gráfica de \( T^2 \) frente a la longitud \( L \) que se puede obtener de la ecuacion \ref{eq:periodo}, considerando que esta pendiente corresponde a:
+A partir de las mediciones obtenidas, buscamos estimar una gravedad efectiva mediante el análisis de la pendiente en la gráfica de \( T^2 \) frente a la longitud \( L \) que se puede obtener de la ecuación \ref{eq:periodo}, considerando que esta pendiente corresponde a:
 \begin{equation}
     T^2 = \frac{4 \pi^2}{g} L
     \label{eq:gravedad}
 \end{equation}
 
 Este enfoque permite no solo una estimación experimental de \( g \), sino también la evaluación de la precisión de nuestro sistema. 
-
+\newpage
 \section{Resultados}
 
-Para la obtencion de la gravedad local se realizo un ajuste lineal de la ecuacion \ref{eq:gravedad} teniendo en cuenta que T y L tienen errores asociados en la propagación de errores al calcular la gravedad efectiva.
+Para la obtención de la gravedad local se realizo un ajuste lineal de la ecuación \ref{eq:gravedad}. 
+Para calcular la incerteza utilizamos la ecuación \ref{eq:propagacion} teniendo en cuenta los errores que T y L tienen asociados.
 
 \begin{figure}[H]
     \centering
@@ -161,7 +162,7 @@ Para la obtencion de la gravedad local se realizo un ajuste lineal de la ecuacio
     \label{fig:gravedad}
 \end{figure}
 
-Despejando g de la pendiente dada en la ecuacion \ref{eq:gravedad} la recta obtenemos: $g = 9.5 \pm 0.6 m/s^2$. Este parámetro incluye a la gravedad real y a los errores de medición del experimento. Se puede observar que el valor obtenido es consistente con el valor teórico esperado de $9.8 m/s^2$ en la recta azul que tiene una pendiente de $\frac{4\pi^2}{9.8}$.
+Despejando g de la pendiente dada en la ecuación \ref{eq:gravedad} la recta obtenemos: $g = 9.5 \pm 0.6 m/s^2$. Este parámetro incluye a la gravedad real y a los errores de medición del experimento. Se puede observar que el valor obtenido es consistente con el valor teórico esperado de $9.8 m/s^2$ en la recta azul que tiene una pendiente de $\frac{4\pi^2}{9.8}$.
 
 A continuación, analizamos la relación entre el periodo de oscilación y la longitud de la soga. Dejando fijos la masa ($23 \pm 1) g$ y el angulo inicial ($25 \pm 1) ^\circ$ obteniendo los siguientes resultados:
 
@@ -172,8 +173,8 @@ A continuación, analizamos la relación entre el periodo de oscilación y la lo
     \label{fig:largo}
 \end{figure}
 
-Se puede observar como el largo de la soga afecta la frecuencia del movimiento. A mayor largo, menor frecuencia. Esto se debe a que la bolita recorre una mayor distancia. Sabemos que la longitud de arco esta definida como $d = r \phi$, donde $d$ es la longitud de arco, que es la distancia que recorre la bolita a lo largo de su trayectoria circular, y $r$ es el radio del círculo, que en este caso es la longitud de la soga hasta la bolita; por lo que a mayor longitud de soga, mayor longitud de arco recorre la bolita. 
-Se observa que la amplitud también es afectada por el largo de la soga que no concuerda con la ecuacion teorica y esto se atribuye a que la soga usada no es inexestensible. Aunque fueron lanzadas desde el mismo angulo inicial, el largo de la soga afecto en la velocidad en la que se perdio amplitud del movimiento.
+Se puede observar como el largo de la soga afecta la frecuencia del movimiento. A mayor largo, menor frecuencia. Esto se debe a que la bolita recorre una mayor distancia. Sabemos que la longitud de arco está definida como $d = r \phi$, donde $d$ es la longitud de arco, que es la distancia que recorre la bolita a lo largo de su trayectoria circular, y $r$ es el radio del círculo, que en este caso es la longitud de la soga hasta la bolita; por lo que a mayor longitud de soga, mayor longitud de arco recorre la bolita. 
+Se observa que la amplitud también es afectada por el largo de la soga que no concuerda con la ecuación teórica y esto se atribuye a que la soga usada no es inexestensible. Aunque fueron lanzadas desde el mismo angulo inicial, el largo de la soga afecto en la velocidad en la que se perdió amplitud del movimiento.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\linewidth]{peso.png}
@@ -213,11 +214,11 @@ Donde $y_i$ es la posición de la masa en el tiempo $i$ medida experimentalmente
         \centering
         \includegraphics[width=\textwidth]{peq_osc_55.png}
     \end{minipage}
-    \caption{Comparacion entre datos obtenidos y su prediccion teorica correspondiente para angulos iniciales de $10^\circ$ y $55^\circ$.}
+    \caption{Comparación entre datos obtenidos y su predicción teórica correspondiente para ángulos iniciales de $10^\circ$ y $55^\circ$.}
     \label{fig:comparacion_angulos}
 \end{figure}
 
-En la Figura \ref{fig:comparacion_angulos} se puede observar que para el ángulo de $10^\circ$ la aproximación de pequeñas oscilaciones es válida, mientras que para el ángulo de $55^\circ$ la aproximación no lo es, ya que no aproxima lo suficientemente bien a la prediccion teorica.
+En la Figura \ref{fig:comparacion_angulos} se puede observar que para el ángulo de $10^\circ$ la aproximación de pequeñas oscilaciones es válida, mientras que para el ángulo de $55^\circ$ la aproximación no lo es, ya que no aproxima lo suficientemente bien a la predicción teórica.
 
 El valor del ECM se presenta en la Figura \ref{fig:pequeñas_oscilaciones}, donde se observa cómo varía con el ángulo inicial.
 
